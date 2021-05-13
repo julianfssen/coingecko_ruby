@@ -3,15 +3,13 @@ require_relative 'lib/coingecko_ruby/version'
 Gem::Specification.new do |spec|
   spec.name          = "coingecko_ruby"
   spec.version       = CoingeckoRuby::VERSION
-  spec.authors       = ["julianfoo"]
-  spec.email         = ["julian.foo@investingnote.com"]
+  spec.authors       = ["Julian Foo Siang Sen"]
+  spec.email         = ["juliandevmy@gmail.com"]
 
   spec.summary       = %q{An easy-to-use client/wrapper for CoinGecko's crypto API}
   spec.description   = %q{An easy-to-use client/wrapper for CoinGecko's crypto API. Get prices, exchanges, volume, and more without building your own API class.}
   spec.homepage      = "https://github.com/julianfssen/coingecko_ruby"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
-
-  spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/julianfssen/coingecko_ruby"
@@ -22,7 +20,7 @@ Gem::Specification.new do |spec|
   # spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
   #   `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   # end
-  spec.files = %w(README.md Rakefile coingecko_ruby.gemspec)
+  spec.files = %w(LICENSE.md README.md Rakefile coingecko_ruby.gemspec)
   spec.files += Dir.glob("lib/**/*.rb")
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
