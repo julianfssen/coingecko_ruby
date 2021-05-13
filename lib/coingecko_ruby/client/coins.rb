@@ -13,12 +13,8 @@ module CoingeckoRuby
         get("coins/#{id}")
       end
 
-      def get_coin_data(id:)
-        get("coins/#{id}")
-      end
-
-      def markets
-        get('coins/markets')
+      def markets(ids:, currency: 'usd')
+        get('coins/markets', { query: { ids: ids, vs_currency: currency } })
       end
     end
   end
