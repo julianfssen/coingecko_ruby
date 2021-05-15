@@ -5,7 +5,7 @@ class CoingeckoRubyTest < Minitest::Test
     refute_nil ::CoingeckoRuby::VERSION
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_that_it_returns_a_new_client_instance
+    assert_instance_of CoingeckoRuby::Client, CoingeckoRuby.client
   end
 end
