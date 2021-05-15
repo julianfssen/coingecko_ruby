@@ -22,6 +22,14 @@ module CoingeckoRuby
       def get_daily_historical_prices(id:, days:)
         get("coins/#{id}/market_chart", { query: { vs_currency: vs_currency, days: days, interval: 'daily' } })
       end
+
+      def get_ohlc(id:, currency: 'usd', days:)
+        get("coins/#{id}/ohlc", { query: { vs_currency: currency, days: days } })
+      end
+
+      def supported_currencies
+        get('simple/supported_vs_currencies')
+      end
     end
   end
 end

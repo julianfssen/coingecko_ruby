@@ -10,10 +10,10 @@ module CoingeckoRuby
       end
 
       def get_coin_tickers(id:)
-        get("coins/#{id}")
+        get("coins/#{id}/tickers")
       end
 
-      def markets(ids:, currency: 'usd')
+      def get_markets(ids:, currency: 'usd')
         get('coins/markets', { query: { ids: ids, vs_currency: currency } })
       end
     end
