@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coingecko.com/api/v3/coins/markets?ids=bitcoin,%20ethereum&vs_currency=eth
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.coingecko.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 15 May 2021 16:01:06 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - public, max-age=30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, PUT, DELETE, GET, OPTIONS
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Expose-Headers:
+      - link, per-page, total
+      Vary:
+      - Accept-Encoding, Origin
+      Etag:
+      - W/"14e4fb42bcf2e7c52b5d481734de7a97"
+      X-Request-Id:
+      - 0c49b90e-7789-4804-907a-3aaf5645e52f
+      X-Runtime:
+      - '0.030207'
+      Alternate-Protocol:
+      - 443:npn-spdy/2
+      Cf-Cache-Status:
+      - MISS
+      Expires:
+      - Sat, 15 May 2021 16:01:36 GMT
+      Cf-Request-Id:
+      - 0a125b9b990000225476a9c000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 64fd953f5cdf2254-HKG
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"bitcoin","symbol":"btc","name":"Bitcoin","image":"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579","current_price":12.666344,"market_cap":236997829,"market_cap_rank":1,"fully_diluted_valuation":265993232,"total_volume":15926716,"high_24h":12.700516,"low_24h":12.149998,"price_change_24h":0.3015473,"price_change_percentage_24h":2.43876,"market_cap_change_24h":5224372,"market_cap_change_percentage_24h":2.25409,"circulating_supply":18710831.0,"total_supply":21000000.0,"max_supply":21000000.0,"ath":624.203,"ath_change_percentage":-97.9708,"ath_date":"2015-10-20T00:00:00.000Z","atl":6.779735,"atl_change_percentage":86.82655,"atl_date":"2017-06-12T00:00:00.000Z","roi":null,"last_updated":"2021-05-15T15:59:43.867Z"},{"id":"ethereum","symbol":"eth","name":"Ethereum","image":"https://assets.coingecko.com/coins/images/279/large/ethereum.png?1595348880","current_price":1.0,"market_cap":115885506,"market_cap_rank":2,"fully_diluted_valuation":null,"total_volume":15170345,"high_24h":1.0,"low_24h":1.0,"price_change_24h":0.0,"price_change_percentage_24h":0.0,"market_cap_change_24h":13415,"market_cap_change_percentage_24h":0.01158,"circulating_supply":115885505.624,"total_supply":null,"max_supply":null,"ath":1.003981,"ath_change_percentage":-0.39652,"ath_date":"2019-10-15T16:26:30.106Z","atl":0.99987722,"atl_change_percentage":0.01228,"atl_date":"2019-10-22T00:00:00.000Z","roi":{"times":104.8161668423025,"currency":"btc","percentage":10481.61668423025},"last_updated":"2021-05-15T15:59:59.730Z"}]'
+  recorded_at: Sat, 15 May 2021 16:01:06 GMT
+recorded_with: VCR 6.0.0

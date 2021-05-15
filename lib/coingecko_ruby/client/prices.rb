@@ -1,17 +1,14 @@
 module CoingeckoRuby
   class Client
     module Prices
-
-      # Fetches the current price for a coin (or a list of coins) in the given currency (or list of currencies).
-      # @param ids [String] the id or list of ids of coins to fetch.
-      # @param currencies [String] the currency or list of currencies to show prices.
+      # Fetches the current price for a coin in the given coin or currency.
+      # @param ids [String] the coin id to fetch.
+      # @param currencies [String] the currency to display the coin's price.
       #
-      # @return [Hash] returns the given coin ids and its current prices.
+      # @return [Hash] returns the given coin id and its current price.
       #
-      # @example Fetch the current price in USD for one coin.
+      # @example Fetch the current price in USD for Bitcoin.
       #   client.get_prices(ids: 'bitcoin', currencies: 'usd')
-      # @example Fetch the current prices in multiple currencies for multiple coins.
-      #   client.get_prices(ids: 'bitcoin, litecoin, xrp', currencies: 'usd, eth, myr')
       def get_prices(ids:, currencies: 'usd')
         get('simple/price', { query: { ids: ids, vs_currencies: currencies } })
       end
@@ -67,16 +64,43 @@ module CoingeckoRuby
         get("coins/#{id}/market_chart", { query: { vs_currency: currency, days: days, interval: 'daily' } })
       end
 
+      # Fetches a coin's open, high, low, and close (OHLC) data within the number of days given.
+      # @param id [String] the coin id to fetch.
+      # @param days [Integer, String] the number of days to fetch daily historical prices. Only accepts the following values: 1/7/14/30/90/180/365/'max'
+      # @param currency [String] the currency to display OHLC data.
+      #
+      # @return [Array<Array<String, Float>>] returns the coin's OHLC data within the number of days given.
+      #
+      # @example Fetch Bitcoin's OHLC data within the last 7 days.
+      #   client.get_ohlc(id: 'bitcoin', days: 7)
+      # @example Fetch Bitcoin's OHLC data in Malaysian Ringgit within the last 30 days.
+      #   client.get_ohlc(id: 'bitcoin', days: 30, currency: 'myr')
       def get_ohlc(id:, days:, currency: 'usd')
         get("coins/#{id}/ohlc", { query: { vs_currency: currency, days: days } })
       end
 
+      # Fetches the list of currencies currently supported by CoinGecko's API.
+      #
+      # @return [Array<String>] returns the list of currencies currently supported by CoinGecko's API.
+      #
+      # @example Fetch supported currencies.
+      #   client.supported_currencies
       def supported_currencies
         get('simple/supported_vs_currencies')
       end
 
+      # Fetches the exchange rate for a coin or currency in the given coin or currency.
+      # @param from [String] the coin id or currency to be converted.
+      # @param to [String] the coin id or currency to convert against.
+      #
+      # @return [Hash] returns the coin's exchange rate against the given coin or currency.
+      #
+      # @example Fetch the exchange rate for BTC-USD.
+      #   client.get_exchange_rate(from: 'bitcoin', to: 'usd')
+      # @example Fetch the exchange rate for BTC-ETH.
+      #   client.get_exchange_rate(from: 'bitcoin', to: 'ethereum')
       def get_exchange_rate(from:, to: 'usd')
-        get_prices(ids: from, vs_currencies: to)
+        get_prices(ids: from, currencies: to)
       end
     end
   end

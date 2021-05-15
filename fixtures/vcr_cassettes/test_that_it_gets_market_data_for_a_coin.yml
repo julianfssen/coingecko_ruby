@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coingecko.com/api/v3/coins/markets?ids=bitcoin&vs_currency=usd
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.coingecko.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 15 May 2021 16:01:03 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - public, max-age=30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, PUT, DELETE, GET, OPTIONS
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Expose-Headers:
+      - link, per-page, total
+      Vary:
+      - Accept-Encoding, Origin
+      Etag:
+      - W/"017723bc3e793a9a5a5b8988756eadaa"
+      X-Request-Id:
+      - 6099d35d-33e5-40a1-ab6d-ee89e6fe9ff0
+      X-Runtime:
+      - '0.023106'
+      Alternate-Protocol:
+      - 443:npn-spdy/2
+      Cf-Cache-Status:
+      - EXPIRED
+      Expires:
+      - Sat, 15 May 2021 16:01:33 GMT
+      Cf-Request-Id:
+      - 0a125b86db0000d18f8a1ac000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 64fd951e2846d18f-HKG
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"bitcoin","symbol":"btc","name":"Bitcoin","image":"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579","current_price":49053,"market_cap":917825524991,"market_cap_rank":1,"fully_diluted_valuation":1030116515125,"total_volume":61679663434,"high_24h":51300,"low_24h":48019,"price_change_24h":-2246.57482218,"price_change_percentage_24h":-4.37931,"market_cap_change_24h":-41121427948.2572,"market_cap_change_percentage_24h":-4.28819,"circulating_supply":18710831.0,"total_supply":21000000.0,"max_supply":21000000.0,"ath":64805,"ath_change_percentage":-24.30618,"ath_date":"2021-04-14T11:54:46.763Z","atl":67.81,"atl_change_percentage":72240.20172,"atl_date":"2013-07-06T00:00:00.000Z","roi":null,"last_updated":"2021-05-15T15:59:43.867Z"}]'
+  recorded_at: Sat, 15 May 2021 16:01:04 GMT
+recorded_with: VCR 6.0.0

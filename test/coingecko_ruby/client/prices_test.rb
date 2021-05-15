@@ -1,4 +1,4 @@
-require "test_helper"
+require 'test_helper'
 
 class TestPrices < Minitest::Test
   def setup
@@ -43,6 +43,26 @@ class TestPrices < Minitest::Test
 
   def test_that_it_gets_daily_historical_prices_for_one_coin
     response = @client.get_daily_historical_prices(id: 'bitcoin', days: 90)
+    refute_empty(response)
+  end
+
+  def test_that_it_gets_ohlc_data_for_one_coin_in_the_last_7_days
+    response = @client.get_ohlc(id: 'bitcoin', days: 7)
+    refute_empty(response)
+  end
+
+  def test_that_it_gets_ohlc_data_for_one_coin_in_the_last_30_days_in_myr
+    response = @client.get_ohlc(id: 'bitcoin', days: 30, currency: 'myr')
+    refute_empty(response)
+  end
+
+  def test_that_it_gets_btc_to_usd_exchange_rate
+    response = @client.get_exchange_rate(from: 'bitcoin', to: 'usd')
+    refute_empty(response)
+  end
+
+  def test_that_it_gets_btc_to_eth_exchange_rate
+    response = @client.get_exchange_rate(from: 'bitcoin', to: 'ethereum')
     refute_empty(response)
   end
 
