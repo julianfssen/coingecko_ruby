@@ -9,17 +9,19 @@ module CoingeckoRuby
     def get(endpoint, options = {})
       url = BASE_URL + endpoint
       uri = URI(url)
-      if options[:query]
-        uri = build_params(uri, options[:query])
-      end
+      uri = build_query(uri, options) unless options.empty?
       response = Net::HTTP.get(uri)
       JSON.parse(response)
     end
 
     private
 
-    def build_params(uri, params)
-      uri.query = URI.encode_www_form(params)
+    def build_query(uri, query)
+      if query[:options]
+        options = query.delete(:options)
+        query = query.merge(options)
+      end
+      uri.query = URI.encode_www_form(query)
       uri
     end
   end

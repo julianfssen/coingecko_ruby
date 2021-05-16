@@ -1,0 +1,100 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coingecko.com/api/v3/coins/categories
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.coingecko.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 16 May 2021 08:27:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - public, max-age=30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, PUT, DELETE, GET, OPTIONS
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Expose-Headers:
+      - link, per-page, total
+      Vary:
+      - Accept-Encoding, Origin
+      Etag:
+      - W/"53f0c6125d889fddae8ffbc17be085da"
+      X-Request-Id:
+      - af614591-aa80-4c6e-abc6-b5958a684021
+      X-Runtime:
+      - '3.572435'
+      Alternate-Protocol:
+      - 443:npn-spdy/2
+      Cf-Cache-Status:
+      - HIT
+      Age:
+      - '139'
+      Expires:
+      - Sun, 16 May 2021 08:27:41 GMT
+      Cf-Request-Id:
+      - 0a15e263d600000bba300d8000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 650339b2ed700bba-HKG
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"exchange-based-tokens","name":"Exchange-based Tokens","market_cap":169371736001.31586,"market_cap_change_24h":-0.0922414270544203,"volume_24h":15951052818.441586,"updated_at":"2021-05-16T08:20:23.151Z"},{"id":"decentralized-finance-defi","name":"Decentralized
+        Finance (DeFi)","market_cap":136820578041.49733,"market_cap_change_24h":-0.9466181422841903,"volume_24h":14287923081.250826,"updated_at":"2021-05-16T08:20:20.877Z"},{"id":"centralized-exchange-token-cex","name":"Centralized
+        Exchange Token (CEX)","market_cap":122947523197.55856,"market_cap_change_24h":0.26640274656563356,"volume_24h":11040737416.224226,"updated_at":"2021-05-16T08:20:06.231Z"},{"id":"binance-smart-chain","name":"Binance
+        Smart Chain Ecosystem","market_cap":116361546228.1391,"market_cap_change_24h":0.4826745508659215,"volume_24h":16613002144.076551,"updated_at":"2021-05-16T08:20:18.419Z"},{"id":"stablecoins","name":"Stablecoins","market_cap":97325984356.89694,"market_cap_change_24h":-0.0875726509433792,"volume_24h":200476835791.99164,"updated_at":"2021-05-16T08:20:24.440Z"},{"id":"dot-ecosystem","name":"Polkadot
+        Ecosystem","market_cap":80036030929.50584,"market_cap_change_24h":-2.095750731441014,"volume_24h":9976746509.269482,"updated_at":"2021-05-16T08:20:20.395Z"},{"id":"governance","name":"Governance","market_cap":61646638642.600464,"market_cap_change_24h":-1.6030575560698792,"volume_24h":7027881997.164181,"updated_at":"2021-05-16T08:20:22.367Z"},{"id":"polygon-ecosystem","name":"Polygon
+        Ecosystem","market_cap":55230933082.29112,"market_cap_change_24h":2.627094618853815,"volume_24h":12640294848.003065,"updated_at":"2021-05-16T08:20:15.088Z"},{"id":"yield-farming","name":"Yield
+        Farming","market_cap":51438960266.23265,"market_cap_change_24h":3.6891603450006083,"volume_24h":6200233444.760905,"updated_at":"2021-05-16T08:20:17.387Z"},{"id":"decentralized-exchange","name":"Decentralized
+        Exchange Token (DEX)","market_cap":48836980457.57617,"market_cap_change_24h":0.09755822362965229,"volume_24h":5265047363.004955,"updated_at":"2021-05-16T08:20:13.354Z"},{"id":"solana-ecosystem","name":"Solana
+        Ecosystem","market_cap":40370305858.85916,"market_cap_change_24h":-1.0449733568586115,"volume_24h":4384676312.556389,"updated_at":"2021-05-16T08:20:05.762Z"},{"id":"automated-market-maker-amm","name":"Automated
+        Market Maker (AMM)","market_cap":34483953269.66086,"market_cap_change_24h":-0.23667003297667782,"volume_24h":3865528884.0094414,"updated_at":"2021-05-16T08:20:15.541Z"},{"id":"cosmos-ecosystem","name":"Cosmos
+        Ecosystem","market_cap":25992698277.852264,"market_cap_change_24h":-1.1306878678781906,"volume_24h":3126252980.6875834,"updated_at":"2021-05-16T08:20:02.055Z"},{"id":"non-fungible-tokens-nft","name":"Non-Fungible
+        Tokens (NFT)","market_cap":24867040889.00869,"market_cap_change_24h":0.19548246565094757,"volume_24h":3150822262.8443885,"updated_at":"2021-05-16T08:20:15.999Z"},{"id":"privacy-coins","name":"Privacy
+        Coins","market_cap":24271769953.309914,"market_cap_change_24h":-1.1724444263670448,"volume_24h":4821713127.81888,"updated_at":"2021-05-16T08:20:24.108Z"},{"id":"oracle","name":"Oracle","market_cap":21503492344.46853,"market_cap_change_24h":0.01707461425800213,"volume_24h":3158464488.4578137,"updated_at":"2021-05-16T08:20:21.615Z"},{"id":"finance-banking","name":"Finance
+        / Banking","market_cap":20213877481.62316,"market_cap_change_24h":-5.046718323725019,"volume_24h":823421604.7987683,"updated_at":"2021-05-16T08:20:11.435Z"},{"id":"internet-of-things-iot","name":"Internet
+        of Things (IOT)","market_cap":20180084531.45852,"market_cap_change_24h":4.201018684275973,"volume_24h":2274524760.0068297,"updated_at":"2021-05-16T08:20:12.379Z"},{"id":"storage","name":"Storage","market_cap":18540886399.441414,"market_cap_change_24h":-0.4442038952985032,"volume_24h":3381061835.8087106,"updated_at":"2021-05-16T08:20:20.035Z"},{"id":"asset-backed-tokens","name":"Asset-backed
+        Tokens","market_cap":18456899873.301594,"market_cap_change_24h":-3.64952255594143,"volume_24h":587630280.2328482,"updated_at":"2021-05-16T08:20:24.828Z"},{"id":"lending-borrowing","name":"Lending/Borrowing","market_cap":18401362671.286892,"market_cap_change_24h":-2.1832129427155222,"volume_24h":2304765226.6386127,"updated_at":"2021-05-16T08:20:07.173Z"},{"id":"wrapped-tokens","name":"Wrapped-Tokens","market_cap":9771192463.87429,"market_cap_change_24h":-1.5469680070002187,"volume_24h":706647243.3863505,"updated_at":"2021-05-16T08:20:08.238Z"},{"id":"terra-ecosystem","name":"Terra
+        Ecosystem","market_cap":9173012058.839174,"market_cap_change_24h":1.4645651464387908,"volume_24h":469740221.4613474,"updated_at":"2021-05-16T08:20:14.718Z"},{"id":"yearn-yfi-partnerships-mergers","name":"Yearn
+        Ecosystem","market_cap":6963790498.873828,"market_cap_change_24h":-3.004649719339299,"volume_24h":1953459038.643325,"updated_at":"2021-05-16T08:20:02.734Z"},{"id":"masternodes","name":"Masternodes","market_cap":6599752340.219196,"market_cap_change_24h":-0.8008636885135179,"volume_24h":1700595021.037012,"updated_at":"2021-05-16T08:20:22.769Z"},{"id":"avalanche-ecosystem","name":"Avalanche
+        Ecosystem","market_cap":6528327418.819485,"market_cap_change_24h":-3.140484484757629,"volume_24h":924208071.7269298,"updated_at":"2021-05-16T08:20:09.119Z"},{"id":"decentralized-derivatives","name":"Derivatives","market_cap":6512830532.72658,"market_cap_change_24h":-3.925356582979921,"volume_24h":583736624.025315,"updated_at":"2021-05-16T08:20:05.182Z"},{"id":"synthetic-assets","name":"Synthetic
+        Issuer","market_cap":5269731317.130669,"market_cap_change_24h":-5.7316216674712015,"volume_24h":434031079.91778475,"updated_at":"2021-05-16T08:20:13.797Z"},{"id":"yield-aggregator","name":"Yield
+        Aggregator","market_cap":4736190748.19292,"market_cap_change_24h":-8.86579197646888,"volume_24h":1160753701.363265,"updated_at":"2021-05-16T08:20:10.325Z"},{"id":"sports","name":"Sports","market_cap":4056003343.735188,"market_cap_change_24h":-1.6390226687521263,"volume_24h":2894762917.1452756,"updated_at":"2021-05-16T08:20:25.529Z"},{"id":"gaming","name":"Gaming","market_cap":3749803553.8869686,"market_cap_change_24h":-0.4948017764000251,"volume_24h":390674141.4556448,"updated_at":"2021-05-16T08:20:18.913Z"},{"id":"seigniorage","name":"Seigniorage","market_cap":2461338103.925926,"market_cap_change_24h":-0.8689163733817793,"volume_24h":90439940.43467346,"updated_at":"2021-05-16T08:20:03.388Z"},{"id":"metaverse","name":"Metaverse","market_cap":2144916592.8034434,"market_cap_change_24h":-1.3576768964264039,"volume_24h":322874172.29973686,"updated_at":"2021-05-16T08:20:01.528Z"},{"id":"analytics","name":"Analytics","market_cap":1986716615.6283023,"market_cap_change_24h":-5.072911552433917,"volume_24h":356659200.30560577,"updated_at":"2021-05-16T08:20:21.247Z"},{"id":"eth-2-0-staking","name":"Eth
+        2.0 Staking","market_cap":1811844300.043134,"market_cap_change_24h":-1.187020843503354,"volume_24h":24505299.50766576,"updated_at":"2021-05-16T08:20:08.731Z"},{"id":"insurance","name":"Insurance","market_cap":1615301703.9076056,"market_cap_change_24h":-5.900023601837172,"volume_24h":50048402.40004466,"updated_at":"2021-05-16T08:20:04.061Z"},{"id":"synths","name":"Synths","market_cap":873383931.1405654,"market_cap_change_24h":-0.3648614417174488,"volume_24h":38489265.48056758,"updated_at":"2021-05-16T08:20:19.289Z"},{"id":"prediction-markets","name":"Prediction
+        Markets","market_cap":808026452.8207433,"market_cap_change_24h":-0.646950491521524,"volume_24h":48736546.39817957,"updated_at":"2021-05-16T08:20:07.724Z"},{"id":"decentralized-perpetuals","name":"Perpetuals","market_cap":727016420.98016,"market_cap_change_24h":-5.168869579974475,"volume_24h":127811938.7047532,"updated_at":"2021-05-16T08:20:06.719Z"},{"id":"gambling","name":"Gambling","market_cap":569461411.0236635,"market_cap_change_24h":-0.14285524527429208,"volume_24h":15230462.839978827,"updated_at":"2021-05-16T08:20:12.891Z"},{"id":"rebase-tokens","name":"Rebase
+        Tokens","market_cap":500487168.1470044,"market_cap_change_24h":-1.4458746321526588,"volume_24h":7560475.938888493,"updated_at":"2021-05-16T08:20:16.862Z"},{"id":"fan-token","name":"Fan
+        Token","market_cap":481622014.16210604,"market_cap_change_24h":6.41265068035633,"volume_24h":1516707457.5465293,"updated_at":"2021-05-16T08:20:14.295Z"},{"id":"defi-index","name":"DeFi
+        Index","market_cap":476594506.5246841,"market_cap_change_24h":-5.919638678548996,"volume_24h":22891825.369198006,"updated_at":"2021-05-16T08:20:01.034Z"},{"id":"tourism","name":"Tourism","market_cap":432508389.0635064,"market_cap_change_24h":3.63040834512631,"volume_24h":19715005.495406162,"updated_at":"2021-05-16T08:20:25.155Z"},{"id":"social-money","name":"Social
+        Money","market_cap":323134340.28929746,"market_cap_change_24h":-2.267193234081168,"volume_24h":4084542.0267301365,"updated_at":"2021-05-16T08:20:21.944Z"},{"id":"music","name":"Music","market_cap":319629663.206694,"market_cap_change_24h":-1.394604792425573,"volume_24h":14635823.316481806,"updated_at":"2021-05-16T08:20:11.936Z"},{"id":"decentralized-options","name":"Options","market_cap":202505261.76387465,"market_cap_change_24h":1.254414847957458,"volume_24h":19144393.41174868,"updated_at":"2021-05-16T08:20:16.469Z"},{"id":"aave-tokens","name":"Aave
+        Tokens","market_cap":0.0,"market_cap_change_24h":0,"volume_24h":100200005.42267586,"updated_at":"2021-05-16T08:20:19.712Z"}]'
+  recorded_at: Sun, 16 May 2021 08:27:11 GMT
+recorded_with: VCR 6.0.0

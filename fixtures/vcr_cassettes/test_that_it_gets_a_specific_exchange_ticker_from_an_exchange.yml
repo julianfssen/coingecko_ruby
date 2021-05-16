@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coingecko.com/api/v3/exchanges/binance/tickers?coin_ids=bitcoin
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.coingecko.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 16 May 2021 08:07:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Per-Page:
+      - '100'
+      Total:
+      - '17'
+      Cache-Control:
+      - public, max-age=30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, PUT, DELETE, GET, OPTIONS
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Expose-Headers:
+      - link, per-page, total
+      Vary:
+      - Accept-Encoding, Origin
+      Etag:
+      - W/"0199b667384889ba5fbbe1b517b81800"
+      X-Request-Id:
+      - a51fcec8-1f5d-4b25-bd45-039403d3b030
+      X-Runtime:
+      - '0.041051'
+      Alternate-Protocol:
+      - 443:npn-spdy/2
+      Cf-Cache-Status:
+      - MISS
+      Expires:
+      - Sun, 16 May 2021 08:08:04 GMT
+      Cf-Request-Id:
+      - 0a15d06fac000019ed299d5000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 65031cf9186f19ed-SIN
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"name":"Binance","tickers":[{"base":"BTC","target":"USDT","market":{"name":"Binance","identifier":"binance","has_trading_incentive":false},"last":48964.36,"volume":86497.48158192317,"converted_last":{"btc":1.000814,"eth":12.757715,"usd":48966},"converted_volume":{"btc":86568,"eth":1103510,"usd":4235396768},"trust_score":"green","bid_ask_spread_percentage":0.01002,"timestamp":"2021-05-16T07:46:57+00:00","last_traded_at":"2021-05-16T07:46:57+00:00","last_fetch_at":"2021-05-16T07:46:57+00:00","is_anomaly":false,"is_stale":false,"trade_url":"https://www.binance.com/en/trade/BTC_USDT?ref=37754157","token_info_url":null,"coin_id":"bitcoin","target_coin_id":"tether"},{"base":"BTC","target":"BUSD","market":{"name":"Binance","identifier":"binance","has_trading_incentive":false},"last":48971.8,"volume":18143.51055858951,"converted_last":{"btc":1.000873,"eth":12.758467,"usd":48968},"converted_volume":{"btc":18159,"eth":231483,"usd":888459339},"trust_score":"green","bid_ask_spread_percentage":0.01002,"timestamp":"2021-05-16T07:46:30+00:00","last_traded_at":"2021-05-16T07:46:30+00:00","last_fetch_at":"2021-05-16T07:46:30+00:00","is_anomaly":false,"is_stale":false,"trade_url":"https://www.binance.com/en/trade/BTC_BUSD?ref=37754157","token_info_url":null,"coin_id":"bitcoin","target_coin_id":"binance-usd"},{"base":"BTC","target":"EUR","market":{"name":"Binance","identifier":"binance","has_trading_incentive":false},"last":40546.32,"volume":3880.946448699891,"converted_last":{"btc":1.004577,"eth":12.777554,"usd":49247},"converted_volume":{"btc":3899,"eth":49589,"usd":191125593},"trust_score":"green","bid_ask_spread_percentage":0.010025,"timestamp":"2021-05-16T07:50:11+00:00","last_traded_at":"2021-05-16T07:50:11+00:00","last_fetch_at":"2021-05-16T07:50:11+00:00","is_anomaly":false,"is_stale":false,"trade_url":"https://www.binance.com/en/trade/BTC_EUR?ref=37754157","token_info_url":null,"coin_id":"bitcoin"},{"base":"BTC","target":"USDC","market":{"name":"Binance","identifier":"binance","has_trading_incentive":false},"last":48937.94,"volume":2097.7185470160366,"converted_last":{"btc":0.99856881,"eth":12.702642,"usd":48833},"converted_volume":{"btc":2095,"eth":26647,"usd":102437854},"trust_score":"green","bid_ask_spread_percentage":0.042754,"timestamp":"2021-05-16T07:43:48+00:00","last_traded_at":"2021-05-16T07:43:48+00:00","last_fetch_at":"2021-05-16T07:43:48+00:00","is_anomaly":false,"is_stale":false,"trade_url":"https://www.binance.com/en/trade/BTC_USDC?ref=37754157","token_info_url":null,"coin_id":"bitcoin","target_coin_id":"usd-coin"},{"base":"BTC","target":"GBP","market":{"name":"Binance","identifier":"binance","has_trading_incentive":false},"last":35157.98,"volume":1279.402575799025,"converted_last":{"btc":1.00989,"eth":12.825531,"usd":49577},"converted_volume":{"btc":1292,"eth":16409,"usd":63428413},"trust_score":"green","bid_ask_spread_percentage":0.040386,"timestamp":"2021-05-16T08:01:27+00:00","last_traded_at":"2021-05-16T08:01:27+00:00","last_fetch_at":"2021-05-16T08:01:27+00:00","is_anomaly":false,"is_stale":false,"trade_url":"https://www.binance.com/en/trade/BTC_GBP?ref=37754157","token_info_url":null,"coin_id":"bitcoin"},{"base":"BTC","target":"TRY","market":{"name":"Binance","identifier":"binance","has_trading_incentive":false},"last":412141.0,"volume":422.95445332147733,"converted_last":{"btc":0.99761405,"eth":12.689552,"usd":48791},"converted_volume":{"btc":421.945,"eth":5367,"usd":20636542},"trust_score":"green","bid_ask_spread_percentage":0.070211,"timestamp":"2021-05-16T07:44:40+00:00","last_traded_at":"2021-05-16T07:44:40+00:00","last_fetch_at":"2021-05-16T07:44:40+00:00","is_anomaly":false,"is_stale":false,"trade_url":"https://www.binance.com/en/trade/BTC_TRY?ref=37754157","token_info_url":null,"coin_id":"bitcoin"},{"base":"BTC","target":"BRL","market":{"name":"Binance","identifier":"binance","has_trading_incentive":false},"last":259367.0,"volume":313.3676429289347,"converted_last":{"btc":1.005143,"eth":12.812898,"usd":49198},"converted_volume":{"btc":314.979,"eth":4015,"usd":15416919},"trust_score":"green","bid_ask_spread_percentage":0.072821,"timestamp":"2021-05-16T07:47:14+00:00","last_traded_at":"2021-05-16T07:47:14+00:00","last_fetch_at":"2021-05-16T07:47:14+00:00","is_anomaly":false,"is_stale":false,"trade_url":"https://www.binance.com/en/trade/BTC_BRL?ref=37754157","token_info_url":null,"coin_id":"bitcoin"},{"base":"BTC","target":"DAI","market":{"name":"Binance","identifier":"binance","has_trading_incentive":false},"last":49230.36,"volume":149.36580371341037,"converted_last":{"btc":1.006035,"eth":12.825905,"usd":49314},"converted_volume":{"btc":150.267,"eth":1916,"usd":7365862},"trust_score":"green","bid_ask_spread_percentage":0.126601,"timestamp":"2021-05-16T07:49:51+00:00","last_traded_at":"2021-05-16T07:49:51+00:00","last_fetch_at":"2021-05-16T07:49:51+00:00","is_anomaly":false,"is_stale":false,"trade_url":"https://www.binance.com/en/trade/BTC_DAI?ref=37754157","token_info_url":null,"coin_id":"bitcoin","target_coin_id":"dai"},{"base":"BTC","target":"AUD","market":{"name":"Binance","identifier":"binance","has_trading_incentive":false},"last":63332.54,"volume":312.07688255041813,"converted_last":{"btc":1.003353,"eth":12.737822,"usd":49246},"converted_volume":{"btc":313.123,"eth":3975,"usd":15368566},"trust_score":"green","bid_ask_spread_percentage":0.097727,"timestamp":"2021-05-16T08:06:49+00:00","last_traded_at":"2021-05-16T08:06:49+00:00","last_fetch_at":"2021-05-16T08:06:49+00:00","is_anomaly":false,"is_stale":false,"trade_url":"https://www.binance.com/en/trade/BTC_AUD?ref=37754157","token_info_url":null,"coin_id":"bitcoin"},{"base":"BTC","target":"RUB","market":{"name":"Binance","identifier":"binance","has_trading_incentive":false},"last":3643155.0,"volume":181.41854068068528,"converted_last":{"btc":1.005727,"eth":12.820353,"usd":49226},"converted_volume":{"btc":182.458,"eth":2326,"usd":8930540},"trust_score":"green","bid_ask_spread_percentage":0.107998,"timestamp":"2021-05-16T07:47:35+00:00","last_traded_at":"2021-05-16T07:47:35+00:00","last_fetch_at":"2021-05-16T07:47:35+00:00","is_anomaly":false,"is_stale":false,"trade_url":"https://www.binance.com/en/trade/BTC_RUB?ref=37754157","token_info_url":null,"coin_id":"bitcoin"},{"base":"BTC","target":"PAX","market":{"name":"Binance","identifier":"binance","has_trading_incentive":false},"last":49043.37,"volume":241.4875826627852,"converted_last":{"btc":0.99558041,"eth":12.639142,"usd":48865},"converted_volume":{"btc":240.42,"eth":3052,"usd":11800189},"trust_score":"green","bid_ask_spread_percentage":0.015566,"timestamp":"2021-05-16T08:06:17+00:00","last_traded_at":"2021-05-16T08:06:17+00:00","last_fetch_at":"2021-05-16T08:06:17+00:00","is_anomaly":false,"is_stale":false,"trade_url":"https://www.binance.com/en/trade/BTC_PAX?ref=37754157","token_info_url":null,"coin_id":"bitcoin","target_coin_id":"paxos-standard"},{"base":"BTC","target":"NGN","market":{"name":"Binance","identifier":"binance","has_trading_incentive":false},"last":38380916.0,"volume":52.28985688020057,"converted_last":{"btc":1.895291,"eth":24.08513,"usd":92932},"converted_volume":{"btc":99.104,"eth":1259,"usd":4859401},"trust_score":"green","bid_ask_spread_percentage":0.2844,"timestamp":"2021-05-16T07:52:40+00:00","last_traded_at":"2021-05-16T07:52:40+00:00","last_fetch_at":"2021-05-16T07:52:40+00:00","is_anomaly":false,"is_stale":false,"trade_url":"https://www.binance.com/en/trade/BTC_NGN?ref=37754157","token_info_url":null,"coin_id":"bitcoin"},{"base":"BTC","target":"BIDR","market":{"name":"Binance","identifier":"binance","has_trading_incentive":false},"last":728209000.0,"volume":32.66149934757741,"converted_last":{"btc":0.99820979,"eth":12.724522,"usd":48838},"converted_volume":{"btc":32.603028,"eth":415.602,"usd":1595127},"trust_score":"green","bid_ask_spread_percentage":0.111679,"timestamp":"2021-05-16T07:46:11+00:00","last_traded_at":"2021-05-16T07:46:11+00:00","last_fetch_at":"2021-05-16T07:46:11+00:00","is_anomaly":false,"is_stale":false,"trade_url":"https://www.binance.com/en/trade/BTC_BIDR?ref=37754157","token_info_url":null,"coin_id":"bitcoin","target_coin_id":"binanceidr"},{"base":"BTC","target":"TUSD","market":{"name":"Binance","identifier":"binance","has_trading_incentive":false},"last":48952.13,"volume":158.27818163523386,"converted_last":{"btc":1.000083,"eth":12.748395,"usd":48930},"converted_volume":{"btc":158.291,"eth":2018,"usd":7744517},"trust_score":"green","bid_ask_spread_percentage":0.049377,"timestamp":"2021-05-16T07:46:53+00:00","last_traded_at":"2021-05-16T07:46:53+00:00","last_fetch_at":"2021-05-16T07:46:53+00:00","is_anomaly":false,"is_stale":false,"trade_url":"https://www.binance.com/en/trade/BTC_TUSD?ref=37754157","token_info_url":null,"coin_id":"bitcoin","target_coin_id":"true-usd"},{"base":"BTC","target":"UAH","market":{"name":"Binance","identifier":"binance","has_trading_incentive":false},"last":1362615.0,"volume":4.540670373020259,"converted_last":{"btc":1.009074,"eth":12.835318,"usd":49352},"converted_volume":{"btc":4.581871,"eth":58.281,"usd":224091},"trust_score":"green","bid_ask_spread_percentage":0.166551,"timestamp":"2021-05-16T07:44:01+00:00","last_traded_at":"2021-05-16T07:44:01+00:00","last_fetch_at":"2021-05-16T07:44:01+00:00","is_anomaly":false,"is_stale":false,"trade_url":"https://www.binance.com/en/trade/BTC_UAH?ref=37754157","token_info_url":null,"coin_id":"bitcoin"},{"base":"BTC","target":"IDRT","market":{"name":"Binance","identifier":"binance","has_trading_incentive":false},"last":724245589.0,"volume":4.592519778770789,"converted_last":{"btc":0.99571503,"eth":12.665397,"usd":48699},"converted_volume":{"btc":4.572841,"eth":58.166,"usd":223649},"trust_score":"green","bid_ask_spread_percentage":0.662132,"timestamp":"2021-05-16T07:44:36+00:00","last_traded_at":"2021-05-16T07:44:36+00:00","last_fetch_at":"2021-05-16T07:44:36+00:00","is_anomaly":false,"is_stale":false,"trade_url":"https://www.binance.com/en/trade/BTC_IDRT?ref=37754157","token_info_url":null,"coin_id":"bitcoin","target_coin_id":"rupiah-token"},{"base":"BTC","target":"VAI","market":{"name":"Binance","identifier":"binance","has_trading_incentive":false},"last":55666.67,"volume":1.5856821744963367,"converted_last":{"btc":0.98706901,"eth":12.531088,"usd":48447},"converted_volume":{"btc":1.565178,"eth":19.870322,"usd":76821},"trust_score":"green","bid_ask_spread_percentage":1.070737,"timestamp":"2021-05-16T08:06:33+00:00","last_traded_at":"2021-05-16T08:06:33+00:00","last_fetch_at":"2021-05-16T08:06:33+00:00","is_anomaly":false,"is_stale":false,"trade_url":"https://www.binance.com/en/trade/BTC_VAI?ref=37754157","token_info_url":null,"coin_id":"bitcoin","target_coin_id":"vai"}]}'
+  recorded_at: Sun, 16 May 2021 08:07:34 GMT
+recorded_with: VCR 6.0.0
