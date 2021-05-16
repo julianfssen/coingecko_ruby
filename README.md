@@ -1,3 +1,5 @@
+![test suite](https://github.com/julianfssen/coingecko_ruby/actions/workflows/ruby.yml/badge.svg)
+
 # CoingeckoRuby
 
 CoingeckoRuby is an easy-to-use client/wrapper for CoinGecko's awesome cryptocurrency API.
@@ -35,8 +37,8 @@ client = CoingeckoRuby.client
 3. Use the client to fetch your desired data.
 
 ```ruby
-# Example: Fetching the current price of Bitcoin
-client.get_prices(ids: 'bitcoin', vs_currencies: 'usd')
+# Example: Fetching the current price of Bitcoin in USD
+client.get_price(id: 'bitcoin', currency: 'usd')
 ```
 
 ## Documentation
