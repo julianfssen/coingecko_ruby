@@ -1,0 +1,124 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coingecko.com/api/v3/coins/bitcoin/history?date=30-12-2017
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.coingecko.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 15 May 2021 14:10:11 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - public, max-age=30
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, PUT, DELETE, GET, OPTIONS
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Expose-Headers:
+      - link, per-page, total
+      Vary:
+      - Accept-Encoding, Origin
+      Etag:
+      - W/"4bded3cea18824cc134dc97fb3fa7eb8"
+      X-Request-Id:
+      - f1747093-e0a7-4209-96af-7862ec791d64
+      X-Runtime:
+      - '1.535539'
+      Alternate-Protocol:
+      - 443:npn-spdy/2
+      Cf-Cache-Status:
+      - MISS
+      Expires:
+      - Sat, 15 May 2021 14:10:41 GMT
+      Cf-Request-Id:
+      - 0a11f6069c0000d1d70e868000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 64fcf2b74a34d1d7-HKG
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpZCI6ImJpdGNvaW4iLCJzeW1ib2wiOiJidGMiLCJuYW1lIjoiQml0Y29pbiIsImxvY2FsaXphdGlvbiI6eyJlbiI6IkJpdGNvaW4iLCJkZSI6IkJpdGNvaW4iLCJlcyI6IkJpdGNvaW4iLCJmciI6IkJpdGNvaW4iLCJpdCI6IkJpdGNvaW4iLCJwbCI6IkJpdGNvaW4iLCJybyI6IkJpdGNvaW4iLCJodSI6IkJpdGNvaW4iLCJubCI6IkJpdGNvaW4iLCJwdCI6IkJpdGNvaW4iLCJzdiI6IkJpdGNvaW4iLCJ2aSI6IkJpdGNvaW4iLCJ0ciI6IkJpdGNvaW4iLCJydSI6ItCx0LjRgtC60L7QuNC9IiwiamEiOiLjg5Pjg4Pjg4jjgrPjgqTjg7MiLCJ6aCI6IuavlOeJueW4gSIsInpoLXR3Ijoi5q+U54m55bmjIiwia28iOiLruYTtirjsvZTsnbgiLCJhciI6Itio2YrYqtmD2YjZitmGIiwidGgiOiLguJrguLTguJXguITguK3guKLguJnguYwiLCJpZCI6IkJpdGNvaW4ifSwiaW1hZ2UiOnsidGh1bWIiOiJodHRwczovL2Fzc2V0cy5jb2luZ2Vja28uY29tL2NvaW5zL2ltYWdlcy8xL3RodW1iL2JpdGNvaW4ucG5nPzE1NDcwMzM1NzkiLCJzbWFsbCI6Imh0dHBzOi8vYXNzZXRzLmNvaW5nZWNrby5jb20vY29pbnMvaW1hZ2VzLzEvc21hbGwvYml0Y29pbi5wbmc/MTU0NzAzMzU3OSJ9LCJtYXJrZXRfZGF0YSI6eyJjdXJyZW50X3ByaWNlIjp7ImFlZCI6NTAwMjQuNTc5MDYzNzY0NDMsImFycyI6MjUzNDY4LjEyNDI5NjkyMTg2LCJhdWQiOjE3NDQ2LjMyMTUyNDU5MzcsImJjaCI6NS43NjkyODI4NjQ3ODE1MywiYmR0IjoxMTI2MTEwLjgwMzE4Mzk4OSwiYmhkIjo1MTMyLjg2MDYxMjk5NTcwNiwiYm1kIjoxMzYyMC4zNjE4NzQxNDYxLCJicmwiOjQ1MTE3LjcyMTExNTM0NjMsImJ0YyI6MS4wLCJjYWQiOjE3MTI4Ljg3MTc1MDM5MywiY2hmIjoxMzI2Mi40ODY4NjU5MDI5LCJjbHAiOjgzNjI5MDIuMTkwNzI1NzA2LCJjbnkiOjg4NTczLjIxMzI2NzU3MTgsImN6ayI6Mjg5OTE0LjU3ODIyODcxMTksImRrayI6ODQ1MjUuMTczNjE2NzY2MiwiZXRoIjoxOC40ODMwOTQwMjQxODg0MDQsImV1ciI6MTEzNDUuODk3NjQ0NzgyNCwiZ2JwIjoxMDA3OS4wNjc3ODY4NjgxLCJoa2QiOjEwNjQxNy45MzAzNzY5ODQsImh1ZiI6MzUyNjcyMC4zMDAwNzI2NDk1LCJpZHIiOjE4NDY1MjE5Mi4xNzUxOTksImlscyI6NDczODcuOTYzMDMyNTI5MTEsImluciI6ODY5NjcxLjAwMTk1MzcyNSwianB5IjoxNTM1MDYyLjQ1NDQ4MjgyLCJrcnciOjE0NTM3NjkzLjI0NjM2OTgsImt3ZCI6NDEwNC42NDU4NzQ3NTQ1NDMsImxrciI6MjA4NzkxOS41NDg4Mjk5MjQsImx0YyI6NjAuOTY4NDA2NjY4NDY1MzQsIm1tayI6MTg0MTQ3MjkuMjUzODQ1NTI4LCJteG4iOjI2Nzg4OC43NTA1MzI5ODIsIm15ciI6NTUzMTcuODczOTE5Mjc1NSwibmduIjo0ODg0NTQ2LjUwMTczMzc3MSwibm9rIjoxMTE3NTUuNzUwMTk1NDYyNDYsIm56ZCI6MTkxNzguMTUwNTM2ODkxNCwicGhwIjo2ODA1MjcuNzYwNjc5ODMzLCJwa3IiOjE1MDU0MTQuNzY3NjI0ODU3NCwicGxuIjo0NzQ1MC42MTY2OTcxNSwicnViIjo3ODUzNzcuMzA2Mzg3MDEsInNhciI6NTEwNzkuMDgxMTAwNDIyNywic2VrIjoxMTE0NDYuNzA0MTg0NTM4LCJzZ2QiOjE4MjEzLjE0Nzg5ODEwODEsInRoYiI6NDQyOTU0LjU5ODY5MDA0MjQ1LCJ0cnkiOjUxNzAwLjA3NDI1OTM1MDY1LCJ0d2QiOjQwNDA1My40Njk1MjA5MywidWFoIjozODI5MDguMDg5MjU3NDcxODUsInVzZCI6MTM2MjAuMzYxODc0MTQ2MSwidmVmIjoxNDA4NTkuNzM5NDQ4MTM3ODQsInZuZCI6MzA5MjAxNDM0LjkxNjc3NTE3LCJ4YWciOjgwNC4xNTQ3NDU4Nzc1NjQsInhhdSI6MTAuNDU0OTg5Nzc0NTk0NSwieGRyIjo5NTYzLjk1OTMyMTE0OTc1LCJ6YXIiOjE2ODc3MS4wNjE3MTMzMDMsImJpdHMiOjEwMDAwMDAuMCwibGluayI6MjIwNDEuNDQ3NTUyMzY1Njg3LCJzYXRzIjoxMDAwMDAwMDAuMH0sIm1hcmtldF9jYXAiOnsiYWVkIjo4MzkwMzA5OTkyNzQuNjA1MywiYXJzIjo0MjUxMjYyNDMxMjU0LjU4MTUsImF1ZCI6MjkyNjE2MjQ2OTgxLjA1NywiYmNoIjo5Njc2NDU3NS42ODkxOTAxMiwiYmR0IjoxODg4NzU1MjY4MjU1My4wNDMsImJoZCI6ODYwOTAyNjMwMjMuODkzOCwiYm1kIjoyMjg0NDU4MTY5ODguODgxLCJicmwiOjc1NjczMTMzNzY5Mi4wMDYsImJ0YyI6MTY3NzIzNzUuMCwiY2FkIjoyODcyOTE4NjAzMjQuNDk4LCJjaGYiOjIyMjQ0MzQwMzE0Ny40OTgsImNscCI6MTQwMjY1NzMxNjMxMTcyLjk0LCJjbnkiOjE0ODU1ODMxNDc4NzguNjksImN6ayI6NDg2MjU1NjAyNDAxOC43ODgsImRrayI6MTQxNzY4NzkwODg0MC41MSwiZXRoIjozMTAwMDUzODQuMTMzOTQ2OTYsImV1ciI6MTkwMjk3NjUwMDA5LjkwNywiZ2JwIjoxNjkwNDk5MDQ1NzEuNzcyLCJoa2QiOjE3ODQ4ODE0MzUwMDYuNjcsImh1ZiI6NTkxNTE0NzUzOTI5MzAuOTYsImlkciI6MzA5NzA1NTgxMTczNDUwMCwiaWxzIjo3OTQ4MDg2ODY0NjcuNzE0OCwiaW5yIjoxNDU4NjQ0ODE3MTM5My42LCJqcHkiOjI1NzQ2NjQzMTM1MDA2LjMsImtydyI6MjQzODMxNjQyNzYzMDgyLjAsImt3ZCI6Njg4NDQ2NTk4NTMuNTg2MTcsImxrciI6MzUwMTkzNjk2NDI4MDYuMjcsImx0YyI6MTAyMjU4NDk3OS43OTYwMDE0LCJtbWsiOjMwODg1ODc0NDU2ODk2Ny4xLCJteG4iOjQ0OTMxMzA1ODIyMjAuNjIsIm15ciI6OTI3ODEyMTI1NTc2LjgwOCwibmduIjo4MTkyNTQ0NTYzMjAxNi44OCwibm9rIjoxODc0NDA5MzUwNjg0LjYxODIsIm56ZCI6MzIxNjYzMTMyNjExLjE5NCwicGhwIjoxMTQxNDA2NjgwMDAzMi40LCJwa3IiOjI1MjQ5MzgxMDEzMTQxLjk1LCJwbG4iOjc5NTg1OTUzNzIyNS44NjEsInJ1YiI6MTMxNzI2NDI2OTkyMTIuOCwic2FyIjo4NTY3MTc1MDI4NzEuNzAxNSwic2VrIjoxODY5MjI1OTE1MDk3LjE0LCJzZ2QiOjMwNTQ3Nzc0NjQ3Ny41MzEsInRoYiI6NzQyOTQwMDYzNzIwMy44OTUsInRyeSI6ODY3MTMzMDMzMDA1LjY3NTcsInR3ZCI6Njc3NjkzNjMxMDg1Ni4xMSwidWFoIjo2NDIyMjc4MDYzNTU5Ljc4NCwidXNkIjoyMjg0NDU4MTY5ODguODgxLCJ2ZWYiOjIzNjI1NTIzNzI0MjYuNDU5NSwidm5kIjo1MTg2MDQyNDE2OTYyMjQzLCJ4YWciOjEzNDg3NTg0OTU1Ljg4ODIsInhhdSI6MTc1MzU1MDA5LjEyMDY2NCwieGRyIjoxNjA0MTAzMTIyMTkuMDY5LCJ6YXIiOjI4MzA2OTE1MzYyMDMuNjYsImJpdHMiOjE2NzcyMzc1MDAwMDAwLjAsImxpbmsiOjM2OTY4NzQyMzg5MS4xMDk0NCwic2F0cyI6MTY3NzIzNzUwMDAwMDAwMH0sInRvdGFsX3ZvbHVtZSI6eyJhZWQiOjEzMjIzNzcyMDM4Ljg4ODI4OCwiYXJzIjo2NzAwMzE1NjM5OS40NzA3MSwiYXVkIjo0NjExODU2NDcyLjg4MTE2LCJiY2giOjE1MjUwODMuOTI1OTMzNDc2MywiYmR0IjoyOTc2ODIzMTU5ODQuMTY2OTMsImJoZCI6MTM1Njg0ODU3MS43MjE2MTIsImJtZCI6MzYwMDQ4MTI4MS4wMzc2OCwiYnJsIjoxMTkyNjY2NjI1My4wNjI5LCJidGMiOjI2NDM0NS40OTM0ODI5NjMsImNhZCI6NDUyNzk0MDA1NS42NjQwMiwiY2hmIjozNTA1ODc4NjM1LjM3ODQyLCJjbHAiOjIyMTA2OTU1MDY1NTcuMTM1NywiY255IjoyMzQxMzkyOTc3MC41ODgsImN6ayI6NzY2Mzc2MTIyNDkuNzczODIsImRrayI6MjIzNDM4NDg3MzEuNDU3MiwiZXRoIjo0ODg1OTIyLjYxMDkxNjA4OCwiZXVyIjoyOTk5MjM2OTExLjkxNzE5LCJnYnAiOjI2NjQzNTYxNDcuOTY3ODgsImhrZCI6MjgxMzExMDAzMjAuOTM5NCwiaHVmIjo5MzIyNzI2MTgwOTkuMDg2NSwiaWRyIjo0ODgxMTk3NDg2MzI2My45LCJpbHMiOjEyNTI2Nzk0NDcyLjk4NjI5OCwiaW5yIjoyMjk4OTM2MTAxNzkuMjgsImpweSI6NDA1Nzg2ODQyMDU3LjQyOSwia3J3IjozODQyOTczNjk1MzE1LjU2LCJrd2QiOjEwODUwNDQ2MzkuMzM0Nzk2MiwibGtyIjo1NTE5MzIxMjM0ODguMTcwOSwibHRjIjoxNjExNjcyMy41NDc2NDU0NDQsIm1tayI6NDg2Nzg1MDY5MTk2Mi45NDMsIm14biI6NzA4MTUxODM5NTguMTc1NSwibXlyIjoxNDYyMzAzMDY3OS42MTkyLCJuZ24iOjEyOTEyMDc4NTU0NDEuMjkyMiwibm9rIjoyOTU0MjEyODkzNC45NzgyMTgsIm56ZCI6NTA2OTY1NzY2Ny43NjUxMSwicGhwIjoxNzk4OTQ0NDY3MjUuNzY2LCJwa3IiOjM5Nzk0OTYwOTY0NC4zMzI0LCJwbG4iOjEyNTQzMzU2Njg2Ljg3OSwicnViIjoyMDc2MTA5NTE2MjcuMTk0LCJzYXIiOjEzNTAyNTI0OTAwLjE0NzUwOSwic2VrIjoyOTQ2MDQzNDAxNC43MTE1LCJzZ2QiOjQ4MTQ1NjM1NjkuMDAzNTcsInRoYiI6MTE3MDkzMDUxOTgxLjI2NjkyLCJ0cnkiOjEzNjY2NjgxNjQzLjE5Mzg2LCJ0d2QiOjEwNjgwOTcxMzc5NC4wMTQsInVhaCI6MTAxMjIwMDI3ODEzLjM4NDY5LCJ1c2QiOjM2MDA0ODEyODEuMDM3NjgsInZlZiI6MzcyMzU2MzczMzYuMjk5NTQsInZuZCI6ODE3MzYwMDU4OTg3MTUuMDgsInhhZyI6MjEyNTc0NjgzLjEzNTY3MSwieGF1IjoyNzYzNzI5LjQzMTMyNDUxLCJ4ZHIiOjI1MjgxODk1NDYuNDAwMzEsInphciI6NDQ2MTM4Njk1OTQuMjQ2NywiYml0cyI6MjY0MzQ1NDkzNDgyLjk2MywibGluayI6NTgyNjU1NzMzMC4zMDg5NTUsInNhdHMiOjI2NDM0NTQ5MzQ4Mjk2LjN9fSwiY29tbXVuaXR5X2RhdGEiOnsiZmFjZWJvb2tfbGlrZXMiOm51bGwsInR3aXR0ZXJfZm9sbG93ZXJzIjo2MDM2NjQsInJlZGRpdF9hdmVyYWdlX3Bvc3RzXzQ4aCI6Mi4wNDIsInJlZGRpdF9hdmVyYWdlX2NvbW1lbnRzXzQ4aCI6NDQ1Ljg5NiwicmVkZGl0X3N1YnNjcmliZXJzIjo2MTI0MTIsInJlZGRpdF9hY2NvdW50c19hY3RpdmVfNDhoIjoiMTQwNzQuMCJ9LCJkZXZlbG9wZXJfZGF0YSI6eyJmb3JrcyI6MTM2NjAsInN0YXJzIjoyMzY2NSwic3Vic2NyaWJlcnMiOjI1MTMsInRvdGFsX2lzc3VlcyI6MzU5MSwiY2xvc2VkX2lzc3VlcyI6MzAyMiwicHVsbF9yZXF1ZXN0c19tZXJnZWQiOjUwMzgsInB1bGxfcmVxdWVzdF9jb250cmlidXRvcnMiOjQ1MCwiY29kZV9hZGRpdGlvbnNfZGVsZXRpb25zXzRfd2Vla3MiOnsiYWRkaXRpb25zIjpudWxsLCJkZWxldGlvbnMiOm51bGx9LCJjb21taXRfY291bnRfNF93ZWVrcyI6MTQ3fSwicHVibGljX2ludGVyZXN0X3N0YXRzIjp7ImFsZXhhX3JhbmsiOjI5MTIsImJpbmdfbWF0Y2hlcyI6bnVsbH19
+  recorded_at: Sat, 15 May 2021 14:10:11 GMT
+- request:
+    method: get
+    uri: https://api.coingecko.com/api/v3/coins/bitcoin/history?query=%7B:date=%3E%2230-12-2017%22%7D
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.coingecko.com
+  response:
+    status:
+      code: 422
+      message: Unprocessable Entity
+    headers:
+      Date:
+      - Sun, 16 May 2021 08:21:20 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding, Origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - ab8447d9-a2d4-4c72-8dfb-ed2a7df979cc
+      X-Runtime:
+      - '0.003016'
+      Cf-Cache-Status:
+      - MISS
+      Cf-Request-Id:
+      - 0a15dd0aee00001aa437968000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 65033124be8e1aa4-SIN
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":"Missing parameter date"}'
+  recorded_at: Sun, 16 May 2021 08:21:20 GMT
+recorded_with: VCR 6.0.0
