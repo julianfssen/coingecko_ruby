@@ -9,7 +9,7 @@ module CoingeckoRuby
       #
       # @example Fetch the list of coins supported by CoinGecko's API.
       #   client.coins_list
-      # @example Response object (truncated)
+      # @example Sample response object (truncated)
       #   [
       #     {
       #       "id" => "01coin",
@@ -20,18 +20,6 @@ module CoingeckoRuby
       #       "symbol" => "algohalf",
       #       "name" => "0.5X Long Algorand Token"
       #     }, {
-      #       "id" => "0-5x-long-altcoin-index-token",
-      #       "symbol" => "althalf",
-      #       "name" => "0.5X Long Altcoin Index Token"
-      #     }, {
-      #       "id" => "0-5x-long-balancer-token",
-      #       "symbol" => "balhalf",
-      #       "name" => "0.5X Long Balancer Token"
-      #     }, {
-      #       "id" => "0-5x-long-bitcoin-cash-token",
-      #       "symbol" => "bchhalf",
-      #       "name" => "0.5X Long Bitcoin Cash Token"
-      #     },
       #   ]
       def coins_list(include_contract_address: false)
         get 'coins/list', { include_contract_address: include_contract_address }
@@ -66,7 +54,7 @@ module CoingeckoRuby
       #
       # @example Fetch Bitcoin's tickers.
       #   client.get_tickers(id: 'bitcoin)
-      # @example Response object (truncated)
+      # @example Sample response object (truncated)
       #   {
       #     "name" => "Bitcoin",
       #     "tickers" => [{
@@ -100,7 +88,7 @@ module CoingeckoRuby
       #   }
       # @example Fetch Bitcoin's tickers from Binance with 2% orderbook depth data.
       #   client.get_tickers(id: 'bitcoin', options: { exchange_id: 'binance', depth: true })
-      # @example Response object (truncated)
+      # @example Sample response object (truncated)
       #   {
       #     "name" => "Bitcoin",
       #     "tickers" => [{
@@ -153,7 +141,7 @@ module CoingeckoRuby
       #
       # @example Fetch market data for Bitcoin and Ethereum in USD.
       #   client.get_markets(ids: 'bitcoin, ethereum', currency: 'gbp')
-      # @example Response object
+      # @example Sample response object
       #   [{
       #       "id" => "bitcoin",
       #       "symbol" => "btc",
