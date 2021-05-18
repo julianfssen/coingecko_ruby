@@ -16,6 +16,11 @@ class TestCategories < Minitest::Test
     refute_empty(response)
   end
 
+  def test_that_it_gets_the_list_of_asset_platforms
+    response = @client.get_asset_platforms
+    refute_empty(response)
+  end
+
   def teardown
     VCR.eject_cassette
   end

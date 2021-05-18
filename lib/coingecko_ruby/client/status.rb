@@ -8,7 +8,7 @@ module CoingeckoRuby
       # @example Fetch CoinGecko's API status.
       #   client.status
       def status
-        get('ping')
+        get 'ping'
       end
     end
   end

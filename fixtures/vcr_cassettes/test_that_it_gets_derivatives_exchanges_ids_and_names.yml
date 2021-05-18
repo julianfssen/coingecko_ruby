@@ -1,0 +1,95 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coingecko.com/api/v3/derivatives/exchanges/list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.coingecko.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 18 May 2021 14:01:29 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - public, max-age=60
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, PUT, DELETE, GET, OPTIONS
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Expose-Headers:
+      - link, per-page, total
+      Vary:
+      - Accept-Encoding, Origin
+      Etag:
+      - W/"ca35fef566ce1adc2ed6324b6c0d8143"
+      X-Request-Id:
+      - db547856-7be4-431c-b5dd-a7002f6041ad
+      X-Runtime:
+      - '0.133416'
+      Alternate-Protocol:
+      - 443:npn-spdy/2
+      Cf-Cache-Status:
+      - EXPIRED
+      Expires:
+      - Tue, 18 May 2021 14:02:29 GMT
+      Cf-Request-Id:
+      - 0a21612b650000d1d7a486e000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 65159e256994d1d7-HKG
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"binance_futures","name":"Binance (Futures)"},{"id":"huobi_dm","name":"Huobi
+        Futures"},{"id":"ftx","name":"FTX (Derivatives)"},{"id":"bybit","name":"Bybit"},{"id":"okex_swap","name":"OKEx
+        (Futures)"},{"id":"deribit","name":"Deribit"},{"id":"bitmex","name":"BitMEX"},{"id":"mxc_futures","name":"MXC
+        (Futures)"},{"id":"bitfinex_futures","name":"Bitfinex (Futures)"},{"id":"hopex","name":"Hopex"},{"id":"kumex","name":"KuCoin
+        Futures"},{"id":"zbg_futures","name":"ZBG Futures"},{"id":"bitget_futures","name":"Bitget
+        Futures"},{"id":"bitz_futures","name":"BitZ (Futures)"},{"id":"btse_futures","name":"BTSE
+        (Futures)"},{"id":"bitforex_futures","name":"Bitforex (Futures)"},{"id":"gate_futures","name":"Gate.io
+        (Futures)"},{"id":"phemex_futures","name":"Phemex (Futures)"},{"id":"btcmex","name":"BTCMEX"},{"id":"mycoinstory","name":"MyCoinStory"},{"id":"kraken_futures","name":"Kraken
+        (Futures)"},{"id":"prime_xbt","name":"Prime XBT"},{"id":"perpetual_protocol","name":"Perpetual
+        Protocol"},{"id":"c_trade","name":"C-Trade"},{"id":"basefex","name":"BaseFEX"},{"id":"dydx_perpetual","name":"dYdX
+        Perpetual"},{"id":"aax_futures","name":"AAX Futures"},{"id":"coinflex_futures","name":"CoinFLEX
+        (Futures)"},{"id":"bit_com_futures","name":"Bit.com"},{"id":"duedex","name":"DueDEX"},{"id":"bitmax_futures","name":"AscendEX  (BitMax)
+        (Futures)"},{"id":"futureswap","name":"Futureswap"},{"id":"poloniex_futures","name":"Poloniex
+        Futures"},{"id":"acdx_futures","name":"ACDX Futures"},{"id":"bigone_futures","name":"BigONE
+        Futures"},{"id":"alpha_five","name":"Alpha5"},{"id":"bitflyer_futures","name":"Bitflyer
+        (Futures)"},{"id":"bitmart_futures","name":"Bitmart Futures"},{"id":"hbtc_futures","name":"HBTC
+        (Futures)"},{"id":"delta_futures","name":"Delta Exchange (Futures)"},{"id":"liquid_derivatives","name":"Liquid
+        Perpetuals"},{"id":"stormgain_futures","name":"Stormgain Futures"},{"id":"biki_futures","name":"Biki
+        (Futures)"},{"id":"jex_futures","name":"Binance JEX (Futures)"},{"id":"cme_futures","name":"CME
+        Bitcoin Futures"},{"id":"crypto_com_futures","name":"Crypto.com (Futures)"},{"id":"gmo_japan_futures","name":"GMO
+        Japan (Futures)"},{"id":"mcdex","name":"MCDEX"},{"id":"bibox_futures","name":"Bibox
+        (Futures)"},{"id":"leverj","name":"Leverj"},{"id":"dydx_perpetual_l1","name":"dYdX
+        Perpetual (L1)"},{"id":"cointiger_futures","name":"CoinTiger (Futures)"},{"id":"bithumb_futures","name":"Bithumb
+        (Futures)"},{"id":"fmex","name":"FMex"},{"id":"bakkt","name":"Bakkt"},{"id":"equos_perpetual","name":"Equos.io
+        (Perpetual)"}]'
+  recorded_at: Tue, 18 May 2021 14:01:29 GMT
+recorded_with: VCR 6.0.0

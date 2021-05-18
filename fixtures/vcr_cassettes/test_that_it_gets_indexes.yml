@@ -1,0 +1,127 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coingecko.com/api/v3/indexes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.coingecko.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 18 May 2021 14:01:33 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Link:
+      - <https://api.coingecko.com/api/v3/indexes?page=27>; rel="last", <https://api.coingecko.com/api/v3/indexes?page=2>;
+        rel="next"
+      Per-Page:
+      - '50'
+      Total:
+      - '1343'
+      Cache-Control:
+      - public, max-age=60
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, PUT, DELETE, GET, OPTIONS
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Expose-Headers:
+      - link, per-page, total
+      Vary:
+      - Accept-Encoding, Origin
+      Etag:
+      - W/"a07a8eaf585c00afd8612006b1b27793"
+      X-Request-Id:
+      - 5d39bc38-7bb7-4319-80c3-df738d9e0606
+      X-Runtime:
+      - '0.120138'
+      Alternate-Protocol:
+      - 443:npn-spdy/2
+      Cf-Cache-Status:
+      - MISS
+      Expires:
+      - Tue, 18 May 2021 14:02:33 GMT
+      Cf-Request-Id:
+      - 0a216139b70000a34277260000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 65159e3c5deba342-HKG
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"name":"CoinFLEX (Futures) DFN","id":"DFN","market":"CoinFLEX (Futures)","last":null,"is_multi_asset_composite":null},{"name":"Bibox
+        (Futures) LINK","id":"LINK","market":"Bibox (Futures)","last":null,"is_multi_asset_composite":null},{"name":"CME
+        Bitcoin Futures BTC","id":"BTC","market":"CME Bitcoin Futures","last":null,"is_multi_asset_composite":false},{"name":"Bibox
+        (Futures) XRP","id":"XRP","market":"Bibox (Futures)","last":null,"is_multi_asset_composite":null},{"name":"dYdX
+        Perpetual AVAX","id":"AVAX","market":"dYdX Perpetual","last":35.1717,"is_multi_asset_composite":null},{"name":"ZBG
+        Futures BSV","id":"BSV","market":"ZBG Futures","last":35.1717,"is_multi_asset_composite":null},{"name":"CoinFLEX
+        (Futures) BCHABC","id":"BCHABC","market":"CoinFLEX (Futures)","last":0.0,"is_multi_asset_composite":null},{"name":"Crypto.com
+        (Futures) ETH","id":"ETH","market":"Crypto.com (Futures)","last":0.0,"is_multi_asset_composite":null},{"name":"MyCoinStory
+        SUN","id":"SUN","market":"MyCoinStory","last":13.407576375,"is_multi_asset_composite":null},{"name":"Perpetual
+        Protocol MKR","id":"MKR","market":"Perpetual Protocol","last":4839.53,"is_multi_asset_composite":null},{"name":"Bibox
+        (Futures) EOS","id":"EOS","market":"Bibox (Futures)","last":4839.53,"is_multi_asset_composite":false},{"name":"GMO
+        Japan (Futures) BTC","id":"BTC","market":"GMO Japan (Futures)","last":4839.53,"is_multi_asset_composite":false},{"name":"GMO
+        Japan (Futures) BCH","id":"BCH","market":"GMO Japan (Futures)","last":4839.53,"is_multi_asset_composite":false},{"name":"GMO
+        Japan (Futures) ETH","id":"ETH","market":"GMO Japan (Futures)","last":4839.53,"is_multi_asset_composite":false},{"name":"GMO
+        Japan (Futures) XRP","id":"XRP","market":"GMO Japan (Futures)","last":4839.53,"is_multi_asset_composite":false},{"name":"CoinFLEX
+        (Futures) D","id":"D","market":"CoinFLEX (Futures)","last":4839.53,"is_multi_asset_composite":false},{"name":"Bibox
+        (Futures) SUSHI","id":"SUSHI","market":"Bibox (Futures)","last":4839.53,"is_multi_asset_composite":null},{"name":"FMex
+        ETH","id":"ETH","market":"FMex","last":4839.53,"is_multi_asset_composite":null},{"name":"Prime
+        XBT EOS","id":"EOS","market":"Prime XBT","last":4839.53,"is_multi_asset_composite":false},{"name":"Crypto.com
+        (Futures) CRO","id":"CRO","market":"Crypto.com (Futures)","last":4839.53,"is_multi_asset_composite":null},{"name":"dYdX
+        Perpetual (L1) WETH","id":"WETH","market":"dYdX Perpetual (L1)","last":4839.53,"is_multi_asset_composite":null},{"name":"Bibox
+        (Futures) BCH","id":"BCH","market":"Bibox (Futures)","last":4839.53,"is_multi_asset_composite":false},{"name":"Bibox
+        (Futures) UNI","id":"UNI","market":"Bibox (Futures)","last":4839.53,"is_multi_asset_composite":false},{"name":"Delta
+        Exchange ADA","id":"ADA","market":"Delta Exchange (Futures)","last":5.09e-06,"is_multi_asset_composite":null},{"name":"Delta
+        Exchange BCH","id":"BCH","market":"Delta Exchange (Futures)","last":315.526644,"is_multi_asset_composite":null},{"name":"ETHG20","id":"ETHG20","market":"BTSE
+        (Futures)","last":223.409277154,"is_multi_asset_composite":null},{"name":"Prime
+        XBT LTC","id":"LTC","market":"Prime XBT","last":223.409277154,"is_multi_asset_composite":false},{"name":"Bibox
+        (Futures) LTC","id":"LTC","market":"Bibox (Futures)","last":223.409277154,"is_multi_asset_composite":false},{"name":"Crypto.com
+        (Futures) VET","id":"VET","market":"Crypto.com (Futures)","last":223.409277154,"is_multi_asset_composite":null},{"name":"GMO
+        Japan (Futures) LTC","id":"LTC","market":"GMO Japan (Futures)","last":223.409277154,"is_multi_asset_composite":false},{"name":"CoinFLEX
+        (Futures) XBT","id":"XBT","market":"CoinFLEX (Futures)","last":223.409277154,"is_multi_asset_composite":false},{"name":"Huobi
+        Futures DOT","id":"DOT","market":"Huobi Futures","last":38.8145549002364,"is_multi_asset_composite":null},{"name":"Bitflyer
+        (Futures) BTC","id":"BTC","market":"Bitflyer (Futures)","last":38.8145549002364,"is_multi_asset_composite":false},{"name":"Bitmart
+        Futures HT","id":"HT","market":"Bitmart Futures","last":3.881011111111,"is_multi_asset_composite":null},{"name":"Bitmart
+        Futures ETC","id":"ETC","market":"Bitmart Futures","last":5.564,"is_multi_asset_composite":null},{"name":"Bitcoin","id":"BTC","market":"FTX
+        (Derivatives)","last":55056.3916543327,"is_multi_asset_composite":false},{"name":"Crypto.com
+        (Futures) DOGE","id":"DOGE","market":"Crypto.com (Futures)","last":55056.3916543327,"is_multi_asset_composite":null},{"name":"Bibox
+        (Futures) FIL","id":"FIL","market":"Bibox (Futures)","last":55056.3916543327,"is_multi_asset_composite":null},{"name":"Prime
+        XBT XRP","id":"XRP","market":"Prime XBT","last":55056.3916543327,"is_multi_asset_composite":false},{"name":"Bibox
+        (Futures) BTC","id":"BTC","market":"Bibox (Futures)","last":55056.3916543327,"is_multi_asset_composite":false},{"name":"XMRG20","id":"XMRG20","market":"BTSE
+        (Futures)","last":68.583952985,"is_multi_asset_composite":null},{"name":"ETHX19","id":"ETHX19","market":"BTSE
+        (Futures)","last":127.299916665,"is_multi_asset_composite":false},{"name":"BBCXG20","id":"BBCXG20","market":"BTSE
+        (Futures)","last":114.91,"is_multi_asset_composite":true},{"name":"CoinFLEX
+        (Futures) USDC","id":"USDC","market":"CoinFLEX (Futures)","last":114.91,"is_multi_asset_composite":false},{"name":"BitZ
+        (Futures) BCH","id":"BCH","market":"BitZ (Futures)","last":1092.7,"is_multi_asset_composite":false},{"name":"Huobi
+        Token","id":"HT","market":"FTX (Derivatives)","last":27.152718674039,"is_multi_asset_composite":false},{"name":"Huobi
+        Futures LINK","id":"LINK","market":"Huobi Futures","last":39.9961426878027,"is_multi_asset_composite":null},{"name":"FTT","id":"FTT","market":"FTX
+        (Derivatives)","last":51.7169373716159,"is_multi_asset_composite":false},{"name":"Prime
+        XBT BTC","id":"BTC","market":"Prime XBT","last":51.7169373716159,"is_multi_asset_composite":false},{"name":"LTCX19","id":"LTCX19","market":"BTSE
+        (Futures)","last":39.783863299,"is_multi_asset_composite":false}]'
+  recorded_at: Tue, 18 May 2021 14:01:33 GMT
+recorded_with: VCR 6.0.0

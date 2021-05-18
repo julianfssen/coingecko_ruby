@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coingecko.com/api/v3/search/trending
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.coingecko.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 18 May 2021 14:01:13 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - public, max-age=60
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, PUT, DELETE, GET, OPTIONS
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Expose-Headers:
+      - link, per-page, total
+      Vary:
+      - Accept-Encoding, Origin
+      Etag:
+      - W/"661e0f45a15c4e361b43ee9191f97670"
+      X-Request-Id:
+      - b7b55dec-969f-442f-9cd5-1fb9f940b32f
+      X-Runtime:
+      - '0.042401'
+      Alternate-Protocol:
+      - 443:npn-spdy/2
+      Cf-Cache-Status:
+      - HIT
+      Age:
+      - '572'
+      Expires:
+      - Tue, 18 May 2021 14:02:13 GMT
+      Cf-Request-Id:
+      - 0a2160ec940000d1cf13271000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 65159dc0ebfad1cf-HKG
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+        "coins": [{"item":{"id":"matic-network","coin_id":4713,"name":"Polygon","symbol":"MATIC","market_cap_rank":16,"thumb":"https://assets.coingecko.com/coins/images/4713/thumb/matic___polygon.jpg?1612939050","small":"https://assets.coingecko.com/coins/images/4713/small/matic___polygon.jpg?1612939050","large":"https://assets.coingecko.com/coins/images/4713/large/matic___polygon.jpg?1612939050","slug":"polygon","price_btc":4.774496780022442e-05,"score":0}},{"item":{"id":"shiba-inu","coin_id":11939,"name":"Shiba Inu","symbol":"SHIB","market_cap_rank":24,"thumb":"https://assets.coingecko.com/coins/images/11939/thumb/SHIBLOGO.png?1600752116","small":"https://assets.coingecko.com/coins/images/11939/small/SHIBLOGO.png?1600752116","large":"https://assets.coingecko.com/coins/images/11939/large/SHIBLOGO.png?1600752116","slug":"shiba-inu","price_btc":3.725378016648686e-10,"score":1}},{"item":{"id":"safemoon","coin_id":14362,"name":"SafeMoon","symbol":"SAFEMOON","market_cap_rank":45,"thumb":"https://assets.coingecko.com/coins/images/14362/thumb/174x174-white.png?1617174846","small":"https://assets.coingecko.com/coins/images/14362/small/174x174-white.png?1617174846","large":"https://assets.coingecko.com/coins/images/14362/large/174x174-white.png?1617174846","slug":"safemoon","price_btc":1.631695480317074e-10,"score":2}},{"item":{"id":"solana","coin_id":4128,"name":"Solana","symbol":"SOL","market_cap_rank":15,"thumb":"https://assets.coingecko.com/coins/images/4128/thumb/coinmarketcap-solana-200.png?1616489452","small":"https://assets.coingecko.com/coins/images/4128/small/coinmarketcap-solana-200.png?1616489452","large":"https://assets.coingecko.com/coins/images/4128/large/coinmarketcap-solana-200.png?1616489452","slug":"solana","price_btc":0.0012300307177294954,"score":3}},{"item":{"id":"pancakeswap-token","coin_id":12632,"name":"PancakeSwap","symbol":"CAKE","market_cap_rank":41,"thumb":"https://assets.coingecko.com/coins/images/12632/thumb/IMG_0440.PNG?1602654093","small":"https://assets.coingecko.com/coins/images/12632/small/IMG_0440.PNG?1602654093","large":"https://assets.coingecko.com/coins/images/12632/large/IMG_0440.PNG?1602654093","slug":"pancakeswap","price_btc":0.0006250815509376436,"score":4}},{"item":{"id":"ripple","coin_id":44,"name":"XRP","symbol":"XRP","market_cap_rank":4,"thumb":"https://assets.coingecko.com/coins/images/44/thumb/xrp-symbol-white-128.png?1605778731","small":"https://assets.coingecko.com/coins/images/44/small/xrp-symbol-white-128.png?1605778731","large":"https://assets.coingecko.com/coins/images/44/large/xrp-symbol-white-128.png?1605778731","slug":"xrp","price_btc":3.67382793929536e-05,"score":5}},{"item":{"id":"sushi","coin_id":12271,"name":"Sushi","symbol":"SUSHI","market_cap_rank":53,"thumb":"https://assets.coingecko.com/coins/images/12271/thumb/512x512_Logo_no_chop.png?1606986688","small":"https://assets.coingecko.com/coins/images/12271/small/512x512_Logo_no_chop.png?1606986688","large":"https://assets.coingecko.com/coins/images/12271/large/512x512_Logo_no_chop.png?1606986688","slug":"sushi","price_btc":0.0004392373210243417,"score":6}}],
+        "exchanges": []
+        }
+  recorded_at: Tue, 18 May 2021 14:01:13 GMT
+recorded_with: VCR 6.0.0

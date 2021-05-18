@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coingecko.com/api/v3/events/countries
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.coingecko.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 18 May 2021 14:01:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - public, max-age=60
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, PUT, DELETE, GET, OPTIONS
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Expose-Headers:
+      - link, per-page, total
+      Vary:
+      - Accept-Encoding, Origin
+      Etag:
+      - W/"b924fe9bd64100aeba3da2d28de3a401"
+      X-Request-Id:
+      - 58bc7800-9758-4706-b88f-48c804c03b70
+      X-Runtime:
+      - '0.023236'
+      Alternate-Protocol:
+      - 443:npn-spdy/2
+      Cf-Cache-Status:
+      - EXPIRED
+      Expires:
+      - Tue, 18 May 2021 14:02:25 GMT
+      Cf-Request-Id:
+      - 0a2160fd1d0000a3126503f000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 65159ddb5c48a312-HKG
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"country":null,"code":""},{"country":"United Arab Emirates","code":"AE"},{"country":"Armenia","code":"AM"},{"country":"Austria","code":"AT"},{"country":"Australia","code":"AU"},{"country":"Azerbaijan","code":"AZ"},{"country":"Bangladesh","code":"BD"},{"country":"Belgium","code":"BE"},{"country":"Bulgaria","code":"BG"},{"country":"Bahrain","code":"BH"},{"country":"Belarus","code":"BY"},{"country":"Canada","code":"CA"},{"country":"Switzerland","code":"CH"},{"country":"Chile","code":"CL"},{"country":"China","code":"CN"},{"country":"Colombia","code":"CO"},{"country":"Cyprus","code":"CY"},{"country":"Czech
+        Republic","code":"CZ"},{"country":"Germany","code":"DE"},{"country":"Estonia","code":"EE"},{"country":"Egypt","code":"EG"},{"country":"Spain","code":"ES"},{"country":"Finland","code":"FI"},{"country":"France","code":"FR"},{"country":"United
+        Kingdom","code":"GB"},{"country":"Georgia","code":"GE"},{"country":"Gibraltar","code":"GI"},{"country":"Greece","code":"GR"},{"country":"Hong
+        Kong","code":"HK"},{"country":"Croatia","code":"HR"},{"country":"Hungary","code":"HU"},{"country":"Indonesia","code":"ID"},{"country":"Israel","code":"IL"},{"country":"India","code":"IN"},{"country":"Japan","code":"JP"},{"country":"Kenya","code":"KE"},{"country":"South
+        Korea","code":"KR"},{"country":"Kazakhstan","code":"KZ"},{"country":"Lithuania","code":"LT"},{"country":"Latvia","code":"LV"},{"country":"Morocco","code":"MA"},{"country":"Monaco","code":"MC"},{"country":"Malta","code":"MT"},{"country":"Mexico","code":"MX"},{"country":"Malaysia","code":"MY"},{"country":"Nigeria","code":"NG"},{"country":"Netherlands","code":"NL"},{"country":"Norway","code":"NO"},{"country":"Peru","code":"PE"},{"country":"Philippines","code":"PH"},{"country":"Poland","code":"PL"},{"country":"Portugal","code":"PT"},{"country":"Qatar","code":"QA"},{"country":"Russia","code":"RU"},{"country":"Seychelles","code":"SC"},{"country":"Sweden","code":"SE"},{"country":"Singapore","code":"SG"},{"country":"Thailand","code":"TH"},{"country":"Turkey","code":"TR"},{"country":"Taiwan","code":"TW"},{"country":"Ukraine","code":"UA"},{"country":"Uganda","code":"UG"},{"country":"United
+        States","code":"US"},{"country":"Vietnam","code":"VN"},{"country":"South Africa","code":"ZA"},{"country":"Zimbabwe","code":"ZW"}],"count":66}'
+  recorded_at: Tue, 18 May 2021 14:01:25 GMT
+recorded_with: VCR 6.0.0

@@ -17,7 +17,7 @@ class TestExchanges < Minitest::Test
   end
 
   def test_that_it_gets_exchange_ids_supported_by_coingecko
-    response = @client.get_exchange_ids
+    response = @client.get_exchanges_ids
     refute_empty(response)
   end
 

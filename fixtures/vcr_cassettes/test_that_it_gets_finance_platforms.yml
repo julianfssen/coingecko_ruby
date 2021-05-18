@@ -1,0 +1,95 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coingecko.com/api/v3/finance_platforms
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.coingecko.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 18 May 2021 14:01:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Per-Page:
+      - '50'
+      Total:
+      - '21'
+      Cache-Control:
+      - public, max-age=60
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, PUT, DELETE, GET, OPTIONS
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Expose-Headers:
+      - link, per-page, total
+      Vary:
+      - Accept-Encoding, Origin
+      Etag:
+      - W/"171007ea8f6b7a4b07936eb8d4f658ea"
+      X-Request-Id:
+      - 0dcc3d69-ad9d-4695-aba4-9d86a13cc804
+      X-Runtime:
+      - '0.464720'
+      Alternate-Protocol:
+      - 443:npn-spdy/2
+      Cf-Cache-Status:
+      - EXPIRED
+      Expires:
+      - Tue, 18 May 2021 14:02:15 GMT
+      Cf-Request-Id:
+      - 0a2160f1c90000d96e22894000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 65159dc94a33d96e-HKG
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"name":"Binance Staking","facts":"","category":"CeFi Platform","centralized":true,"website_url":"https://www.binance.com/en/staking"},{"name":"Celsius
+        Network","facts":"","category":"CeFi Platform","centralized":true,"website_url":"https://celsius.network/"},{"name":"Cobo","facts":"","category":"CeFi
+        Platform","centralized":true,"website_url":"https://cobo.com/"},{"name":"Dai
+        Savings Rate","facts":"","category":"DeFi Platform","centralized":false,"website_url":"https://oasis.app/save"},{"name":"dYdX","facts":"","category":"DeFi
+        Platform","centralized":false,"website_url":"https://dydx.exchange/"},{"name":"Idle
+        Finance","facts":"","category":"DeFi Platform","centralized":false,"website_url":"https://idle.finance/#/"},{"name":"Staked
+        US","facts":"","category":"CeFi Platform","centralized":true,"website_url":"https://staked.us/"},{"name":"Crypto.com","facts":"","category":"CeFi
+        Platform","centralized":true,"website_url":"https://crypto.com/en/"},{"name":"Aave","facts":"","category":"DeFi
+        Platform","centralized":false,"website_url":"https://aave.com/"},{"name":"Nexo","facts":"","category":"CeFi
+        Platform","centralized":true,"website_url":"https://nexo.io/"},{"name":"Inlock","facts":"","category":"CeFi
+        Platform","centralized":true,"website_url":"https://inlock.io/"},{"name":"Bitfinex","facts":"","category":"CeFi
+        Platform","centralized":true,"website_url":"https://www.bitfinex.com"},{"name":"Compound
+        Finance","facts":"","category":"DeFi Platform","centralized":false,"website_url":"https://compound.finance/"},{"name":"Fulcrum","facts":"","category":"DeFi
+        Platform","centralized":false,"website_url":"https://fulcrum.trade/lending"},{"name":"Binance
+        Savings","facts":"","category":"CeFi Platform","centralized":true,"website_url":"https://www.binance.com/en/lending"},{"name":"CILIO
+        Finance","facts":"","category":"CeFi Platform","centralized":true,"website_url":"https://www.ciliofi.com/"},{"name":"Swissborg","facts":"","category":"CeFi
+        Platform","centralized":true,"website_url":"https://swissborg.com/"},{"name":"Vauld","facts":"","category":"CeFi
+        Platform","centralized":true,"website_url":"https://vauld.com/"},{"name":"Yearn
+        Finance Vaults","facts":"","category":"DeFi Platform","centralized":false,"website_url":"https://yearn.finance/vaults"},{"name":"DDEX
+        Lending","facts":"","category":"DeFi Platform","centralized":false,"website_url":"https://ddex.io/loans"},{"name":"Hodlnaut","facts":"","category":"CeFi
+        Platform","centralized":true,"website_url":"https://www.hodlnaut.com/"}]'
+  recorded_at: Tue, 18 May 2021 14:01:15 GMT
+recorded_with: VCR 6.0.0

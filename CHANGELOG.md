@@ -1,3 +1,20 @@
+## 0.3.0 - 18-05-2021
+
+### [Added]
+
+#### Modules
+ * Added `Derivatives` module to fetch crypto derivatives data.
+ * Added `Indexes` module to fetch crypto indexes data.
+ * Added `Finance` module to fetch crypto finance data.
+ * Added `Infos` module to fetch global crypto data.
+ * Added `Events` module to fetch event data.
+
+#### Tests
+* Added basic unit tests for `Derivatives`, `Indexes`, `Finance`, `Infos`, and `Events` modules.
+
+#### Docs
+* Added `YARD` documentation (params, return values, usage, and response objects) for `Derivatives`, `Indexes`, `Finance`, `Infos`, and `Events` modules.
+
 ## 0.2.0 - 16-05-2021
 
 ### [Added]

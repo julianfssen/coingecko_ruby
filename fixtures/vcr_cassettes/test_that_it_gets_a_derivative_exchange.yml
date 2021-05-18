@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coingecko.com/api/v3/derivatives/exchanges/binance_futures
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.coingecko.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 18 May 2021 14:01:27 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - public, max-age=60
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, PUT, DELETE, GET, OPTIONS
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Expose-Headers:
+      - link, per-page, total
+      Vary:
+      - Accept-Encoding, Origin
+      Etag:
+      - W/"b78a529d35b3eea47211aa866f4fafbc"
+      X-Request-Id:
+      - eb035580-4e7d-4e5b-9874-da193a213146
+      X-Runtime:
+      - '0.055629'
+      Alternate-Protocol:
+      - 443:npn-spdy/2
+      Cf-Cache-Status:
+      - EXPIRED
+      Expires:
+      - Tue, 18 May 2021 14:02:27 GMT
+      Cf-Request-Id:
+      - 0a2161219200002495670d4000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 65159e15b9892495-HKG
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"name":"Binance (Futures)","open_interest_btc":240213.7,"trade_volume_24h_btc":"2343566.75","number_of_perpetual_pairs":132,"number_of_futures_pairs":32,"image":"https://assets.coingecko.com/markets/images/466/small/binance_futures.jpg?1568609512","year_established":2019,"country":null,"description":"","url":"https://www.binance.com/"}'
+  recorded_at: Tue, 18 May 2021 14:01:27 GMT
+recorded_with: VCR 6.0.0

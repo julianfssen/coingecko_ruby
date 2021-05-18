@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coingecko.com/api/v3/global/decentralized_finance_defi
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.coingecko.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 18 May 2021 14:01:08 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, PUT, DELETE, GET, OPTIONS
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Expose-Headers:
+      - link, per-page, total
+      Vary:
+      - Accept-Encoding, Origin
+      Etag:
+      - W/"4ca71cfc8ad4cb6ab8ca1df0a35ca9b9"
+      Cache-Control:
+      - public, max-age=60
+      X-Request-Id:
+      - e9d9910a-55f7-4a30-bf27-4e6f4d0acc16
+      X-Runtime:
+      - '0.402924'
+      Alternate-Protocol:
+      - 443:npn-spdy/2
+      Cf-Cache-Status:
+      - MISS
+      Expires:
+      - Tue, 18 May 2021 14:02:08 GMT
+      Cf-Request-Id:
+      - 0a2160d53a00001252550a9000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 65159d9b8e271252-HKG
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":{"defi_market_cap":"126209687895.026510664421836369","eth_market_cap":"397417477636.8047863806894481302","defi_to_eth_ratio":"31.757457836408512836828030372466536330023004286301041843566019","trading_volume_24h":"15401284643.97339021491159452764","defi_dominance":"5.8946472721221314944597989721592904300128622135909285","top_coin_name":"Uniswap","top_coin_defi_dominance":14.383511406201583}}'
+  recorded_at: Tue, 18 May 2021 14:01:08 GMT
+recorded_with: VCR 6.0.0
