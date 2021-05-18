@@ -1,0 +1,630 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coingecko.com/api/v3/indexes/list
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.coingecko.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 18 May 2021 14:01:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - public, max-age=60
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, PUT, DELETE, GET, OPTIONS
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Expose-Headers:
+      - link, per-page, total
+      Vary:
+      - Accept-Encoding, Origin
+      Etag:
+      - W/"50e98186ec2a21ed5678c414dc2f94d1"
+      X-Request-Id:
+      - 42c68741-b67f-40c7-abe4-24cc40710711
+      X-Runtime:
+      - '0.083131'
+      Alternate-Protocol:
+      - 443:npn-spdy/2
+      Cf-Cache-Status:
+      - MISS
+      Expires:
+      - Tue, 18 May 2021 14:02:35 GMT
+      Cf-Request-Id:
+      - 0a216140060000d932650a1000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 65159e4679cad932-HKG
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"DFN","name":"CoinFLEX (Futures) DFN"},{"id":"LINK","name":"Bibox
+        (Futures) LINK"},{"id":"BTC","name":"CME Bitcoin Futures BTC"},{"id":"XRP","name":"Bibox
+        (Futures) XRP"},{"id":"AVAX","name":"dYdX Perpetual AVAX"},{"id":"BSV","name":"ZBG
+        Futures BSV"},{"id":"BCHABC","name":"CoinFLEX (Futures) BCHABC"},{"id":"ETH","name":"Crypto.com
+        (Futures) ETH"},{"id":"SUN","name":"MyCoinStory SUN"},{"id":"MKR","name":"Perpetual
+        Protocol MKR"},{"id":"EOS","name":"Bibox (Futures) EOS"},{"id":"BTC","name":"GMO
+        Japan (Futures) BTC"},{"id":"BCH","name":"GMO Japan (Futures) BCH"},{"id":"ETH","name":"GMO
+        Japan (Futures) ETH"},{"id":"XRP","name":"GMO Japan (Futures) XRP"},{"id":"D","name":"CoinFLEX
+        (Futures) D"},{"id":"SUSHI","name":"Bibox (Futures) SUSHI"},{"id":"ETH","name":"FMex
+        ETH"},{"id":"EOS","name":"Prime XBT EOS"},{"id":"CRO","name":"Crypto.com (Futures)
+        CRO"},{"id":"WETH","name":"dYdX Perpetual (L1) WETH"},{"id":"BCH","name":"Bibox
+        (Futures) BCH"},{"id":"UNI","name":"Bibox (Futures) UNI"},{"id":"ADA","name":"Delta
+        Exchange ADA"},{"id":"BCH","name":"Delta Exchange BCH"},{"id":"ETHG20","name":"ETHG20"},{"id":"LTC","name":"Prime
+        XBT LTC"},{"id":"LTC","name":"Bibox (Futures) LTC"},{"id":"VET","name":"Crypto.com
+        (Futures) VET"},{"id":"LTC","name":"GMO Japan (Futures) LTC"},{"id":"XBT","name":"CoinFLEX
+        (Futures) XBT"},{"id":"DOT","name":"Huobi Futures DOT"},{"id":"BTC","name":"Bitflyer
+        (Futures) BTC"},{"id":"HT","name":"Bitmart Futures HT"},{"id":"ETC","name":"Bitmart
+        Futures ETC"},{"id":"BTC","name":"Bitcoin"},{"id":"DOGE","name":"Crypto.com
+        (Futures) DOGE"},{"id":"FIL","name":"Bibox (Futures) FIL"},{"id":"XRP","name":"Prime
+        XBT XRP"},{"id":"BTC","name":"Bibox (Futures) BTC"},{"id":"XMRG20","name":"XMRG20"},{"id":"ETHX19","name":"ETHX19"},{"id":"BBCXG20","name":"BBCXG20"},{"id":"USDC","name":"CoinFLEX
+        (Futures) USDC"},{"id":"BCH","name":"BitZ (Futures) BCH"},{"id":"HT","name":"Huobi
+        Token"},{"id":"LINK","name":"Huobi Futures LINK"},{"id":"FTT","name":"FTT"},{"id":"BTC","name":"Prime
+        XBT BTC"},{"id":"LTCX19","name":"LTCX19"},{"id":"BTC","name":"FMex BTC"},{"id":"BTC","name":"Crypto.com
+        (Futures) BTC"},{"id":"DOT","name":"Bibox (Futures) DOT"},{"id":"ETH","name":"Bibox
+        (Futures) ETH"},{"id":"CVC","name":"MXC (Futures) CVC"},{"id":"OkexSwap-FTM","name":"Okex
+        FTM"},{"id":"STORJ","name":"Huobi Futures STORJ"},{"id":"AAVE","name":"Bibox
+        (Futures) AAVE"},{"id":"ETH","name":"Prime XBT ETH"},{"id":"UNI","name":"Crypto.com
+        (Futures) UNI"},{"id":"BTCG20","name":"BTCG20"},{"id":"BAT","name":"Huobi
+        Futures BAT"},{"id":"SERO","name":"Gate.io (Futures) SERO"},{"id":"BTCX19","name":"BTCX19"},{"id":"LTCG20","name":"LTCG20"},{"id":"WAVES","name":"Delta
+        Exchange WAVES"},{"id":"XTZ","name":"Delta Exchange XTZ"},{"id":"LTCH20","name":"LTCH20"},{"id":"BBCXZ19","name":"BBCXZ19"},{"id":"KRVNUSDT","name":".KRVNUSDT"},{"id":"XLM","name":"Delta
+        Exchange XLM"},{"id":"AAVE","name":"Bitget Futures AAVE"},{"id":"RVN","name":"Delta
+        Exchange RVN"},{"id":"CVC","name":"Huobi Futures CVC"},{"id":"XTZ","name":"Stormgain
+        Futures XTZ"},{"id":"LTC","name":"Gate.io (Futures) LTC"},{"id":"BTC","name":"Bakkt
+        BTC"},{"id":"BBCXX19","name":"BBCXX19"},{"id":"BNB","name":"Bitforex (Futures)
+        BNB"},{"id":"BSV","name":"MXC (Futures) BSV"},{"id":"BBAXG20","name":"BBAXG20"},{"id":"LINK","name":"Crypto.com
+        (Futures) LINK"},{"id":"DEBANDUSDT","name":".DEBANDUSDT"},{"id":"BSV","name":"Delta
+        Exchange BSV"},{"id":"BNC BTC High Frequency Index","name":"BNC BTC High Frequency
+        Index"},{"id":"XMRX19","name":"XMRX19"},{"id":"STMX","name":"MXC (Futures)
+        STMX"},{"id":"DOT","name":"Perpetual Protocol DOT"},{"id":"YFI","name":"Perpetual
+        Protocol YFI"},{"id":"XMRH20","name":"XMRH20"},{"id":"BCH","name":"Stormgain
+        Futures BCH"},{"id":"OkexSwap-ANT","name":"Okex ANT"},{"id":"BBAXX20","name":"BBAXX20"},{"id":"OkexSwap-SRM","name":"Okex
+        SRM"},{"id":"KICPUSDT","name":".KICPUSDT"},{"id":"DOT","name":"ZBG Futures
+        DOT"},{"id":"OkexSwap-SWRV","name":"Okex SWRV"},{"id":"EOS","name":"BaseFEX
+        EOS"},{"id":"ADA","name":"Crypto.com (Futures) ADA"},{"id":"LINKPFC","name":"LINKPFC"},{"id":"KVETUSDT","name":".KVETUSDT"},{"id":"STMX","name":"Binance
+        (Futures) STMX"},{"id":"LINK","name":"Perpetual Protocol LINK"},{"id":"XMR","name":"Gate.io
+        (Futures) XMR"},{"id":"SRM","name":"Gate.io (Futures) SRM"},{"id":"EOS","name":"Binance
+        (Futures) EOS"},{"id":"BSV","name":"Huobi Futures BSV"},{"id":"LTC","name":"Binance
+        (Futures) LTC"},{"id":"BADGER","name":"Huobi Futures BADGER"},{"id":"LTC","name":"BaseFEX
+        LTC"},{"id":"PLINK","name":"dYdX Perpetual (L1) PLINK"},{"id":"BBAXH20","name":"BBAXH20"},{"id":"PEARL","name":"Gate.io
+        (Futures) PEARL"},{"id":"LINK","name":"Delta Exchange LINK"},{"id":"ENJ","name":"MXC
+        (Futures) ENJ"},{"id":"LTC","name":"Crypto.com (Futures) LTC"},{"id":"DOGE","name":"ZBG
+        Futures DOGE"},{"id":"BTCH20","name":"BTCH20"},{"id":"BNB","name":"Poloniex
+        Futures BNB"},{"id":"HOT","name":"Holo"},{"id":"XRP","name":"Binance (Futures)
+        XRP"},{"id":"DOT","name":"Crypto.com (Futures) DOT"},{"id":"XLM","name":"Stormgain
+        Futures XLM"},{"id":"EOS","name":"Bitget Futures EOS"},{"id":"CREAM","name":"Cream"},{"id":"EXCH","name":"Exchange
+        Token Index"},{"id":"LTC","name":"Bitget Futures LTC"},{"id":"CONV","name":"Gate.io
+        (Futures) CONV"},{"id":"XRP","name":"Bitget Futures XRP"},{"id":"LINK","name":"Gate.io
+        (Futures) LINK"},{"id":"BEL","name":"Binance (Futures) BEL"},{"id":"ENJ","name":"Crypto.com
+        (Futures) ENJ"},{"id":"1INCH","name":"Huobi Futures 1INCH"},{"id":"KrakenFutures-rr_ethusd","name":"Kraken
+        Futures rr_ethusd"},{"id":"EOS","name":"Huobi Futures EOS"},{"id":"SUSHI","name":"Perpetual
+        Protocol SUSHI"},{"id":"SKL","name":"SKALE"},{"id":"ALT","name":"Altcoin Index"},{"id":"DEFI","name":"DeFi
+        Index"},{"id":"MASS","name":"Huobi Futures MASS"},{"id":"ETH","name":"dYdX
+        Perpetual ETH"},{"id":"LINK","name":"Binance (Futures) LINK"},{"id":"OkexSwap-UNI","name":"Okex
+        UNI"},{"id":"OkexSwap-DASH","name":"Okex DASH"},{"id":"RAMP","name":"RAMP"},{"id":"OkexSwap-QTUM","name":"Okex
+        QTUM"},{"id":"OkexSwap-NEAR","name":"Okex NEAR"},{"id":"OkexSwap-ONT","name":"Okex
+        ONT"},{"id":"UNI","name":"ZBG Futures UNI"},{"id":"ETH","name":"Deribit ETH"},{"id":"ETHH20","name":"ETHH20"},{"id":"BBCXH20","name":"BBCXH20"},{"id":"YFII","name":"CoinTiger
+        (Futures) YFII"},{"id":"SXP","name":"CoinTiger (Futures) SXP"},{"id":"1000SHIB","name":"Binance
+        (Futures) 1000SHIB"},{"id":"DOGE","name":"Phemex (Futures) DOGE"},{"id":"BTC","name":"Bitget
+        Futures BTC"},{"id":"STX","name":"Stacks"},{"id":"RSR","name":"CoinTiger (Futures)
+        RSR"},{"id":"XMR","name":"Monero"},{"id":"FIL","name":"Filecoin"},{"id":"TRX","name":"Huobi
+        Futures TRX"},{"id":"BETHXBT30M","name":".BETHXBT30M"},{"id":"BTC","name":"MyCoinStory
+        BTC"},{"id":"BTC","name":"Hopex BTC"},{"id":"ETH","name":"Hopex ETH"},{"id":"LINK","name":"Phemex
+        (Futures) LINK"},{"id":"TRX","name":"Bitmart Futures TRX"},{"id":"OkexSwap-NEO","name":"Okex
+        NEO"},{"id":"OkexSwap-AVAX","name":"Okex AVAX"},{"id":"ETC","name":"Bitget
+        Futures ETC"},{"id":"BBCXQ20","name":"BBCXQ20"},{"id":"ETHZ19","name":"ETHZ19"},{"id":"XMRF20","name":"XMRF20"},{"id":"IOTA","name":"Binance
+        (Futures) IOTA"},{"id":"ETC","name":"Huobi Futures ETC"},{"id":"SOL","name":"Solana"},{"id":"DASH","name":"Dash"},{"id":"BAO","name":"BaoToken"},{"id":"BEOSXBT30M","name":".BEOSXBT30M"},{"id":"BTC","name":"BaseFEX
+        BTC"},{"id":"OkexSwap-CRV","name":"Okex CRV"},{"id":"BSV","name":"Bitmart
+        Futures BSV"},{"id":"CHZ","name":"Stormgain Futures CHZ"},{"id":"BCH","name":"AAX
+        Futures BCH"},{"id":"OkexSwap-ALPHA","name":"Okex ALPHA"},{"id":"BCH","name":"BaseFEX
+        BCH"},{"id":"BBCXF20","name":"BBCXF20"},{"id":"UMA","name":"MyCoinStory UMA"},{"id":"OkexSwap-PERP","name":"Okex
+        PERP"},{"id":"YFI","name":"Phemex (Futures) YFI"},{"id":"XRP","name":"Phemex
+        (Futures) XRP"},{"id":"ANT","name":"Huobi Futures ANT"},{"id":"DASH","name":"Binance
+        (Futures) DASH"},{"id":"OkexSwap-ALGO","name":"Okex ALGO"},{"id":"OkexSwap-MASK","name":"Okex
+        MASK"},{"id":"BXBT30M","name":".BXBT30M"},{"id":"DEFILUSDT","name":".DEFILUSDT"},{"id":"ALGO","name":"Bitmart
+        Futures ALGO"},{"id":"LTCF20","name":"LTCF20"},{"id":"ETHF20","name":"ETHF20"},{"id":"LTCN20","name":"LTCN20"},{"id":"BXBT","name":".BXBT"},{"id":"XRP","name":"Huobi
+        Futures XRP"},{"id":"BTC","name":"Phemex (Futures) BTC"},{"id":"ETH","name":"Phemex
+        (Futures) ETH"},{"id":"ETC","name":"HBTC (Futures) ETC"},{"id":"ALGO","name":"Stormgain
+        Futures ALGO"},{"id":"MATIC","name":"Delta Exchange MATIC"},{"id":"BTCF20","name":"BTCF20"},{"id":"ADA","name":"Phemex
+        (Futures) ADA"},{"id":"XMRZ19","name":"XMRZ19"},{"id":"LTCZ19","name":"LTCZ19"},{"id":"1INCH-DIVE-5.00-D1001","name":"ACDX
+        Futures 1INCH-DIVE-5.00-D1001"},{"id":"DOGE","name":"Bitmart Futures DOGE"},{"id":"OkexSwap-MIR","name":"Okex
+        MIR"},{"id":"BNB","name":"Stormgain Futures BNB"},{"id":"BCH","name":"Phemex
+        (Futures) BCH"},{"id":"BTC","name":"Liquid Perpetuals BTC"},{"id":"BTCZ19","name":"BTCZ19"},{"id":"OKB","name":"Bitmart
+        Futures OKB"},{"id":"FIL","name":"Stormgain Futures FIL"},{"id":"XTZ","name":"Phemex
+        (Futures) XTZ"},{"id":"BBCXV20","name":"BBCXV20"},{"id":"OkexSwap-JST","name":"Okex
+        JST"},{"id":"OkexSwap-ZRX","name":"Okex ZRX"},{"id":"OkexSwap-LUNA","name":"Okex
+        LUNA"},{"id":"SUSHI-DIVE-20.50-D0901","name":"ACDX Futures SUSHI-DIVE-20.50-D0901"},{"id":"OkexSwap-1INCH","name":"Okex
+        1INCH"},{"id":"OkexSwap-KNC","name":"Okex KNC"},{"id":"DEXEMXBT","name":".DEXEMXBT"},{"id":"DOGE","name":"CoinTiger
+        (Futures) DOGE"},{"id":"AAVE","name":"CoinTiger (Futures) AAVE"},{"id":"BTC","name":"CoinTiger
+        (Futures) BTC"},{"id":"LINK","name":"HBTC (Futures) LINK"},{"id":"FIL","name":"HBTC
+        (Futures) FIL"},{"id":"LINK","name":"AAX Futures LINK"},{"id":"OkexSwap-SUSHI","name":"Okex
+        SUSHI"},{"id":"OkexSwap-LAT","name":"Okex LAT"},{"id":"OkexSwap-LTC","name":"Okex
+        LTC"},{"id":"OkexSwap-BCH","name":"Okex BCH"},{"id":"OkexSwap-ETH","name":"Okex
+        ETH"},{"id":"AVAX","name":"Stormgain Futures AVAX"},{"id":"ADA","name":"HBTC
+        (Futures) ADA"},{"id":"ANKR","name":"CoinTiger (Futures) ANKR"},{"id":"LTC","name":"Delta
+        Exchange LTC"},{"id":"SECO","name":"Serum Ecosystem Pool Token"},{"id":"WAVES","name":"Waves"},{"id":"OkexSwap-IOST","name":"Okex
+        IOST"},{"id":"NEAR","name":"Near"},{"id":"OkexSwap-FIL","name":"Okex FIL"},{"id":"SOL","name":"Stormgain
+        Futures SOL"},{"id":"MATIC","name":"Matic"},{"id":"BCH","name":"HBTC (Futures)
+        BCH"},{"id":"SRM","name":"CoinTiger (Futures) SRM"},{"id":"OkexSwap-REN","name":"Okex
+        REN"},{"id":"SKL","name":"CoinTiger (Futures) SKL"},{"id":"LTC","name":"Litecoin"},{"id":"BNB","name":"Delta
+        Exchange BNB"},{"id":"TOMO","name":"Delta Exchange TOMO"},{"id":"ATOM","name":"Delta
+        Exchange ATOM"},{"id":"BTC","name":"Delta Exchange BTC"},{"id":"EOS","name":"Delta
+        Exchange EOS"},{"id":"ETH","name":"Delta Exchange ETH"},{"id":"THETA","name":"Stormgain
+        Futures THETA"},{"id":"BCH","name":"BTCMEX BCH"},{"id":"ETH","name":"BaseFEX
+        ETH"},{"id":"OMG","name":"CoinTiger (Futures) OMG"},{"id":"ETH","name":"Perpetual
+        Protocol ETH"},{"id":"ETH","name":"AscendEX  (BitMax) (Futures) ETH"},{"id":"MASK","name":"Huobi
+        Futures MASK"},{"id":"ICP","name":"Internet Computer"},{"id":"BCH","name":"CoinTiger
+        (Futures) BCH"},{"id":"KMKRUSDT","name":".KMKRUSDT"},{"id":"ENJ","name":"Delta
+        Exchange ENJ"},{"id":"XRP","name":"Delta Exchange XRP"},{"id":"DEKNCUSDT","name":".DEKNCUSDT"},{"id":"BAT","name":"Delta
+        Exchange BAT"},{"id":"XMR","name":"Delta Exchange XMR"},{"id":"LEO","name":"Delta
+        Exchange LEO"},{"id":"ETHJ21","name":"ETHJ21"},{"id":"KDGBUSDT","name":".KDGBUSDT"},{"id":"KSHIBUSDT","name":".KSHIBUSDT"},{"id":"KMIRUSDT","name":".KMIRUSDT"},{"id":"GXC","name":"Huobi
+        Futures GXC"},{"id":"BNB","name":"BaseFEX BNB"},{"id":"EGLD","name":"Stormgain
+        Futures EGLD"},{"id":"REN","name":"CoinTiger (Futures) REN"},{"id":"BTCJ21","name":"BTCJ21"},{"id":"MATIC","name":"Stormgain
+        Futures MATIC"},{"id":"COMP","name":"AAX Futures COMP"},{"id":"DELENDXBT","name":".DELENDXBT"},{"id":"ALGO","name":"MXC
+        (Futures) ALGO"},{"id":"RUNE","name":"Stormgain Futures RUNE"},{"id":"CAKE","name":"Stormgain
+        Futures CAKE"},{"id":"XMRZ20","name":"XMRZ20"},{"id":"AAVE","name":"Stormgain
+        Futures AAVE"},{"id":"ELF","name":"Bitmart Futures ELF"},{"id":"BTC","name":"dYdX
+        Perpetual BTC"},{"id":"WAVES","name":"Huobi Futures WAVES"},{"id":"BTC","name":"ZBG
+        Futures BTC"},{"id":"ONT","name":"Ontology"},{"id":"ENJ","name":"Stormgain
+        Futures ENJ"},{"id":"LINK","name":"dYdX Perpetual LINK"},{"id":"UNI","name":"Stormgain
+        Futures UNI"},{"id":"THETA","name":"Binance (Futures) THETA"},{"id":"RUNE","name":"Binance
+        (Futures) RUNE"},{"id":"XLM","name":"Stellar"},{"id":"DASH","name":"Gate.io
+        (Futures) DASH"},{"id":"XEM","name":"Huobi Futures XEM"},{"id":"ETH","name":"ZBG
+        Futures ETH"},{"id":"OkexSwap-ADA","name":"Okex ADA"},{"id":"LTCPFC","name":"LTCPFC"},{"id":"SUSHI","name":"Stormgain
+        Futures SUSHI"},{"id":"DENT","name":"Binance (Futures) DENT"},{"id":"FTM","name":"Binance
+        (Futures) FTM"},{"id":"ALPHA","name":"Alpha Finance"},{"id":"SHIT","name":"Shitcoin
+        Index"},{"id":"DOGE","name":"Stormgain Futures DOGE"},{"id":"ANT","name":"Gate.io
+        (Futures) ANT"},{"id":"BSV","name":"HBTC (Futures) BSV"},{"id":"BTS","name":"Huobi
+        Futures BTS"},{"id":"ALCX","name":"Alchemix"},{"id":"HNT","name":"Helium"},{"id":"RSR","name":"Huobi
+        Futures RSR"},{"id":"XAUTPFC","name":"XAUTPFC"},{"id":"UNI","name":"HBTC (Futures)
+        UNI"},{"id":"LTC","name":"HBTC (Futures) LTC"},{"id":"LTC","name":"CoinTiger
+        (Futures) LTC"},{"id":"FLM","name":"Flamingo"},{"id":"NEO","name":"CoinTiger
+        (Futures) NEO"},{"id":"BNB","name":"BNB"},{"id":"OKB","name":"OKB"},{"id":"FRONT","name":"Gate.io
+        (Futures) FRONT"},{"id":"LINK","name":"Chainlink"},{"id":"SHIB","name":"Shiba
+        Inu"},{"id":"BTC","name":"Biki (Futures) BTC"},{"id":"YFI","name":"HBTC (Futures)
+        YFI"},{"id":"BRZ","name":"Brazilian Digital Token"},{"id":"BBAXU20","name":"BBAXU20"},{"id":"TRYB","name":"BiLira"},{"id":"DRGN","name":"Dragon
+        Index"},{"id":"CUSDT","name":"Compound USDT"},{"id":"DOT","name":"Biki (Futures)
+        DOT"},{"id":"IOST","name":"Huobi Futures IOST"},{"id":"NEAR","name":"CoinTiger
+        (Futures) NEAR"},{"id":"EOS","name":"HBTC (Futures) EOS"},{"id":"LRC","name":"Loopring"},{"id":"DMG","name":"DMM
+        Governance"},{"id":"OXY","name":"Oxygen Protocol"},{"id":"FIL","name":"Huobi
+        Futures FIL"},{"id":"OkexSwap-BSV","name":"Okex BSV"},{"id":"MID","name":"Midcap
+        Index"},{"id":"XEM","name":"NEM"},{"id":"REN","name":"Huobi Futures REN"},{"id":"ETC","name":"CoinTiger
+        (Futures) ETC"},{"id":"ETH","name":"CoinTiger (Futures) ETH"},{"id":"COMP","name":"Compound
+        Token"},{"id":"SUSHI","name":"Sushi"},{"id":"XRP","name":"Bitmart Futures
+        XRP"},{"id":"ONT","name":"Stormgain Futures ONT"},{"id":"AKRO","name":"CoinTiger
+        (Futures) AKRO"},{"id":"BTC","name":"Binance JEX (Futures) BTC"},{"id":"CONV","name":"Convergence"},{"id":"ATOM","name":"Cosmos"},{"id":"KNC","name":"Kyber
+        Network"},{"id":"DOT","name":"Polkadot"},{"id":"LTC","name":"Biki (Futures)
+        LTC"},{"id":"ATOM","name":"Stormgain Futures ATOM"},{"id":"LTC","name":"Bitmart
+        Futures LTC"},{"id":"BAT","name":"Basic Attention Token"},{"id":"CHZ","name":"Chiliz"},{"id":"XMRQ20","name":"XMRQ20"},{"id":"XMRJ20","name":"XMRJ20"},{"id":"ETC","name":"Bitz
+        (Futures) ETC"},{"id":"ETH","name":"Bitmart Futures ETH"},{"id":"XRP","name":"XRP"},{"id":"EOS","name":"Bitmart
+        Futures EOS"},{"id":"XRP","name":"BaseFEX XRP"},{"id":"OMG","name":"OMG Network"},{"id":"BTC","name":"Bithumb
+        (Futures) BTC"},{"id":"index_BTCUSD","name":"index_BTCUSD"},{"id":"BTCJ20","name":"BTCJ20"},{"id":"DOGE","name":"Dogecoin"},{"id":"CKB","name":"Bitmart
+        Futures CKB"},{"id":"BNB","name":"Bitmart Futures BNB"},{"id":"TRU","name":"TrueFi"},{"id":"ETHU20","name":"ETHU20"},{"id":"IOST","name":"Bitmart
+        Futures IOST"},{"id":"AXS","name":"Axie Infinity"},{"id":"SUN","name":"MXC
+        (Futures) SUN"},{"id":"AVAX","name":"Avalanche"},{"id":"XMRN20","name":"XMRN20"},{"id":"XAUT","name":"Tether
+        Gold"},{"id":"LTCJ20","name":"LTCJ20"},{"id":"TOMO","name":"TomoChain"},{"id":"SUN","name":"Huobi
+        Futures SUN"},{"id":"BBAXQ20","name":"BBAXQ20"},{"id":"BBAXJ20","name":"BBAXJ20"},{"id":"FIL","name":"MXC
+        (Futures) FIL"},{"id":"BCHABC","name":"Bitmart Futures BCHABC"},{"id":"LTCQ20","name":"LTCQ20"},{"id":"ETHJ20","name":"ETHJ20"},{"id":"ETHQ20","name":"ETHQ20"},{"id":"BTCQ20","name":"BTCQ20"},{"id":"NPXS","name":"Pundi
+        X"},{"id":"WNXM","name":"Huobi Futures WNXM"},{"id":"LTCZ20","name":"LTCZ20"},{"id":"OkexSwap-LRC","name":"Okex
+        LRC"},{"id":"BBCXJ20","name":"BBCXJ20"},{"id":"ONT","name":"Bitmart Futures
+        ONT"},{"id":"BTCZ20","name":"BTCZ20"},{"id":"ETHZ20","name":"ETHZ20"},{"id":"LINK","name":"Biki
+        (Futures) LINK"},{"id":"BTC","name":"Bitmart Futures BTC"},{"id":"DOT-DIVE-42.00-D0801","name":"ACDX
+        Futures DOT-DIVE-42.00-D0801"},{"id":"SWRV","name":"Huobi Futures SWRV"},{"id":"EOS","name":"Biki
+        (Futures) EOS"},{"id":"BCH","name":"Biki (Futures) BCH"},{"id":"1INCH-MOON-3.50-M1001","name":"ACDX
+        Futures 1INCH-MOON-3.50-M1001"},{"id":"BBCXZ20","name":"BBCXZ20"},{"id":"MEDIA","name":"MEDIA"},{"id":"ACH","name":"Huobi
+        Futures ACH"},{"id":"LTCJ21","name":"LTCJ21"},{"id":"LTCG21","name":"LTCG21"},{"id":"DEENJXBT","name":".DEENJXBT"},{"id":"XMRJ21","name":"XMRJ21"},{"id":"DERENUSDT","name":".DERENUSDT"},{"id":"DEXAUTUSDT","name":".DEXAUTUSDT"},{"id":"ETH-DIVE-2200-D0214","name":"ACDX
+        Futures ETH-DIVE-2200-D0214"},{"id":"SNX","name":"dYdX Perpetual SNX"},{"id":"PERP","name":"Perpetual
+        Protocol PERP"},{"id":"FIL","name":"Biki (Futures) FIL"},{"id":"XRP","name":"Biki
+        (Futures) XRP"},{"id":"XTZ","name":"Binance (Futures) XTZ"},{"id":"ALPHA","name":"Binance
+        (Futures) ALPHA"},{"id":"XEM","name":"Binance (Futures) XEM"},{"id":"BTC","name":"Binance
+        (Futures) BTC"},{"id":"ETC","name":"Binance (Futures) ETC"},{"id":"BNB","name":"Binance
+        (Futures) BNB"},{"id":"FTT-DIVE-50.0-D0405","name":"ACDX Futures FTT-DIVE-50.0-D0405"},{"id":"UNI","name":"Biki
+        (Futures) UNI"},{"id":"SFP","name":"Binance (Futures) SFP"},{"id":"ETH","name":"AAX
+        Futures ETH"},{"id":"ENJ","name":"Binance (Futures) ENJ"},{"id":"SXP","name":"Binance
+        (Futures) SXP"},{"id":"XMRG21","name":"XMRG21"},{"id":"DOGE","name":"Binance
+        (Futures) DOGE"},{"id":"SKL","name":"Binance (Futures) SKL"},{"id":"SUSHI","name":"Biki
+        (Futures) SUSHI"},{"id":"HOT","name":"Binance (Futures) HOT"},{"id":"BTC","name":"AAX
+        Futures BTC"},{"id":"DODO","name":"Binance (Futures) DODO"},{"id":"DOGE","name":"dYdX
+        Perpetual DOGE"},{"id":"MATIC","name":"Binance (Futures) MATIC"},{"id":"FLM","name":"Binance
+        (Futures) FLM"},{"id":"BCH","name":"Binance (Futures) BCH"},{"id":"BSV","name":"Biki
+        (Futures) BSV"},{"id":"ETH","name":"BigONE Futures ETH"},{"id":"ETH","name":"Biki
+        (Futures) ETH"},{"id":"OkexSwap-CSPR","name":"Okex CSPR"},{"id":"DE1INCHUSDT","name":".DE1INCHUSDT"},{"id":"XLM","name":"Binance
+        (Futures) XLM"},{"id":"SUSHI","name":"Binance (Futures) SUSHI"},{"id":"ONT","name":"Binance
+        (Futures) ONT"},{"id":"ZRX","name":"Binance (Futures) ZRX"},{"id":"BBCHXBT30M","name":".BBCHXBT30M"},{"id":"BDOGET","name":".BDOGET"},{"id":"DEAAVEUSDT","name":".DEAAVEUSDT"},{"id":"RLC","name":"Binance
+        (Futures) RLC"},{"id":"BTC","name":"BigONE Futures BTC"},{"id":"REEF","name":"Binance
+        (Futures) REEF"},{"id":"UNFI","name":"Binance (Futures) UNFI"},{"id":"KAVA","name":"Binance
+        (Futures) KAVA"},{"id":"BADAXBT30M","name":".BADAXBT30M"},{"id":"OkexSwap-THETA","name":"Okex
+        THETA"},{"id":"BTS","name":"Binance (Futures) BTS"},{"id":"MTL","name":"Gate.io
+        (Futures) MTL"},{"id":"JST","name":"Gate.io (Futures) JST"},{"id":"ADA","name":"Binance
+        (Futures) ADA"},{"id":"MANA","name":"Binance (Futures) MANA"},{"id":"OkexSwap-ICP","name":"Okex
+        ICP"},{"id":"TOMO","name":"Binance (Futures) TOMO"},{"id":"ETH","name":"Binance
+        (Futures) ETH"},{"id":"index_ETHUSD","name":"index_ETHUSD"},{"id":"DOT","name":"BigONE
+        Futures DOT"},{"id":"AVAX","name":"Binance (Futures) AVAX"},{"id":"BBNBT30M","name":".BBNBT30M"},{"id":"BNB","name":"MyCoinStory
+        BNB"},{"id":"EGLD","name":"Binance (Futures) EGLD"},{"id":"YFI","name":"Binance
+        (Futures) YFI"},{"id":"DETRXUSDT","name":".DETRXUSDT"},{"id":"EOS","name":"BigONE
+        Futures EOS"},{"id":"RSR","name":"Binance (Futures) RSR"},{"id":"BTCST","name":"Binance
+        (Futures) BTCST"},{"id":"SRM","name":"Binance (Futures) SRM"},{"id":"SAND","name":"Binance
+        (Futures) SAND"},{"id":"BTCX20","name":"BTCX20"},{"id":"UNI","name":"BigONE
+        Futures UNI"},{"id":"OGN","name":"Binance (Futures) OGN"},{"id":"OkexSwap-SHIB","name":"Okex
+        SHIB"},{"id":"LPT","name":"Gate.io (Futures) LPT"},{"id":"ICP","name":"Binance
+        (Futures) ICP"},{"id":"LIT","name":"Binance (Futures) LIT"},{"id":"DEWAVESXBT","name":".DEWAVESXBT"},{"id":"XMRX20","name":"XMRX20"},{"id":"SUSHI","name":"Bitget
+        Futures SUSHI"},{"id":"CREAM","name":"Perpetual Protocol CREAM"},{"id":"AAVE","name":"Phemex
+        (Futures) AAVE"},{"id":"UNI","name":"Phemex (Futures) UNI"},{"id":"DEXRPUSDT","name":".DEXRPUSDT"},{"id":"KONTUSDT","name":".KONTUSDT"},{"id":"PERP","name":"Gate.io
+        (Futures) PERP"},{"id":"REN","name":"Binance (Futures) REN"},{"id":"ETH","name":"Bitget
+        Futures ETH"},{"id":"DEETCUSDT","name":".DEETCUSDT"},{"id":"LTCX20","name":"LTCX20"},{"id":"SHIB","name":"Gate.io
+        (Futures) SHIB"},{"id":"ETHG21","name":"ETHG21"},{"id":"ADA","name":"Bitget
+        Futures ADA"},{"id":"NKN","name":"Binance (Futures) NKN"},{"id":"ADA","name":"MXC
+        (Futures) ADA"},{"id":"BTC","name":"C-Trade BTC"},{"id":"ZEC","name":"Stormgain
+        Futures ZEC"},{"id":"AR","name":"Gate.io (Futures) AR"},{"id":"BNB","name":"Gate.io
+        (Futures) BNB"},{"id":"DESUSHIUSDT","name":".DESUSHIUSDT"},{"id":"DOT","name":"Bitget
+        Futures DOT"},{"id":"TRX","name":"Bitget Futures TRX"},{"id":"XLM","name":"CoinTiger
+        (Futures) XLM"},{"id":"XLM","name":"Bitget Futures XLM"},{"id":"KrakenFutures-rr_xbtusd","name":"Kraken
+        Futures rr_xbtusd"},{"id":"BEOST30M","name":".BEOST30M"},{"id":"IOST","name":"Binance
+        (Futures) IOST"},{"id":"AKRO","name":"Binance (Futures) AKRO"},{"id":"LINK","name":"BTCMEX
+        LINK"},{"id":"BSV","name":"Stormgain Futures BSV"},{"id":"WOO","name":"Huobi
+        Futures WOO"},{"id":"ETH","name":"BTCMEX ETH"},{"id":"FIL","name":"Bitget
+        Futures FIL"},{"id":"XMR","name":"HBTC (Futures) XMR"},{"id":"OkexSwap-XRP","name":"Okex
+        XRP"},{"id":"UNI","name":"Bitget Futures UNI"},{"id":"OkexSwap-ZEC","name":"Okex
+        ZEC"},{"id":"ETH","name":"Bitfinex (Futures) ETH"},{"id":"ICP","name":"Gate.io
+        (Futures) ICP"},{"id":"XTZ","name":"Bitget Futures XTZ"},{"id":"BBAXZ20","name":"BBAXZ20"},{"id":"OkexSwap-WNXM","name":"Okex
+        WNXM"},{"id":"EUR","name":"Bitfinex (Futures) EUR"},{"id":"SUSHI","name":"Bybit
+        SUSHI"},{"id":"KrakenFutures-rr_xrpusd","name":"Kraken Futures rr_xrpusd"},{"id":"BCH","name":"Gate.io
+        (Futures) BCH"},{"id":"EOS","name":"BTCMEX EOS"},{"id":"SHIB","name":"MXC
+        (Futures) SHIB"},{"id":"DEBCHUSDT","name":".DEBCHUSDT"},{"id":"CTK","name":"Binance
+        (Futures) CTK"},{"id":"UNI","name":"Binance (Futures) UNI"},{"id":"NEAR","name":"Binance
+        (Futures) NEAR"},{"id":"SKL","name":"MXC (Futures) SKL"},{"id":"XEM","name":"Bybit
+        XEM"},{"id":"VET","name":"Huobi Futures VET"},{"id":"ETHX20","name":"ETHX20"},{"id":"EOS","name":"Binance
+        JEX (Futures) EOS"},{"id":"LTCM21","name":"LTCM21"},{"id":"EUROPE50IX","name":"Bitfinex
+        (Futures) EUROPE50IX"},{"id":"NEO","name":"NEO"},{"id":"ALGO","name":"Algorand"},{"id":"BTMX","name":"BitMax
+        Token"},{"id":"BBCXX20","name":"BBCXX20"},{"id":"DASH","name":"CoinTiger (Futures)
+        DASH"},{"id":"ETH","name":"Binance JEX (Futures) ETH"},{"id":"OkexSwap-KSM","name":"Okex
+        KSM"},{"id":"BTC","name":"Bitfinex (Futures) BTC"},{"id":"DOT","name":"MXC
+        (Futures) DOT"},{"id":"ETH","name":"Ethereum"},{"id":"GRT","name":"Graph Token"},{"id":"AAVE","name":"Bybit
+        AAVE"},{"id":"HNT","name":"MXC (Futures) HNT"},{"id":"XAG","name":"Bitfinex
+        (Futures) XAG"},{"id":"SNX","name":"Synthetix Network Token"},{"id":"UNISWAP","name":"Uniswap
+        Index"},{"id":"LINK","name":"CoinTiger (Futures) LINK"},{"id":"STEP","name":"Step
+        Finance"},{"id":"NEO","name":"Stormgain Futures NEO"},{"id":"OkexSwap-SUN","name":"Okex
+        SUN"},{"id":"LINK","name":"Bitget Futures LINK"},{"id":"XAUBPFC","name":"XAUBPFC"},{"id":"NEAR","name":"Huobi
+        Futures NEAR"},{"id":"LTC","name":"Stormgain Futures LTC"},{"id":"KrakenFutures-rr_bchusd","name":"Kraken
+        Futures rr_bchusd"},{"id":"ICP","name":"MXC (Futures) ICP"},{"id":"XTZPFC","name":"XTZPFC"},{"id":"AR","name":"Arweave"},{"id":"TRX","name":"TRX"},{"id":"KrakenFutures-rr_ltcusd","name":"Kraken
+        Futures rr_ltcusd"},{"id":"ATOM","name":"MXC (Futures) ATOM"},{"id":"DOT","name":"Stormgain
+        Futures DOT"},{"id":"XRP","name":"Stormgain Futures XRP"},{"id":"UMA","name":"Stormgain
+        Futures UMA"},{"id":"MAPS","name":"Maps.me Token"},{"id":"BTCG21","name":"BTCG21"},{"id":"SNX","name":"CoinTiger
+        (Futures) SNX"},{"id":"ALPHA","name":"MXC (Futures) ALPHA"},{"id":"BAGS","name":"Huobi
+        Futures BAGS"},{"id":"TRX","name":"HBTC (Futures) TRX"},{"id":"ENJ","name":"Enjin
+        Coin"},{"id":"OkexSwap-UMA","name":"Okex UMA"},{"id":"BTC","name":"Huobi Futures
+        BTC"},{"id":"BCH","name":"Bitcoin Cash"},{"id":"IOT","name":"Bitfinex (Futures)
+        IOT"},{"id":"ETC","name":"Stormgain Futures ETC"},{"id":"ONT","name":"Huobi
+        Futures ONT"},{"id":"QTUM","name":"Stormgain Futures QTUM"},{"id":"CSPR","name":"Huobi
+        Futures CSPR"},{"id":"BTT","name":"BitTorrent"},{"id":"BTCM21","name":"BTCM21"},{"id":"MATIC","name":"CoinTiger
+        (Futures) MATIC"},{"id":"COMP","name":"Stormgain Futures COMP"},{"id":"SUSHI","name":"HBTC
+        (Futures) SUSHI"},{"id":"KNC","name":"MXC (Futures) KNC"},{"id":"DOGE","name":"BitZ
+        (Futures) DOGE"},{"id":"KSM","name":"CoinTiger (Futures) KSM"},{"id":"CHR","name":"CoinTiger
+        (Futures) CHR"},{"id":"BLZ","name":"Binance (Futures) BLZ"},{"id":"ZEN","name":"CoinTiger
+        (Futures) ZEN"},{"id":"LINK","name":"AscendEX  (BitMax) (Futures) LINK"},{"id":"ZEC","name":"HBTC
+        (Futures) ZEC"},{"id":"ALICE","name":"Binance (Futures) ALICE"},{"id":"PROM","name":"Prometeus"},{"id":"PAXG","name":"BitZ
+        (Futures) PAXG"},{"id":"MKR","name":"CoinTiger (Futures) MKR"},{"id":"KSM","name":"MXC
+        (Futures) KSM"},{"id":"LINA","name":"Linear Token"},{"id":"ZEN","name":"Huobi
+        Futures ZEN"},{"id":"SRM","name":"AscendEX  (BitMax) (Futures) SRM"},{"id":"FRONT","name":"Huobi
+        Futures FRONT"},{"id":"LTC","name":"BitZ (Futures) LTC"},{"id":"BZRX","name":"CoinTiger
+        (Futures) BZRX"},{"id":"BNB","name":"AscendEX  (BitMax) (Futures) BNB"},{"id":"ZRX","name":"0x"},{"id":"FORTH","name":"Huobi
+        Futures FORTH"},{"id":"ZIL","name":"MXC (Futures) ZIL"},{"id":"OkexSwap-CRO","name":"Okex
+        CRO"},{"id":"DODO","name":"CoinTiger (Futures) DODO"},{"id":"COMP","name":"MCDEX
+        COMP"},{"id":"BTC","name":"AscendEX  (BitMax) (Futures) BTC"},{"id":"ANKR","name":"Huobi
+        Futures ANKR"},{"id":"LRC","name":"CoinTiger (Futures) LRC"},{"id":"ALPHA","name":"CoinTiger
+        (Futures) ALPHA"},{"id":"AXS","name":"MXC (Futures) AXS"},{"id":"OkexSwap-TORN","name":"Okex
+        TORN"},{"id":"XRP","name":"AscendEX  (BitMax) (Futures) XRP"},{"id":"GRT","name":"CoinTiger
+        (Futures) GRT"},{"id":"YFI","name":"Poloniex Futures YFI"},{"id":"BCH","name":"MXC
+        (Futures) BCH"},{"id":"SOL","name":"AscendEX  (BitMax) (Futures) SOL"},{"id":"DOT","name":"AscendEX  (BitMax)
+        (Futures) DOT"},{"id":"ZEC","name":"CoinTiger (Futures) ZEC"},{"id":"OkexSwap-DOGE","name":"Okex
+        DOGE"},{"id":"BSV","name":"Poloniex Futures BSV"},{"id":"BTC","name":"Perpetual
+        Protocol BTC"},{"id":"IOTA","name":"MXC (Futures) IOTA"},{"id":"BTC","name":"DueDEX
+        BTC"},{"id":"OCEAN","name":"Binance (Futures) OCEAN"},{"id":"BCH","name":"Poloniex
+        Futures BCH"},{"id":"BEAM","name":"Gate.io (Futures) BEAM"},{"id":"CSPR","name":"AscendEX  (BitMax)
+        (Futures) CSPR"},{"id":"MANA","name":"CoinTiger (Futures) MANA"},{"id":"TRX","name":"CoinTiger
+        (Futures) TRX"},{"id":"ZRX","name":"MXC (Futures) ZRX"},{"id":"OCEAN","name":"CoinTiger
+        (Futures) OCEAN"},{"id":"QTUM","name":"Binance (Futures) QTUM"},{"id":"UNI","name":"Poloniex
+        Futures UNI"},{"id":"DOGE","name":"AscendEX  (BitMax) (Futures) DOGE"},{"id":"OkexSwap-DOT","name":"Okex
+        DOT"},{"id":"CTK","name":"MXC (Futures) CTK"},{"id":"XRP","name":"Poloniex
+        Futures XRP"},{"id":"COMP","name":"CoinTiger (Futures) COMP"},{"id":"OkexSwap-GRT","name":"Okex
+        GRT"},{"id":"1INCH","name":"MXC (Futures) 1INCH"},{"id":"CRV","name":"CoinTiger
+        (Futures) CRV"},{"id":"STORJ","name":"Binance (Futures) STORJ"},{"id":"SNX","name":"Binance
+        (Futures) SNX"},{"id":"FTM","name":"Fantom"},{"id":"OkexSwap-EOS","name":"Okex
+        EOS"},{"id":"UNI","name":"MXC (Futures) UNI"},{"id":"RUNE","name":"CoinTiger
+        (Futures) RUNE"},{"id":"XMR","name":"Poloniex Futures XMR"},{"id":"OkexSwap-BTC","name":"Okex
+        BTC"},{"id":"ANKR","name":"Binance (Futures) ANKR"},{"id":"BCH","name":"AscendEX  (BitMax)
+        (Futures) BCH"},{"id":"SFP","name":"CoinTiger (Futures) SFP"},{"id":"ALGO","name":"Binance
+        (Futures) ALGO"},{"id":"BLZ","name":"CoinTiger (Futures) BLZ"},{"id":"XRP","name":"MXC
+        (Futures) XRP"},{"id":"DOT","name":"Phemex (Futures) DOT"},{"id":"ETH","name":"C-Trade
+        ETH"},{"id":"BTCPFC","name":"BTCPFC"},{"id":"BTCDOM","name":"Bitfinex (Futures)
+        BTCDOM"},{"id":"LRC","name":"Binance (Futures) LRC"},{"id":"BAL","name":"CoinTiger
+        (Futures) BAL"},{"id":"OkexSwap-LINK","name":"Okex LINK"},{"id":"AMPL","name":"Gate.io
+        (Futures) AMPL"},{"id":"ALGO","name":"Phemex (Futures) ALGO"},{"id":"NEO","name":"Binance
+        (Futures) NEO"},{"id":"XRP","name":"CoinTiger (Futures) XRP"},{"id":"OMG","name":"MXC
+        (Futures) OMG"},{"id":"USDTPFC","name":"USDTPFC"},{"id":"CHZ","name":"CoinTiger
+        (Futures) CHZ"},{"id":"EOS","name":"Bitfinex (Futures) EOS"},{"id":"COMP","name":"Phemex
+        (Futures) COMP"},{"id":"SOL","name":"MXC (Futures) SOL"},{"id":"ZIL","name":"Huobi
+        Futures ZIL"},{"id":"ETH","name":"DueDEX ETH"},{"id":"HNT","name":"Binance
+        (Futures) HNT"},{"id":"BTC","name":"dYdX Perpetual (L1) BTC"},{"id":"1INCH","name":"CoinTiger
+        (Futures) 1INCH"},{"id":"VET","name":"Stormgain Futures VET"},{"id":"TRU","name":"Gate.io
+        (Futures) TRU"},{"id":"REN","name":"REN"},{"id":"BAND","name":"CoinTiger (Futures)
+        BAND"},{"id":"XTZ","name":"MXC (Futures) XTZ"},{"id":"YFI","name":"Stormgain
+        Futures YFI"},{"id":"ADA","name":"CoinTiger (Futures) ADA"},{"id":"LTC","name":"Phemex
+        (Futures) LTC"},{"id":"ANKR","name":"MXC (Futures) ANKR"},{"id":"DOT","name":"CoinTiger
+        (Futures) DOT"},{"id":"XRP","name":"Bitforex (Futures) XRP"},{"id":"EOS","name":"CoinTiger
+        (Futures) EOS"},{"id":"LINK","name":"Bitfinex (Futures) LINK"},{"id":"BTC","name":"Bitforex
+        (Futures) BTC"},{"id":"SUSHI","name":"MXC (Futures) SUSHI"},{"id":"YFI","name":"CoinTiger
+        (Futures) YFI"},{"id":"KAVA","name":"CoinTiger (Futures) KAVA"},{"id":"DASH","name":"Stormgain
+        Futures DASH"},{"id":"KNC","name":"CoinTiger (Futures) KNC"},{"id":"BAND","name":"MXC
+        (Futures) BAND"},{"id":"BEAM","name":"Bitforex (Futures) BEAM"},{"id":"OkexSwap-TRX","name":"Okex
+        TRX"},{"id":"BNB","name":"CoinTiger (Futures) BNB"},{"id":"ETH","name":"Stormgain
+        Futures ETH"},{"id":"BAND","name":"Gate.io (Futures) BAND"},{"id":"XMRF21","name":"XMRF21"},{"id":"DOGE","name":"MXC
+        (Futures) DOGE"},{"id":"OkexSwap-ETC","name":"Okex ETC"},{"id":"AVAX","name":"MXC
+        (Futures) AVAX"},{"id":"DOT","name":"Bitfinex (Futures) DOT"},{"id":"ADA","name":"Stormgain
+        Futures ADA"},{"id":"LTCF21","name":"LTCF21"},{"id":"MANA","name":"MXC (Futures)
+        MANA"},{"id":"BAL","name":"Binance (Futures) BAL"},{"id":"RVN","name":"Binance
+        (Futures) RVN"},{"id":"BTT","name":"CoinTiger (Futures) BTT"},{"id":"REEF","name":"CoinTiger
+        (Futures) REEF"},{"id":"ETHF21","name":"ETHF21"},{"id":"ONE","name":"Binance
+        (Futures) ONE"},{"id":"CHZ","name":"Binance (Futures) CHZ"},{"id":"LRC","name":"MXC
+        (Futures) LRC"},{"id":"WAVES","name":"Binance (Futures) WAVES"},{"id":"BXTZT30M","name":".BXTZT30M"},{"id":"LRC","name":"Gate.io
+        (Futures) LRC"},{"id":"ETH","name":"Futureswap ETH"},{"id":"BTCF21","name":"BTCF21"},{"id":"BNT","name":"Huobi
+        Futures BNT"},{"id":"BYFIT30M","name":".BYFIT30M"},{"id":"XAUT","name":"Bitfinex
+        (Futures) XAUT"},{"id":"BTC","name":"MXC (Futures) BTC"},{"id":"MDA","name":"Gate.io
+        (Futures) MDA"},{"id":"LTC","name":"MXC (Futures) LTC"},{"id":"ATOM","name":"Binance
+        (Futures) ATOM"},{"id":"THETA","name":"Gate.io (Futures) THETA"},{"id":"LINA","name":"Binance
+        (Futures) LINA"},{"id":"IRIS","name":"Gate.io (Futures) IRIS"},{"id":"MATIC","name":"MXC
+        (Futures) MATIC"},{"id":"DASH","name":"MXC (Futures) DASH"},{"id":"OkexSwap-ENJ","name":"Okex
+        ENJ"},{"id":"LRC","name":"Huobi Futures LRC"},{"id":"1INCH","name":"Gate.io
+        (Futures) 1INCH"},{"id":"ENJ","name":"Huobi Futures ENJ"},{"id":"EOS","name":"Stormgain
+        Futures EOS"},{"id":"BETH","name":".BETH"},{"id":"ONT","name":"MXC (Futures)
+        ONT"},{"id":"ZEC","name":"MXC (Futures) ZEC"},{"id":"XLM","name":"MXC (Futures)
+        XLM"},{"id":"IOST","name":"MXC (Futures) IOST"},{"id":"REEF","name":"Huobi
+        Futures REEF"},{"id":"ZRX","name":"Stormgain Futures ZRX"},{"id":"ZIL","name":"Binance
+        (Futures) ZIL"},{"id":"HOT","name":"MXC (Futures) HOT"},{"id":"LUNA","name":"Huobi
+        Futures LUNA"},{"id":"SUSHI-MOON-13.50-M0901","name":"ACDX Futures SUSHI-MOON-13.50-M0901"},{"id":"BTM","name":"MXC
+        (Futures) BTM"},{"id":"IOTA","name":"Huobi Futures IOTA"},{"id":"ADA","name":"Bitfinex
+        (Futures) ADA"},{"id":"STORJ","name":"MXC (Futures) STORJ"},{"id":"HBAR","name":"MXC
+        (Futures) HBAR"},{"id":"NEO","name":"Huobi Futures NEO"},{"id":"BADAT30M","name":".BADAT30M"},{"id":"AMP","name":"Bitfinex
+        (Futures) AMP"},{"id":"ETH","name":"MXC (Futures) ETH"},{"id":"MKR","name":"Stormgain
+        Futures MKR"},{"id":"BTCH21","name":"BTCH21"},{"id":"DOT","name":"Binance
+        (Futures) DOT"},{"id":"ETHV20","name":"ETHV20"},{"id":"BUNIT","name":".BUNIT"},{"id":"DOT-MOON-30.00-M0801","name":"ACDX
+        Futures DOT-MOON-30.00-M0801"},{"id":"AVAX","name":"Huobi Futures AVAX"},{"id":"BTT","name":"Gate.io
+        (Futures) BTT"},{"id":"TRX","name":"Stormgain Futures TRX"},{"id":"BNB","name":"MXC
+        (Futures) BNB"},{"id":"CHZ","name":"MXC (Futures) CHZ"},{"id":"BBAXK20","name":"BBAXK20"},{"id":"AXS","name":"Binance
+        (Futures) AXS"},{"id":"SAND","name":"Huobi Futures SAND"},{"id":"BTT","name":"MXC
+        (Futures) BTT"},{"id":"LTC","name":"Bitfinex (Futures) LTC"},{"id":"LTCK20","name":"LTCK20"},{"id":"SOL","name":"Binance
+        (Futures) SOL"},{"id":"BTS","name":"MXC (Futures) BTS"},{"id":"OKB","name":"MXC
+        (Futures) OKB"},{"id":"OkexSwap-CONV","name":"Okex CONV"},{"id":"YFI","name":"Huobi
+        Futures YFI"},{"id":"CRV","name":"MXC (Futures) CRV"},{"id":"NEO","name":"MXC
+        (Futures) NEO"},{"id":"UNI","name":"Gate.io (Futures) UNI"},{"id":"LINK","name":"MXC
+        (Futures) LINK"},{"id":"ICX","name":"Binance (Futures) ICX"},{"id":"XMRK20","name":"XMRK20"},{"id":"WOZX","name":"ACDX
+        Futures WOZX"},{"id":"DETOMOXBT","name":".DETOMOXBT"},{"id":"XBT","name":"BTCMEX
+        XBT"},{"id":"BBCXK20","name":"BBCXK20"},{"id":"ETHK20","name":"ETHK20"},{"id":"GBP","name":"Bitfinex
+        (Futures) GBP"},{"id":"KNC","name":"Binance (Futures) KNC"},{"id":"QTUM","name":"Huobi
+        Futures QTUM"},{"id":"XBT","name":"Poloniex Futures XBT"},{"id":"VET","name":"Binance
+        (Futures) VET"},{"id":"UNI","name":"Huobi Futures UNI"},{"id":"WAVES","name":"MXC
+        (Futures) WAVES"},{"id":"XLM","name":"Gate.io (Futures) XLM"},{"id":"BLTC","name":".BLTC"},{"id":"OGN","name":"MXC
+        (Futures) OGN"},{"id":"MASK","name":"Gate.io (Futures) MASK"},{"id":"XMR","name":"Huobi
+        Futures XMR"},{"id":"BCHA","name":"MyCoinStory BCHA"},{"id":"XMRH21","name":"XMRH21"},{"id":"BAL","name":"Huobi
+        Futures BAL"},{"id":"DENT","name":"MXC (Futures) DENT"},{"id":"DEZECUSDT","name":".DEZECUSDT"},{"id":"ZEC","name":"Binance
+        (Futures) ZEC"},{"id":"DEAAVEXBT","name":".DEAAVEXBT"},{"id":"DEXBTUSDT","name":".DEXBTUSDT"},{"id":"BTC","name":"BTCMEX
+        BTC"},{"id":"OkexSwap-LEND","name":"Okex LEND"},{"id":"MKR","name":"Binance
+        (Futures) MKR"},{"id":"YFII","name":"MXC (Futures) YFII"},{"id":"YFII","name":"Binance
+        (Futures) YFII"},{"id":"BTM","name":"Huobi Futures BTM"},{"id":"JPY","name":"Bitfinex
+        (Futures) JPY"},{"id":"TRX","name":"Poloniex Futures TRX"},{"id":"LEND","name":"MXC
+        (Futures) LEND"},{"id":"COMP","name":"MXC (Futures) COMP"},{"id":"KBATUSDT","name":".KBATUSDT"},{"id":"XTZ","name":"Huobi
+        Futures XTZ"},{"id":"BLINKT30M","name":".BLINKT30M"},{"id":"ETH","name":"MCDEX
+        ETH"},{"id":"LTCH21","name":"LTCH21"},{"id":"RNDR","name":"Huobi Futures RNDR"},{"id":"LTC","name":"Poloniex
+        Futures LTC"},{"id":"KAAVEUSDT","name":".KAAVEUSDT"},{"id":"ETH","name":"Alpha5
+        ETH"},{"id":"TMTG","name":"MyCoinStory TMTG"},{"id":"KUNIUSDT","name":".KUNIUSDT"},{"id":"BTC","name":"Alpha5
+        BTC"},{"id":"ETH","name":"HBTC (Futures) ETH"},{"id":"AAVE","name":"CoinFLEX
+        (Futures) AAVE"},{"id":"KDOGEUSDT","name":".KDOGEUSDT"},{"id":"SOL","name":"Huobi
+        Futures SOL"},{"id":"BTC","name":"HBTC (Futures) BTC"},{"id":"BBCXN20","name":"BBCXN20"},{"id":"KTRXUSDT","name":".KTRXUSDT"},{"id":"XLM","name":"Huobi
+        Futures XLM"},{"id":"XRP","name":"HBTC (Futures) XRP"},{"id":"HBAR","name":"Huobi
+        Futures HBAR"},{"id":"KOCEANUSDT","name":".KOCEANUSDT"},{"id":"BAL","name":"CoinFLEX
+        (Futures) BAL"},{"id":"ROSE","name":"Gate.io (Futures) ROSE"},{"id":"RVN","name":"Huobi
+        Futures RVN"},{"id":"DELTCUSDT","name":".DELTCUSDT"},{"id":"ZRX","name":"Gate.io
+        (Futures) ZRX"},{"id":"KALGOUSDT","name":".KALGOUSDT"},{"id":"DELINKUSDT","name":".DELINKUSDT"},{"id":"OkexSwap-ZEN","name":"Okex
+        ZEN"},{"id":"BDIPFC","name":"BDIPFC"},{"id":"LEND","name":"CoinTiger (Futures)
+        LEND"},{"id":"DOGE","name":"Gate.io (Futures) DOGE"},{"id":"CHZ","name":"Gate.io
+        (Futures) CHZ"},{"id":"KAVA","name":"Gate.io (Futures) KAVA"},{"id":"KWAVESUSDT","name":".KWAVESUSDT"},{"id":"KXMRUSDT","name":".KXMRUSDT"},{"id":"DEEOSUSDT","name":".DEEOSUSDT"},{"id":"USDT","name":"Huobi
+        Futures USDT"},{"id":"LUNA","name":"Gate.io (Futures) LUNA"},{"id":"KXEMUSDT","name":".KXEMUSDT"},{"id":"KIOSTUSDT","name":".KIOSTUSDT"},{"id":"KDENTUSDT","name":".KDENTUSDT"},{"id":"KKSMUSDT","name":".KKSMUSDT"},{"id":"XTZ","name":"Gate.io
+        (Futures) XTZ"},{"id":"STORJ","name":"Gate.io (Futures) STORJ"},{"id":"EGLD","name":"Gate.io
+        (Futures) EGLD"},{"id":"ZEN","name":"Gate.io (Futures) ZEN"},{"id":"KETCUSDT","name":".KETCUSDT"},{"id":"OkexSwap-MKR","name":"Okex
+        MKR"},{"id":"LINK","name":"Hopex LINK"},{"id":"ETH","name":"CoinFLEX (Futures)
+        ETH"},{"id":"BTCV20","name":"BTCV20"},{"id":"DEADAUSDT","name":".DEADAUSDT"},{"id":"SXP","name":"Gate.io
+        (Futures) SXP"},{"id":"KFTMUSDT","name":".KFTMUSDT"},{"id":"KAVAXUSDT","name":".KAVAXUSDT"},{"id":"KQTUMUSDT","name":".KQTUMUSDT"},{"id":"KSM","name":"Gate.io
+        (Futures) KSM"},{"id":"BTC","name":"CoinFLEX (Futures) BTC"},{"id":"DOT","name":"CoinFLEX
+        (Futures) DOT"},{"id":"BTCK20","name":"BTCK20"},{"id":"BAT","name":"Gate.io
+        (Futures) BAT"},{"id":"XMRV20","name":"XMRV20"},{"id":"DASH","name":"CoinFLEX
+        (Futures) DASH"},{"id":"KCHZUSDT","name":".KCHZUSDT"},{"id":"LTC","name":"Hopex
+        LTC"},{"id":"DESNXUSDT","name":".DESNXUSDT"},{"id":"BTC","name":"Bit.com BTC"},{"id":"KTHETAUSDT","name":".KTHETAUSDT"},{"id":"SRM","name":"MXC
+        (Futures) SRM"},{"id":"XLM","name":"MyCoinStory XLM"},{"id":"KXBTUSDT","name":".KXBTUSDT"},{"id":"ETHN20","name":"ETHN20"},{"id":"XEM","name":"MXC
+        (Futures) XEM"},{"id":"BTC","name":"ACDX Futures BTC"},{"id":"QTUM","name":"MXC
+        (Futures) QTUM"},{"id":"BBAXV20","name":"BBAXV20"},{"id":"KXLMUSDT","name":".KXLMUSDT"},{"id":"EGLD","name":"MXC
+        (Futures) EGLD"},{"id":"NEO","name":"MyCoinStory NEO"},{"id":"BTCN20","name":"BTCN20"},{"id":"LTCV20","name":"LTCV20"},{"id":"ETC","name":"MXC
+        (Futures) ETC"},{"id":"KSUSHIUSDT","name":".KSUSHIUSDT"},{"id":"BXBT","name":".BXBT"},{"id":"DEAVAXUSDT","name":".DEAVAXUSDT"},{"id":"BBAXN20","name":"BBAXN20"},{"id":"ETH","name":"ACDX
+        Futures ETH"},{"id":"MTL","name":"MXC (Futures) MTL"},{"id":"TRX","name":"MXC
+        (Futures) TRX"},{"id":"KYFIUSDT","name":".KYFIUSDT"},{"id":"OkexSwap-ZIL","name":"Okex
+        ZIL"},{"id":"BCH","name":"MyCoinStory BCH"},{"id":"YFI","name":"MXC (Futures)
+        YFI"},{"id":"KETHUSDT","name":".KETHUSDT"},{"id":"BTC","name":"Deribit BTC"},{"id":"LUNA","name":"MyCoinStory
+        LUNA"},{"id":"ETHH21","name":"ETHH21"},{"id":"LINK","name":"Poloniex Futures
+        LINK"},{"id":"BAT","name":"MXC (Futures) BAT"},{"id":"UNI","name":"Perpetual
+        Protocol UNI"},{"id":"KSXPUSDT","name":".KSXPUSDT"},{"id":"XMR","name":"Stormgain
+        Futures XMR"},{"id":"OkexSwap-SC","name":"Okex SC"},{"id":"KLAY","name":"MyCoinStory
+        KLAY"},{"id":"KETHUSD","name":".KETHUSD"},{"id":"BCH","name":"Hopex BCH"},{"id":"KLTCUSDT","name":".KLTCUSDT"},{"id":"BCH","name":"Bit.com
+        BCH"},{"id":"ETH","name":"MyCoinStory ETH"},{"id":"KBANDUSDT","name":".KBANDUSDT"},{"id":"ETC","name":"Hopex
+        ETC"},{"id":"LINK","name":"MyCoinStory LINK"},{"id":"KFILUSDT","name":".KFILUSDT"},{"id":"LINK","name":"MCDEX
+        LINK"},{"id":"COPE-MOON-1.00-M1502","name":"ACDX Futures COPE-MOON-1.00-M1502"},{"id":"ETH","name":"Bit.com
+        ETH"},{"id":"XRP","name":"MyCoinStory XRP"},{"id":"BCH","name":"Bitforex (Futures)
+        BCH"},{"id":"KCRVUSDT","name":".KCRVUSDT"},{"id":"OkexSwap-YFV","name":"Okex
+        YFV"},{"id":"KXRPUSDT","name":".KXRPUSDT"},{"id":"SNX","name":"MCDEX SNX"},{"id":"ADA","name":"MyCoinStory
+        ADA"},{"id":"KDOTUSD","name":".KDOTUSD"},{"id":"IOTA","name":"Stormgain Futures
+        IOTA"},{"id":"RSR","name":"CoinFLEX (Futures) RSR"},{"id":"KSOLUSDT","name":".KSOLUSDT"},{"id":"BNC
+        ETH High Frequency Index","name":"BNC ETH High Frequency Index"},{"id":"BSV","name":"Bitforex
+        (Futures) BSV"},{"id":"KATOMUSDT","name":".KATOMUSDT"},{"id":"KBCHUSDT","name":".KBCHUSDT"},{"id":"KLINKUSDT","name":".KLINKUSDT"},{"id":"KNEOUSDT","name":".KNEOUSDT"},{"id":"KNC","name":"Huobi
+        Futures KNC"},{"id":"KZECUSDT","name":".KZECUSDT"},{"id":"KXRPUSD","name":".KXRPUSD"},{"id":"XRP","name":"ZBG
+        Futures XRP"},{"id":"LEND","name":"MCDEX LEND"},{"id":"BTT","name":"Huobi
+        Futures BTT"},{"id":"UNI","name":"Bitfinex (Futures) UNI"},{"id":"LTC","name":"Huobi
+        Futures LTC"},{"id":"PHA","name":"Huobi Futures PHA"},{"id":"GERMANY30IX","name":"Bitfinex
+        (Futures) GERMANY30IX"},{"id":"BTRXXBT30M","name":".BTRXXBT30M"},{"id":"KSNXUSDT","name":".KSNXUSDT"},{"id":"MATIC","name":"Huobi
+        Futures MATIC"},{"id":"MANA","name":"Huobi Futures MANA"},{"id":"ADA","name":"Huobi
+        Futures ADA"},{"id":"LINK","name":"Stormgain Futures LINK"},{"id":"KEOSUSDT","name":".KEOSUSDT"},{"id":"LTCU20","name":"LTCU20"},{"id":"DEEOSXBT","name":".DEEOSXBT"},{"id":"BBCXU20","name":"BBCXU20"},{"id":"PEARL","name":"Huobi
+        Futures PEARL"},{"id":"BTCU20","name":"BTCU20"},{"id":"XMRU20","name":"XMRU20"},{"id":"KMANAUSDT","name":".KMANAUSDT"},{"id":"SUSHI","name":"Huobi
+        Futures SUSHI"},{"id":"XRP","name":"Hopex XRP"},{"id":"SNX","name":"Perpetual
+        Protocol SNX"},{"id":"LEND","name":"Huobi Futures LEND"},{"id":"EOS","name":"Bybit
+        EOS"},{"id":"MKR","name":"Huobi Futures MKR"},{"id":"AAVE","name":"Huobi Futures
+        AAVE"},{"id":"OkexSwap-RSR","name":"Okex RSR"},{"id":"TRB","name":"Huobi Futures
+        TRB"},{"id":"DOT","name":"Hopex DOT"},{"id":"DEKAVAUSDT","name":".DEKAVAUSDT"},{"id":"OkexSwap-BNT","name":"Okex
+        BNT"},{"id":"KMATICUSDT","name":".KMATICUSDT"},{"id":"KDOTUSDT","name":".KDOTUSDT"},{"id":"KENJUSDT","name":".KENJUSDT"},{"id":"LEND","name":"Binance
+        (Futures) LEND"},{"id":"KBTTUSDT","name":".KBTTUSDT"},{"id":"BNB","name":"Huobi
+        Futures BNB"},{"id":"CRV","name":"Huobi Futures CRV"},{"id":"OkexSwap-FLM","name":"Okex
+        FLM"},{"id":"DEXEMUSDT","name":".DEXEMUSDT"},{"id":"YFV","name":"Huobi Futures
+        YFV"},{"id":"DEYFIXBT","name":".DEYFIXBT"},{"id":"DEXLMUSDT","name":".DEXLMUSDT"},{"id":"OkexSwap-XTZ","name":"Okex
+        XTZ"},{"id":"OkexSwap-IOTA","name":"Okex IOTA"},{"id":"DOT","name":"ACDX Futures
+        DOT"},{"id":"KGRTUSDT","name":".KGRTUSDT"},{"id":"CRO","name":"Huobi Futures
+        CRO"},{"id":"GRIN","name":"Bitforex (Futures) GRIN"},{"id":"OkexSwap-BTM","name":"Okex
+        BTM"},{"id":"KDASHUSDT","name":".KDASHUSDT"},{"id":"KLUNAUSDT","name":".KLUNAUSDT"},{"id":"KBNBUSDT","name":".KBNBUSDT"},{"id":"KXTZUSDT","name":".KXTZUSDT"},{"id":"FTT-MOON-32.0-M0405","name":"ACDX
+        Futures FTT-MOON-32.0-M0405"},{"id":"K1INCHUSDT","name":".K1INCHUSDT"},{"id":"KCOMPUSDT","name":".KCOMPUSDT"},{"id":"KADAUSDT","name":".KADAUSDT"},{"id":"ATOM","name":"Bitforex
+        (Futures) ATOM"},{"id":"KBSVUSDT","name":".KBSVUSDT"},{"id":"FIL","name":"BitZ
+        (Futures) FIL"},{"id":"OkexSwap-COMP","name":"Okex COMP"},{"id":"ETH","name":"Huobi
+        Futures ETH"},{"id":"OkexSwap-SOL","name":"Okex SOL"},{"id":"DOGE","name":"Huobi
+        Futures DOGE"},{"id":"THETA","name":"BitZ (Futures) THETA"},{"id":"SNX","name":"Huobi
+        Futures SNX"},{"id":"1INCH","name":"BitZ (Futures) 1INCH"},{"id":"TRX","name":"Bitforex
+        (Futures) TRX"},{"id":"OkexSwap-BAL","name":"Okex BAL"},{"id":"OkexSwap-AAVE","name":"Okex
+        AAVE"},{"id":"EOS","name":"Bitforex (Futures) EOS"},{"id":"GRT","name":"Huobi
+        Futures GRT"},{"id":"AKRO","name":"Huobi Futures AKRO"},{"id":"UMA","name":"Huobi
+        Futures UMA"},{"id":"LTC","name":"Bitforex (Futures) LTC"},{"id":"BAND","name":"Huobi
+        Futures BAND"},{"id":"ZKS","name":"Huobi Futures ZKS"},{"id":"OkexSwap-XEM","name":"Okex
+        XEM"},{"id":"SNX","name":"Stormgain Futures SNX"},{"id":"CELR","name":"Binance
+        (Futures) CELR"},{"id":"DEBALUSDT","name":".DEBALUSDT"},{"id":"THETA","name":"Huobi
+        Futures THETA"},{"id":"DEALGOUSDT","name":".DEALGOUSDT"},{"id":"JST","name":"Huobi
+        Futures JST"},{"id":"BCH","name":"CoinFLEX (Futures) BCH"},{"id":"AAVE","name":"Perpetual
+        Protocol AAVE"},{"id":"ATOM","name":"Huobi Futures ATOM"},{"id":"ETH","name":"Bitforex
+        (Futures) ETH"},{"id":"ZRX","name":"Huobi Futures ZRX"},{"id":"KSM","name":"Huobi
+        Futures KSM"},{"id":"OMG","name":"Huobi Futures OMG"},{"id":"KAVA","name":"Huobi
+        Futures KAVA"},{"id":"ALGO","name":"Huobi Futures ALGO"},{"id":"BTC","name":"Bybit
+        BTC"},{"id":"SUSHI","name":"CoinFLEX (Futures) SUSHI"},{"id":"OkexSwap-LON","name":"Okex
+        LON"},{"id":"XMR","name":"Binance (Futures) XMR"},{"id":"OGN","name":"Huobi
+        Futures OGN"},{"id":"BCH","name":"Huobi Futures BCH"},{"id":"ETH","name":"Bybit
+        ETH"},{"id":"ADA","name":"Bybit ADA"},{"id":"OMG","name":"CoinFLEX (Futures)
+        OMG"},{"id":"BCH","name":"Bybit BCH"},{"id":"EOS","name":"Hopex EOS"},{"id":"DASH","name":"Huobi
+        Futures DASH"},{"id":"ZEC","name":"Huobi Futures ZEC"},{"id":"YFII","name":"Huobi
+        Futures YFII"},{"id":"COMP","name":"Huobi Futures COMP"},{"id":"XTZ","name":"Bybit
+        XTZ"},{"id":"LINK","name":"CoinFLEX (Futures) LINK"},{"id":"BTC","name":"Stormgain
+        Futures BTC"},{"id":"OkexSwap-EGLD","name":"Okex EGLD"},{"id":"KAVA","name":"MXC
+        (Futures) KAVA"},{"id":"USDT","name":"CoinFLEX (Futures) USDT"},{"id":"DEXTZUSDT","name":".DEXTZUSDT"},{"id":"LTC","name":"Bybit
+        LTC"},{"id":"XRP","name":"CoinFLEX (Futures) XRP"},{"id":"OkexSwap-BTT","name":"Okex
+        BTT"},{"id":"DOT","name":"Bybit DOT"},{"id":"LINK","name":"Bybit LINK"},{"id":"DEDOTUSDT","name":".DEDOTUSDT"},{"id":"XRP","name":"Bybit
+        XRP"},{"id":"OkexSwap-CVC","name":"Okex CVC"},{"id":"UNI","name":"Bybit UNI"},{"id":"DEETHUSDT","name":".DEETHUSDT"},{"id":"DEUNIUSDT","name":".DEUNIUSDT"},{"id":"OkexSwap-BAND","name":"Okex
+        BAND"},{"id":"RAY","name":"Raydium"},{"id":"DETOMOUSDT","name":".DETOMOUSDT"},{"id":"OkexSwap-DORA","name":"Okex
+        DORA"},{"id":"OkexSwap-YFII","name":"Okex YFII"},{"id":"BXRP","name":".BXRP"},{"id":"OkexSwap-XLM","name":"Okex
+        XLM"},{"id":"OkexSwap-STORJ","name":"Okex STORJ"},{"id":"DERENXBT","name":".DERENXBT"},{"id":"OkexSwap-XMR","name":"Okex
+        XMR"},{"id":"BXRPXBT30M","name":".BXRPXBT30M"},{"id":"OkexSwap-BADGER","name":"Okex
+        BADGER"},{"id":"BLTCXBT30M","name":".BLTCXBT30M"},{"id":"OkexSwap-YFI","name":"Okex
+        YFI"},{"id":"OkexSwap-SNX","name":"Okex SNX"},{"id":"DESOLUSDT","name":".DESOLUSDT"},{"id":"BDOTT30M","name":".BDOTT30M"},{"id":"BBDXPFC","name":"BBDXPFC"},{"id":"DESNXXBT","name":".DESNXXBT"},{"id":"XLM","name":"Bitfinex
+        (Futures) XLM"},{"id":"DECOMPUSDT","name":".DECOMPUSDT"},{"id":"OkexSwap-WAVES","name":"Okex
+        WAVES"},{"id":"LEO","name":"LEO"},{"id":"CEL","name":"Celsius Network"},{"id":"QTUM","name":"Gate.io
+        (Futures) QTUM"},{"id":"DEWRXXBT","name":".DEWRXXBT"},{"id":"OkexSwap-BAT","name":"Okex
+        BAT"},{"id":"CRV","name":"Binance (Futures) CRV"},{"id":"ETHPFC","name":"ETHPFC"},{"id":"MKR","name":"MXC
+        (Futures) MKR"},{"id":"MKR","name":"Maker"},{"id":"OkexSwap-OMG","name":"Okex
+        OMG"},{"id":"SXP","name":"MXC (Futures) SXP"},{"id":"TRX","name":"Binance
+        (Futures) TRX"},{"id":"FLOW","name":"Flow"},{"id":"LUNA","name":"Binance (Futures)
+        LUNA"},{"id":"OkexSwap-SAND","name":"Okex SAND"},{"id":"XMR","name":"MXC (Futures)
+        XMR"},{"id":"BDOTT","name":".BDOTT"},{"id":"DELSKXBT","name":".DELSKXBT"},{"id":"XMRM21","name":"XMRM21"},{"id":"COMP","name":"Binance
+        (Futures) COMP"},{"id":"DEADAXBT","name":".DEADAXBT"},{"id":"DEGRTUSDT","name":".DEGRTUSDT"},{"id":"DEFTMXBT","name":".DEFTMXBT"},{"id":"OCEAN","name":"MXC
+        (Futures) OCEAN"},{"id":"OkexSwap-ATOM","name":"Okex ATOM"},{"id":"FIL","name":"Binance
+        (Futures) FIL"},{"id":"LIT","name":"MXC (Futures) LIT"},{"id":"KSM","name":"Binance
+        (Futures) KSM"},{"id":"SUSHI","name":"Gate.io (Futures) SUSHI"},{"id":"BLINKT","name":".BLINKT"},{"id":"PUNDIX","name":"Pundi
+        X"},{"id":"DEDOGEUSDT","name":".DEDOGEUSDT"},{"id":"BCHA","name":"Gate.io
+        (Futures) BCHA"},{"id":"GRT","name":"Gate.io (Futures) GRT"},{"id":"HBAR","name":"Binance
+        (Futures) HBAR"},{"id":"ETH","name":"Poloniex Futures ETH"},{"id":"OkexSwap-TRB","name":"Okex
+        TRB"},{"id":"BAND","name":"Binance (Futures) BAND"},{"id":"PERP","name":"Perpetual"},{"id":"RNDR","name":"Gate.io
+        (Futures) RNDR"},{"id":"BCH","name":"Bitget Futures BCH"},{"id":"YFI","name":"Yearn.Finance"},{"id":"ETHM21","name":"ETHM21"},{"id":"MTL","name":"Binance
+        (Futures) MTL"},{"id":"ATOM","name":"Bitget Futures ATOM"},{"id":"OMG","name":"Gate.io
+        (Futures) OMG"},{"id":"LTC","name":"CoinFLEX (Futures) LTC"},{"id":"NEST","name":"Gate.io
+        (Futures) NEST"},{"id":"DENT","name":"Dent"},{"id":"YFI","name":"Bitget Futures
+        YFI"},{"id":"ZEN","name":"MXC (Futures) ZEN"},{"id":"ZEC","name":"Bitget Futures
+        ZEC"},{"id":"BZRX","name":"Binance (Futures) BZRX"},{"id":"QTUM","name":"Qtum"},{"id":"AAVE","name":"Gate.io
+        (Futures) AAVE"},{"id":"AMPL","name":"Ampleforth"},{"id":"BADGER","name":"Gate.io
+        (Futures) BADGER"},{"id":"FLM","name":"MXC (Futures) FLM"},{"id":"TRB","name":"Binance
+        (Futures) TRB"},{"id":"CHR","name":"Binance (Futures) CHR"},{"id":"SC","name":"Siacoin"},{"id":"EOS","name":"EOS"},{"id":"THETA","name":"MXC
+        (Futures) THETA"},{"id":"1INCH","name":"Binance (Futures) 1INCH"},{"id":"DEFI","name":"Binance
+        (Futures) DEFI"},{"id":"LEND","name":"Aave"},{"id":"ROOK","name":"KeeperDAO"},{"id":"GRT","name":"MXC
+        (Futures) GRT"},{"id":"BAT","name":"Binance (Futures) BAT"},{"id":"ZEN","name":"Binance
+        (Futures) ZEN"},{"id":"THETA","name":"Theta Network"},{"id":"EOS","name":"MXC
+        (Futures) EOS"},{"id":"AAVE","name":"Binance (Futures) AAVE"},{"id":"DODO","name":"DODO"},{"id":"XTZ","name":"Tezos"},{"id":"AAVE","name":"MXC
+        (Futures) AAVE"},{"id":"BTT","name":"Binance (Futures) BTT"},{"id":"COTI","name":"Binance
+        (Futures) COTI"},{"id":"AKRO","name":"MXC (Futures) AKRO"},{"id":"PAXG","name":"PAX
+        Gold"},{"id":"FIDA","name":"Bonfida Token"},{"id":"USDT","name":"Tether"},{"id":"CELR","name":"MXC
+        (Futures) CELR"},{"id":"CVC","name":"Binance (Futures) CVC"},{"id":"AAVE","name":"Aave"},{"id":"1INCH","name":"1INCH
+        Token"},{"id":"OMG","name":"Binance (Futures) OMG"},{"id":"ORBS","name":"Orbs"},{"id":"MTL","name":"Metal"},{"id":"ETC","name":"Gate.io
+        (Futures) ETC"},{"id":"GRT","name":"Binance (Futures) GRT"},{"id":"BAL","name":"Balancer"},{"id":"RSR","name":"Reserve
+        Rights"},{"id":"LTC","name":"ZBG Futures LTC"},{"id":"SRN","name":"Sirin Labs
+        Token"},{"id":"ATOM","name":"Gate.io (Futures) ATOM"},{"id":"SXP","name":"Swipe"},{"id":"ADA","name":"Cardano"},{"id":"FIL","name":"ZBG
+        Futures FIL"},{"id":"CRV","name":"Curve DAO Token"},{"id":"BNT","name":"Bancor
+        Network Token"},{"id":"ETC","name":"Ethereum Classic"},{"id":"REEF","name":"Reef
+        Finance"},{"id":"HBAR","name":"Hedera Hashgraph"},{"id":"HUM","name":"Humanscape"},{"id":"KIN","name":"Kin"},{"id":"SUSHI","name":"ZBG
+        Futures SUSHI"},{"id":"DAWN","name":"Dawn Protocol"},{"id":"ETC","name":"ZBG
+        Futures ETC"},{"id":"AUDIO","name":"Audius"},{"id":"RUNE","name":"Thorchain"},{"id":"HOLY","name":"Holy
+        Trinity Pool"},{"id":"IOTA","name":"MIOTA"},{"id":"ALGO","name":"Gate.io (Futures)
+        ALGO"},{"id":"BCH","name":"ZBG Futures BCH"},{"id":"SAND","name":"SAND"},{"id":"EOS","name":"ZBG
+        Futures EOS"},{"id":"EGLD","name":"Elrond"},{"id":"LINK","name":"ZBG Futures
+        LINK"},{"id":"BNT","name":"Gate.io (Futures) BNT"},{"id":"VET","name":"VeChain"},{"id":"NEO","name":"Gate.io
+        (Futures) NEO"},{"id":"ETH","name":"Gate.io (Futures) ETH"},{"id":"KAVA","name":"Kava.io"},{"id":"KSM","name":"Kusama"},{"id":"ANKR","name":"Gate.io
+        (Futures) ANKR"},{"id":"SRM","name":"Serum"},{"id":"PRIV","name":"Privacy
+        Index"},{"id":"BTM","name":"Gate.io (Futures) BTM"},{"id":"MTA","name":"Meta"},{"id":"YFI","name":"Gate.io
+        (Futures) YFI"},{"id":"STMX","name":"StormX"},{"id":"VET","name":"Gate.io
+        (Futures) VET"},{"id":"EOS","name":"BitZ (Futures) EOS"},{"id":"DEKNCXBT","name":".DEKNCXBT"},{"id":"BSV","name":"Bitcoin
+        SV"},{"id":"YFII","name":"DFI.Money"},{"id":"ZIL","name":"Zilliqa"},{"id":"NKN","name":"Gate.io
+        (Futures) NKN"},{"id":"BAND","name":"Band Protocol"},{"id":"ADA","name":"Gate.io
+        (Futures) ADA"},{"id":"BTS","name":"Gate.io (Futures) BTS"},{"id":"CRV","name":"Gate.io
+        (Futures) CRV"},{"id":"BTCM20","name":"BTCM20"},{"id":"CAKE","name":"PancakeSwap"},{"id":"ETHM20","name":"ETHM20"},{"id":"DEVETUSDT","name":".DEVETUSDT"},{"id":"UNI","name":"Uniswap
+        Protocol Token"},{"id":"FIL","name":"Gate.io (Futures) FIL"},{"id":"XMRM20","name":"XMRM20"},{"id":"LTCM20","name":"LTCM20"},{"id":"CRO","name":"Crypto.com
+        Coin"},{"id":"ZEC","name":"Gate.io (Futures) ZEC"},{"id":"BBCXM20","name":"BBCXM20"},{"id":"DEZILUSDT","name":".DEZILUSDT"},{"id":"BBAXM20","name":"BBAXM20"},{"id":"BADGER","name":"Badger"},{"id":"LON","name":"Gate.io
+        (Futures) LON"},{"id":"LUNA","name":"Terra"},{"id":"GRIN","name":"Gate.io
+        (Futures) GRIN"},{"id":"ZEC","name":"Zcash"},{"id":"STORJ","name":"Storj"},{"id":"CVC","name":"Gate.io
+        (Futures) CVC"},{"id":"MKR","name":"Gate.io (Futures) MKR"},{"id":"ETH","name":"BitZ
+        (Futures) ETH"},{"id":"OGN","name":"Gate.io (Futures) OGN"},{"id":"COMP","name":"Gate.io
+        (Futures) COMP"},{"id":"OKB","name":"Gate.io (Futures) OKB"},{"id":"BTC","name":"BitZ
+        (Futures) BTC"},{"id":"XRP","name":"BitZ (Futures) XRP"},{"id":"ONT","name":"Gate.io
+        (Futures) ONT"},{"id":"SNX","name":"Gate.io (Futures) SNX"},{"id":"YFII","name":"Gate.io
+        (Futures) YFII"},{"id":"WAVES","name":"Gate.io (Futures) WAVES"},{"id":"ALPHA","name":"Gate.io
+        (Futures) ALPHA"},{"id":"BTC","name":"Gate.io (Futures) BTC"},{"id":"BSV","name":"Gate.io
+        (Futures) BSV"},{"id":"HT","name":"Gate.io (Futures) HT"},{"id":"ZKS","name":"Gate.io
+        (Futures) ZKS"},{"id":"XRP","name":"Gate.io (Futures) XRP"},{"id":"HBAR","name":"Gate.io
+        (Futures) HBAR"},{"id":"EOS","name":"Gate.io (Futures) EOS"},{"id":"TRX","name":"Gate.io
+        (Futures) TRX"},{"id":"SKL","name":"Gate.io (Futures) SKL"},{"id":"FLOW","name":"Gate.io
+        (Futures) FLOW"},{"id":"DOT","name":"Gate.io (Futures) DOT"},{"id":"HIVE","name":"Gate.io
+        (Futures) HIVE"},{"id":"SOL","name":"Gate.io (Futures) SOL"},{"id":"ZIL","name":"Gate.io
+        (Futures) ZIL"}]'
+  recorded_at: Tue, 18 May 2021 14:01:35 GMT
+recorded_with: VCR 6.0.0

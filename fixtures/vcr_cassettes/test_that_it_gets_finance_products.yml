@@ -1,0 +1,100 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.coingecko.com/api/v3/finance_products
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.coingecko.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 18 May 2021 14:01:16 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Link:
+      - <https://api.coingecko.com/api/v3/finance_products?page=9>; rel="last", <https://api.coingecko.com/api/v3/finance_products?page=2>;
+        rel="next"
+      Per-Page:
+      - '50'
+      Total:
+      - '410'
+      Cache-Control:
+      - public, max-age=60
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, PUT, DELETE, GET, OPTIONS
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Expose-Headers:
+      - link, per-page, total
+      Vary:
+      - Accept-Encoding, Origin
+      Etag:
+      - W/"69a67c2b4a8820497b18986068766cd0"
+      X-Request-Id:
+      - e92e0091-456f-4892-83f6-71cb9fa9fcd9
+      X-Runtime:
+      - '0.137892'
+      Alternate-Protocol:
+      - 443:npn-spdy/2
+      Cf-Cache-Status:
+      - MISS
+      Expires:
+      - Tue, 18 May 2021 14:02:16 GMT
+      Cf-Request-Id:
+      - 0a2160f98a0000199f7c901000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 65159dd5a89b199f-HKG
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"platform":"Binance Savings","identifier":"XTZ001","supply_rate_percentage":"1.956035","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Binance
+        Savings","identifier":"ZEC001","supply_rate_percentage":"0.182865","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Crypto.com","identifier":"BAT","supply_rate_percentage":"2.0","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Binance
+        Savings","identifier":"UNI001","supply_rate_percentage":"1.0001","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Bitfinex","identifier":"fXTZ","supply_rate_percentage":"0.0055","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"dYdX","identifier":"DAI","supply_rate_percentage":"6.53095630521803","borrow_rate_percentage":"11.7257761290384","number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Nexo","identifier":"USDT","supply_rate_percentage":"12.0","borrow_rate_percentage":"5.9","number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Binance
+        Staking","identifier":"ALGO","supply_rate_percentage":"9.0","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":1564185600,"end_at":1893369600,"value_at":0,"redeem_at":0},{"platform":"Binance
+        Savings","identifier":"WAVES001","supply_rate_percentage":"5.000135","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Nexo","identifier":"BTC","supply_rate_percentage":"8.0","borrow_rate_percentage":"5.9","number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Vauld","identifier":"USDC","supply_rate_percentage":"12.0","borrow_rate_percentage":"13.0","number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Nexo","identifier":"EUR","supply_rate_percentage":"12.0","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Fulcrum","identifier":"dai","supply_rate_percentage":"26.8095712637452","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Nexo","identifier":"ETH","supply_rate_percentage":"8.0","borrow_rate_percentage":"5.9","number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Fulcrum","identifier":"usdt","supply_rate_percentage":"13.9084587341806","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Aave","identifier":"WBTC","supply_rate_percentage":"0.0247796768040586","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Binance
+        Staking","identifier":"TRX","supply_rate_percentage":"8.0","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":1569888000,"end_at":1893369600,"value_at":0,"redeem_at":0},{"platform":"Binance
+        Staking","identifier":"ARPA","supply_rate_percentage":"5.5","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":1583452800,"end_at":1893369600,"value_at":0,"redeem_at":0},{"platform":"Binance
+        Staking","identifier":"THETA","supply_rate_percentage":"1.5","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":1579737600,"end_at":1893369600,"value_at":0,"redeem_at":0},{"platform":"Aave","identifier":"ETH","supply_rate_percentage":"0.00251293229910618","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Aave","identifier":"UNI","supply_rate_percentage":"0.0","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Bitfinex","identifier":"fETP","supply_rate_percentage":"4.0579","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Bitfinex","identifier":"fLINK","supply_rate_percentage":"0.1015","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Celsius
+        Network","identifier":"COMP","supply_rate_percentage":"4.5","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Celsius
+        Network","identifier":"ZUSD","supply_rate_percentage":"9.54","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Binance
+        Staking","identifier":"ONT","supply_rate_percentage":"4.0","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":1530921600,"end_at":1893369600,"value_at":0,"redeem_at":0},{"platform":"Bitfinex","identifier":"fFIL","supply_rate_percentage":"0.0631","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Binance
+        Staking","identifier":"NEO","supply_rate_percentage":"2.0","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":1500508800,"end_at":1885420800,"value_at":0,"redeem_at":0},{"platform":"Inlock","identifier":"UNI","supply_rate_percentage":"2.88","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Binance
+        Savings","identifier":"CCOCOS7DAYSS001","supply_rate_percentage":"4.0","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"DDEX
+        Lending","identifier":"USDT","supply_rate_percentage":"6.73694065509343","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Binance
+        Savings","identifier":"VET001","supply_rate_percentage":"1.10376","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Celsius
+        Network","identifier":"LEO","supply_rate_percentage":"0.0","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Bitfinex","identifier":"fEOS","supply_rate_percentage":"35.0252","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Inlock","identifier":"LINK","supply_rate_percentage":"3.96","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Swissborg","identifier":"USDC","supply_rate_percentage":"13.9788703873735","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Swissborg","identifier":"CHSB","supply_rate_percentage":"9.98589925039355","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Swissborg","identifier":"BTC","supply_rate_percentage":"6.2980232111282","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Swissborg","identifier":"ETH","supply_rate_percentage":"6.999908311496","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Staked
+        US","identifier":"Cardano","supply_rate_percentage":"5.8","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Staked
+        US","identifier":"Solana","supply_rate_percentage":"11.53","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Binance
+        Savings","identifier":"XMR001","supply_rate_percentage":"0.579985","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"CILIO
+        Finance","identifier":"ETH","supply_rate_percentage":"0.0","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Binance
+        Savings","identifier":"BAND30DAYSS001","supply_rate_percentage":"14.8","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"DDEX
+        Lending","identifier":"SAI","supply_rate_percentage":"0.0","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Binance
+        Savings","identifier":"FIL001","supply_rate_percentage":"2.23015","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Crypto.com","identifier":"PAX","supply_rate_percentage":"6.0","borrow_rate_percentage":"12.0","number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Crypto.com","identifier":"BNB","supply_rate_percentage":"2.0","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Vauld","identifier":"BUSD","supply_rate_percentage":"12.0","borrow_rate_percentage":"13.0","number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0},{"platform":"Fulcrum","identifier":"uni","supply_rate_percentage":"0.795924381468424","borrow_rate_percentage":null,"number_duration":null,"length_duration":null,"start_at":0,"end_at":0,"value_at":0,"redeem_at":0}]'
+  recorded_at: Tue, 18 May 2021 14:01:16 GMT
+recorded_with: VCR 6.0.0

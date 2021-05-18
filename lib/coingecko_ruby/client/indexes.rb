@@ -49,44 +49,24 @@ module CoingeckoRuby
         get 'indexes/list'
       end
 
-      # Fetches the list of market indexes based on the market and index given.
+      # Fetches the list of indexes based on the market and index given.
       #
       # @param market_id [String] filter results by the market id.
       # @param index_id [String] filter indexes from the given market by the index id.
       #
-      # @return [Array<Hash>] each finance product's platform, identifier, supply and borrow rate percentage, and the product duration data.
+      # @return [Array<Hash>] the index's name, market, last done, and whether it's a multiasset composite index.
       #
-      # @example Get all market indexes in Binance that includes ETH.
-      #   client.get_indexes_by_market_and_index(market_id: 'binance', index_id: 'eth')
+      # @example Get all BTC indexes in the CME Futures market.
+      #   client.get_indexes_by_market_and_index(market_id: 'cme_futures', index_id: 'btc')
       # @example Sample response object
-      #   [
-      #     {"platform"=>"Binance Savings",
-      #     "identifier"=>"XTZ001",
-      #     "supply_rate_percentage"=>"1.956035",
-      #     "borrow_rate_percentage"=>nil,
-      #     "number_duration"=>nil,
-      #     "length_duration"=>nil,
-      #     "start_at"=>0,
-      #     "end_at"=>0,
-      #     "value_at"=>0,
-      #     "redeem_at"=>0},
-      #    {"platform"=>"Binance Savings",
-      #     "identifier"=>"ZEC001",
-      #     "supply_rate_percentage"=>"0.182865",
-      #     "borrow_rate_percentage"=>nil,
-      #     "number_duration"=>nil,
-      #     "length_duration"=>nil,
-      #     "start_at"=>0,
-      #     "end_at"=>0,
-      #     "value_at"=>0,
-      #     "redeem_at"=>0}
-      #   ]
+      #   {
+      #     "name"=>"CME Bitcoin Futures BTC",
+      #     "market"=>"CME Bitcoin Futures",
+      #     "last"=>nil,
+      #     "is_multi_asset_composite"=>false
+      #   }
       def get_indexes_by_market_and_index(market_id:, index_id:, options: {})
         get "indexes/#{market_id}/#{index_id}", { options: options }
-      end
-
-      def get_indexes_ids_by_market_and_index(market_id:, index_id:, options: {})
-        get "indexes/list_by_market_and_id/#{market_id}/#{index_id}", { options: options }
       end
     end
   end

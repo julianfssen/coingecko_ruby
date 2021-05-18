@@ -10,7 +10,30 @@ module CoingeckoRuby
       #
       # @example Get all finance platforms.
       #   client.get_finance_platforms
-      # @example Sample response object
+      # @example Sample response object (truncated)
+      #   [
+      #     {
+      #       "name"=>"Binance Staking",
+      #       "facts"=>"",
+      #       "category"=>"CeFi Platform",
+      #       "centralized"=>true,
+      #       "website_url"=>"https://www.binance.com/en/staking"
+      #     },
+      #     {
+      #       "name"=>"Celsius Network",
+      #       "facts"=>"",
+      #       "category"=>"CeFi Platform",
+      #       "centralized"=>true,
+      #       "website_url"=>"https://celsius.network/"
+      #     },
+      #     {
+      #       "name"=>"Cobo",
+      #       "facts"=>"",
+      #       "category"=>"CeFi Platform",
+      #       "centralized"=>true,
+      #       "website_url"=>"https://cobo.com/"
+      #     }
+      #   ]
       def get_finance_platforms(options: {})
         get 'finance_platforms', { options: options }
       end
@@ -24,9 +47,41 @@ module CoingeckoRuby
       #
       # @return [Array<Hash>] each finance product's platform, identifier, supply and borrow rate percentage, and the product duration data.
       #
-      # @example Get all finance platforms.
+      # @example Get all finance products.
       #   client.get_finance_products
-      # @example Sample response object
+      # @example Sample response object (truncated)
+      #   [
+      #     {"platform"=>"Binance Savings",
+      #     "identifier"=>"XTZ001",
+      #     "supply_rate_percentage"=>"1.956035",
+      #     "borrow_rate_percentage"=>nil,
+      #     "number_duration"=>nil,
+      #     "length_duration"=>nil,
+      #     "start_at"=>0,
+      #     "end_at"=>0,
+      #     "value_at"=>0,
+      #     "redeem_at"=>0},
+      #    {"platform"=>"Binance Savings",
+      #     "identifier"=>"ZEC001",
+      #     "supply_rate_percentage"=>"0.182865",
+      #     "borrow_rate_percentage"=>nil,
+      #     "number_duration"=>nil,
+      #     "length_duration"=>nil,
+      #     "start_at"=>0,
+      #     "end_at"=>0,
+      #     "value_at"=>0,
+      #     "redeem_at"=>0},
+      #    {"platform"=>"Crypto.com",
+      #     "identifier"=>"BAT",
+      #     "supply_rate_percentage"=>"2.0",
+      #     "borrow_rate_percentage"=>nil,
+      #     "number_duration"=>nil,
+      #     "length_duration"=>nil,
+      #     "start_at"=>0,
+      #     "end_at"=>0,
+      #     "value_at"=>0,
+      #     "redeem_at"=>0}
+      #   ]
       def get_finance_products(options: {})
         get 'finance_products', { options: options }
       end
