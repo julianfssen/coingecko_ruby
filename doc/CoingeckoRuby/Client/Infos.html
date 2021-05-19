@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Module: CoingeckoRuby::Client::Infos
+  
+    &mdash; Documentation by YARD 0.9.26
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "CoingeckoRuby::Client::Infos";
+  relpath = '../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../_index.html">Index (I)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../CoingeckoRuby.html" title="CoingeckoRuby (module)">CoingeckoRuby</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Client.html" title="CoingeckoRuby::Client (class)">Client</a></span></span>
+     &raquo; 
+    <span class="title">Infos</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Module: CoingeckoRuby::Client::Infos
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+
+  
+  
+  
+  
+  
+
+  
+  <dl>
+    <dt>Included in:</dt>
+    <dd><span class='object_link'><a href="../Client.html" title="CoingeckoRuby::Client (class)">CoingeckoRuby::Client</a></span></dd>
+  </dl>
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/coingecko_ruby/client/infos.rb</dd>
+  </dl>
+  
+</div>
+
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_global_crypto_data-instance_method" title="#get_global_crypto_data (instance method)">#<strong>get_global_crypto_data</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Fetches global crypto data from CoinGecko.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_global_defi_data-instance_method" title="#get_global_defi_data (instance method)">#<strong>get_global_defi_data</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Fetches global crypto data from CoinGecko.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_status_updates-instance_method" title="#get_status_updates (instance method)">#<strong>get_status_updates</strong>(options: {})  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Fetches coin and/or market status updates.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_trending_searches-instance_method" title="#get_trending_searches (instance method)">#<strong>get_trending_searches</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Fetches the top 7 coin searches from CoinGecko in the last 24 hours.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="get_global_crypto_data-instance_method">
+  
+    #<strong>get_global_crypto_data</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Fetches global crypto data from CoinGecko.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Get global crypto data.</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_get_global_crypto_data'>get_global_crypto_data</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Sample response object (truncated)</p>
+</div></p>
+      
+      <pre class="example code"><code>{
+  &quot;data&quot; =&gt; {
+    &quot;active_cryptocurrencies&quot; =&gt; 7361,
+    &quot;upcoming_icos&quot; =&gt; 0,
+    &quot;ongoing_icos&quot; =&gt; 50,
+    &quot;ended_icos&quot; =&gt; 3375,
+    &quot;markets&quot; =&gt; 616,
+    &quot;total_market_cap&quot; =&gt; {
+      &quot;btc&quot; =&gt; 48541739.601360835,
+      &quot;eth&quot; =&gt; 628896708.615425,
+      &quot;ltc&quot; =&gt; 7052042789.61238,
+      &quot;bch&quot; =&gt; 1934433566.5425043
+    },
+    &quot;total_volume&quot; =&gt; {
+      &quot;btc&quot; =&gt; 6568919.505737251,
+      &quot;eth&quot; =&gt; 85105558.43783577,
+      &quot;ltc&quot; =&gt; 954318939.049309,
+      &quot;usd&quot; =&gt; 286508058915.08606
+    }
+    &quot;market_cap_percentage&quot; =&gt; {
+      &quot;btc&quot; =&gt; 38.55040456662042,
+      &quot;eth&quot; =&gt; 18.387297257364622,
+    },
+    &quot;market_cap_change_percentage_24h_usd&quot; =&gt; -3.133283965790086,
+    &quot;updated_at&quot; =&gt; 1621344957
+  }
+}</code></pre>
+    
+  </div>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>global crypto data (e.g. market cap, total volume, active ICOs, etc.)</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+38
+39
+40</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coingecko_ruby/client/infos.rb', line 38</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_global_crypto_data'>get_global_crypto_data</span>
+  <span class='id identifier rubyid_get'>get</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>global</span><span class='tstring_end'>&#39;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_global_defi_data-instance_method">
+  
+    #<strong>get_global_defi_data</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Fetches global crypto data from CoinGecko.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Get global defi data.</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_get_global_defi_data'>get_global_defi_data</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Sample response object</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='lbrace'>{</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>data</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>defi_market_cap</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>125745676087.2760332093360054945</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>eth_market_cap</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>394420680555.8088822113739591981</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>defi_to_eth_ratio</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>31.8811062112863892278072770612100063079659263284319798945238447</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>trading_volume_24h</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>15011166214.23270941006219308344</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>defi_dominance</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>5.8997291574682455351428477202615510371051549446051010984545824</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>top_coin_name</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Uniswap</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>top_coin_defi_dominance</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='float'>14.449398175884316</span>
+  <span class='rbrace'>}</span>
+<span class='rbrace'>}</span></code></pre>
+    
+  </div>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>global defi data.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+62
+63
+64</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coingecko_ruby/client/infos.rb', line 62</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_global_defi_data'>get_global_defi_data</span>
+  <span class='id identifier rubyid_get'>get</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>global/decentralized_finance_defi</span><span class='tstring_end'>&#39;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_status_updates-instance_method">
+  
+    #<strong>get_status_updates</strong>(options: {})  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Fetches coin and/or market status updates.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Get a single status update.</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_get_status_updates'>get_status_updates</span><span class='lparen'>(</span><span class='label'>options:</span> <span class='lbrace'>{</span> <span class='label'>per_page:</span> <span class='int'>1</span> <span class='rbrace'>}</span><span class='rparen'>)</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Sample response object</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='lbrace'>{</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>status_updates</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='lbracket'>[</span><span class='lbrace'>{</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>description</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>📢 Community Call &amp; AMA Invitation 📢\r\n</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\r\n</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Thursday 20th May at 4pm CET (Registration below)\r\n</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\r\n</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>During this event, we will be updating our community on the latest news and developments at Fuse, covering:\r\n</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\r\n</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>- Fuse Dollar (fUSD)\r\n</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>- Fuse Cash\r\n</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>- Latest partnerships and integrations.\r\n</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>- Binance Smart Chain (BSC) bridge.\r\n</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>- DeFi on Fuse.\r\n</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>- Featured communities.\r\n</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>- What to expect for the rest of Q2 and beyond!\r\n</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>\r\n</span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Please register 👉 https://bit.ly/3furWZs</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>category</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>general</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>created_at</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>2021-05-18T08:29:06.537Z</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>user</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Robert Miller</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>user_title</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Marcom Director </span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>pin</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='kw'>false</span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>project</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>type</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Coin</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>fuse-network-token</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>name</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Fuse</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>symbol</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>fuse</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>image</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span>
+        <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>thumb</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span>
+        <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://assets.coingecko.com/coins/images/10347/thumb/vUXKHEe.png?1601523640</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+        <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>small</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span>
+        <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://assets.coingecko.com/coins/images/10347/small/vUXKHEe.png?1601523640</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+        <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>large</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span>
+        <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://assets.coingecko.com/coins/images/10347/large/vUXKHEe.png?1601523640</span><span class='tstring_end'>&quot;</span></span>
+      <span class='rbrace'>}</span>
+    <span class='rbrace'>}</span>
+  <span class='rbrace'>}</span><span class='rbracket'>]</span>
+<span class='rbrace'>}</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>options:</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:category</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>filter results by the given category. Valid values: general, milestone, partnership, exchange_listing, software_release, fund_movement, new_listings, event</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:project_type</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>filter results by the project type. Fetches both coin and market status updates if left blank. Valid values: coin, market</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:per_page</span>
+          <span class="type">(<tt>Integer</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>sets the number of results to return per page.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:page</span>
+          <span class="type">(<tt>Integer</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>sets the page for results.</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the list of status updates and its information.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+150
+151
+152</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coingecko_ruby/client/infos.rb', line 150</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_status_updates'>get_status_updates</span><span class='lparen'>(</span><span class='label'>options:</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_get'>get</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>status_updates</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='lbrace'>{</span> <span class='label'>options:</span> <span class='id identifier rubyid_options'>options</span> <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_trending_searches-instance_method">
+  
+    #<strong>get_trending_searches</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Fetches the top 7 coin searches from CoinGecko in the last 24 hours.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Get trending searches in the last 24 hours.</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_get_trending_searches'>get_trending_searches</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Sample response object (truncated)</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='lbrace'>{</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>coins</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='lbracket'>[</span><span class='lbrace'>{</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>item</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span>
+        <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>shiba-inu</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+        <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>coin_id</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='int'>11939</span><span class='comma'>,</span>
+        <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>name</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Shiba Inu</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+        <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>symbol</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>SHIB</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+        <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>market_cap_rank</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='int'>24</span><span class='comma'>,</span>
+        <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>thumb</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span>
+        <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://assets.coingecko.com/coins/images/11939/thumb/SHIBLOGO.png?1600752116</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+        <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>small</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span>
+        <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://assets.coingecko.com/coins/images/11939/small/SHIBLOGO.png?1600752116</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+        <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>large</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span>
+        <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://assets.coingecko.com/coins/images/11939/large/SHIBLOGO.png?1600752116</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+        <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>slug</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>shiba-inu</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+        <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>price_btc</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='float'>3.637711629799728e-10</span><span class='comma'>,</span>
+        <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>score</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='int'>0</span>
+      <span class='rbrace'>}</span>
+    <span class='rbrace'>}</span><span class='comma'>,</span>
+  <span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>exchanges</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
+<span class='rbrace'>}</span></code></pre>
+    
+  </div>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the ternding searches and its information.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+95
+96
+97</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coingecko_ruby/client/infos.rb', line 95</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_trending_searches'>get_trending_searches</span>
+  <span class='id identifier rubyid_get'>get</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>search/trending</span><span class='tstring_end'>&#39;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Tue May 18 22:21:36 2021 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.26 (ruby-2.7.1).
+</div>
+
+    </div>
+  </body>
+</html>

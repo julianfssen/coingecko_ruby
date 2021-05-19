@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Module: CoingeckoRuby::Client::Finance
+  
+    &mdash; Documentation by YARD 0.9.26
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "CoingeckoRuby::Client::Finance";
+  relpath = '../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../_index.html">Index (F)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../CoingeckoRuby.html" title="CoingeckoRuby (module)">CoingeckoRuby</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Client.html" title="CoingeckoRuby::Client (class)">Client</a></span></span>
+     &raquo; 
+    <span class="title">Finance</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Module: CoingeckoRuby::Client::Finance
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+
+  
+  
+  
+  
+  
+
+  
+  <dl>
+    <dt>Included in:</dt>
+    <dd><span class='object_link'><a href="../Client.html" title="CoingeckoRuby::Client (class)">CoingeckoRuby::Client</a></span></dd>
+  </dl>
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/coingecko_ruby/client/finance.rb</dd>
+  </dl>
+  
+</div>
+
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_finance_platforms-instance_method" title="#get_finance_platforms (instance method)">#<strong>get_finance_platforms</strong>(options: {})  &#x21d2; Array&lt;Hash&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Fetches the list of finance platforms (e.g. Celsius Network, dYdX) listed in CoinGecko.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#get_finance_products-instance_method" title="#get_finance_products (instance method)">#<strong>get_finance_products</strong>(options: {})  &#x21d2; Array&lt;Hash&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Fetches the list of finance products (e.g. Binance Savings, Nexo, Fulcrum) listed in CoinGecko.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="get_finance_platforms-instance_method">
+  
+    #<strong>get_finance_platforms</strong>(options: {})  &#x21d2; <tt>Array&lt;Hash&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Fetches the list of finance platforms (e.g. Celsius Network, dYdX) listed in CoinGecko.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Get all finance platforms.</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_get_finance_platforms'>get_finance_platforms</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Sample response object (truncated)</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='lbracket'>[</span>
+  <span class='lbrace'>{</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>name</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Binance Staking</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>facts</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>category</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>CeFi Platform</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>centralized</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='kw'>true</span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>website_url</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://www.binance.com/en/staking</span><span class='tstring_end'>&quot;</span></span>
+  <span class='rbrace'>}</span><span class='comma'>,</span>
+  <span class='lbrace'>{</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>name</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Celsius Network</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>facts</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>category</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>CeFi Platform</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>centralized</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='kw'>true</span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>website_url</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://celsius.network/</span><span class='tstring_end'>&quot;</span></span>
+  <span class='rbrace'>}</span><span class='comma'>,</span>
+  <span class='lbrace'>{</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>name</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Cobo</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>facts</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>category</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>CeFi Platform</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>centralized</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='kw'>true</span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>website_url</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://cobo.com/</span><span class='tstring_end'>&quot;</span></span>
+  <span class='rbrace'>}</span>
+<span class='rbracket'>]</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>options:</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:per_page</span>
+          <span class="type">(<tt>Integer</tt>)</span>
+          <span class="default">
+            
+              &mdash; default:
+              <tt>100</tt>
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>sets the number of results to return per page.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:page</span>
+          <span class="type">(<tt>Integer</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>sets the page for results.</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;Hash&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>each finance platform&#39;s name, category, url, facts (description), and centralized status.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+37
+38
+39</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coingecko_ruby/client/finance.rb', line 37</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_finance_platforms'>get_finance_platforms</span><span class='lparen'>(</span><span class='label'>options:</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_get'>get</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>finance_platforms</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='lbrace'>{</span> <span class='label'>options:</span> <span class='id identifier rubyid_options'>options</span> <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_finance_products-instance_method">
+  
+    #<strong>get_finance_products</strong>(options: {})  &#x21d2; <tt>Array&lt;Hash&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Fetches the list of finance products (e.g. Binance Savings, Nexo, Fulcrum) listed in CoinGecko.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Get all finance products.</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_get_finance_products'>get_finance_products</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Sample response object (truncated)</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='lbracket'>[</span>
+  <span class='lbrace'>{</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>platform</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Binance Savings</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>identifier</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>XTZ001</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>supply_rate_percentage</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>1.956035</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>borrow_rate_percentage</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>number_duration</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>length_duration</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>start_at</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='int'>0</span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>end_at</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='int'>0</span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>value_at</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='int'>0</span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>redeem_at</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='int'>0</span><span class='rbrace'>}</span><span class='comma'>,</span>
+ <span class='lbrace'>{</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>platform</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Binance Savings</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>identifier</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ZEC001</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>supply_rate_percentage</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>0.182865</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>borrow_rate_percentage</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>number_duration</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>length_duration</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>start_at</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='int'>0</span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>end_at</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='int'>0</span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>value_at</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='int'>0</span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>redeem_at</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='int'>0</span><span class='rbrace'>}</span><span class='comma'>,</span>
+ <span class='lbrace'>{</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>platform</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Crypto.com</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>identifier</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>BAT</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>supply_rate_percentage</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>2.0</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>borrow_rate_percentage</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>number_duration</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>length_duration</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='kw'>nil</span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>start_at</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='int'>0</span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>end_at</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='int'>0</span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>value_at</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='int'>0</span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>redeem_at</span><span class='tstring_end'>&quot;</span></span><span class='op'>=&gt;</span><span class='int'>0</span><span class='rbrace'>}</span>
+<span class='rbracket'>]</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>options:</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:per_page</span>
+          <span class="type">(<tt>Integer</tt>)</span>
+          <span class="default">
+            
+              &mdash; default:
+              <tt>100</tt>
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>sets the number of results to return per page.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:page</span>
+          <span class="type">(<tt>Integer</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>sets the page for results.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:start_at</span>
+          <span class="type">(<tt>Integer</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>filter results based on the launch date of the product in UNIX timestamp format.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:end_at</span>
+          <span class="type">(<tt>Integer</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>filter results based on the end date of the product in UNIX timestamp format.</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;Hash&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>each finance product&#39;s platform, identifier, supply and borrow rate percentage, and the product duration data.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+85
+86
+87</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coingecko_ruby/client/finance.rb', line 85</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_finance_products'>get_finance_products</span><span class='lparen'>(</span><span class='label'>options:</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_get'>get</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>finance_products</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='lbrace'>{</span> <span class='label'>options:</span> <span class='id identifier rubyid_options'>options</span> <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Tue May 18 22:21:37 2021 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.26 (ruby-2.7.1).
+</div>
+
+    </div>
+  </body>
+</html>
