@@ -43,7 +43,7 @@ client.get_price(id: 'bitcoin', currency: 'usd')
 
 ## Documentation
 
-WORK IN PROGRESS
+[Read the API documentation here: ](https://julianfssen.github.io/coingecko_ruby/CoingeckoRuby.html)
 
 ## Contributing
 
