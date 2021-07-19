@@ -29,7 +29,7 @@ module CoingeckoRuby
       #     "is_multi_asset_composite"=>false}
       #   ]
       def indexes(**options)
-        get 'indexes', options
+        get 'indexes', **options
       end
 
       # @deprecated Use {#indexes} instead
@@ -76,7 +76,7 @@ module CoingeckoRuby
       #     "is_multi_asset_composite"=>false
       #   }
       def indexes_by_market_and_coin(market_id, coin_id, **options)
-        get "indexes/#{market_id}/#{coin_id}", options
+        get "indexes/#{market_id}/#{coin_id}", **options
       end
 
       # @deprecated Use {#indexes_by_market_and_coin} instead

@@ -45,7 +45,7 @@ module CoingeckoRuby
       #     },
       #   ]
       def derivatives(**options)
-        get 'derivatives', options
+        get 'derivatives', **options
       end
 
       # @deprecated Use {#derivatives} instead
@@ -79,7 +79,7 @@ module CoingeckoRuby
       #     "url" => "https://www.binance.com/"
       #   }]
       def derivative_exchanges(**options)
-        get 'derivatives/exchanges', options
+        get 'derivatives/exchanges', **options
       end
 
       # @deprecated Use {#derivative_exchanges} instead
@@ -112,7 +112,7 @@ module CoingeckoRuby
       #     "url" => "https://www.binance.com/"
       #   }
       def derivative_exchange(id, **options)
-        get "derivatives/exchanges/#{id}", options
+        get "derivatives/exchanges/#{id}", **options
       end
 
       # @deprecated Use {#derivative_exchange} instead

@@ -16,7 +16,7 @@ module CoingeckoRuby
       # @example Get all upcoming events.
       #   client.events(upcoming_events_only: true) 
       def events(**options)
-        get 'events', options
+        get 'events', **options
       end
 
       # @deprecated Use {#events} instead

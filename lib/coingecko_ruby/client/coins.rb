@@ -22,7 +22,7 @@ module CoingeckoRuby
       #     }, {
       #   ]
       def coins_list(**options)
-        get 'coins/list', options
+        get 'coins/list', **options
       end
 
       # Fetches detailed current data for a coin.
@@ -38,7 +38,7 @@ module CoingeckoRuby
       # @example Fetch Bitcoin's current data.
       #   client.coin('bitcoin')
       def coin(id, **options)
-        get "coins/#{id}", options
+        get "coins/#{id}", **options
       end
 
       # @deprecated Use {#coin} instead
@@ -128,7 +128,7 @@ module CoingeckoRuby
       #     }],
       #   }
       def tickers(id, **options)
-        get "coins/#{id}/tickers", options
+        get "coins/#{id}/tickers", **options
       end
 
       # @deprecated Use {#tickers} instead
@@ -216,7 +216,7 @@ module CoingeckoRuby
       #     }
       #   ]
       def markets(ids, **options)
-        get 'coins/markets', { ids: ids, **options }
+        get 'coins/markets', ids: ids, **options
       end
 
       # @deprecated Use {#markets} instead

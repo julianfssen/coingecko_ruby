@@ -34,7 +34,7 @@ module CoingeckoRuby
       def price(ids, currency: 'usd', **options)
         ids = ids.join(',') if ids.is_a? Array
         currency = currency.join(',') if currency.is_a? Array
-        get 'simple/price', { ids: ids, vs_currencies: currency, **options }
+        get 'simple/price', ids: ids, vs_currencies: currency, **options
       end
 
       # @see Alias for {#price}
@@ -122,7 +122,7 @@ module CoingeckoRuby
       def historical_price(id, date:, **options)
         date = Time.now.strftime('%d-%m-%Y') if date.nil?
 
-        get "coins/#{id}/history", { date: date, **options }
+        get "coins/#{id}/history", date: date, **options
       end
 
       # @deprecated Use {#historical_price} instead
@@ -158,7 +158,7 @@ module CoingeckoRuby
       #     ]
       #   }
       def minutely_historical_price(id, currency: 'usd', **options)
-        get "coins/#{id}/market_chart", { vs_currency: currency, days: 1, **options }
+        get "coins/#{id}/market_chart", vs_currency: currency, days: 1, **options
       end
 
       # @deprecated Use {#minutely_historical_price} instead
@@ -195,7 +195,7 @@ module CoingeckoRuby
       def hourly_historical_price(id, currency: 'usd', days: 7, **options)
         return daily_historical_price(id, currrency: currency, days: days) if days > 90
 
-        get "coins/#{id}/market_chart", { vs_currency: currency, days: days, **options }
+        get "coins/#{id}/market_chart", vs_currency: currency, days: days, **options
       end
 
       # @deprecated Use {#hourly_historical_price} instead
@@ -229,7 +229,7 @@ module CoingeckoRuby
       #     ]
       #   }
       def daily_historical_price(id, currency: 'usd', days: 7, **options)
-        get "coins/#{id}/market_chart", { vs_currency: currency, days: days, interval: 'daily', **options }
+        get "coins/#{id}/market_chart", vs_currency: currency, days: days, interval: 'daily', **options
       end
 
       # @deprecated Use {#daily_historical_price} instead
@@ -256,7 +256,7 @@ module CoingeckoRuby
       #     [1620576000000, 57956.7, 57956.7, 56636.68, 57302.22],
       #   ]
       def ohlc(id, currency: 'usd', days: 7, **options)
-        get "coins/#{id}/ohlc", { vs_currency: currency, days: days, **options }
+        get "coins/#{id}/ohlc", vs_currency: currency, days: days, **options
       end
 
       # @deprecated Use {#ohlc} instead

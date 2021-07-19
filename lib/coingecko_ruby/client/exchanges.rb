@@ -26,7 +26,7 @@ module CoingeckoRuby
       #     "trade_volume_24h_btc_normalized" => 982949.3975723931
       #   }]
       def exchanges(**options)
-        get 'exchanges', options
+        get 'exchanges', **options
       end
 
       # @deprecated Use {#exchanges} instead
@@ -121,7 +121,7 @@ module CoingeckoRuby
       #     }]
       #   }
       def exchange_tickers(id, **options)
-        get "exchanges/#{id}/tickers", options
+        get "exchanges/#{id}/tickers", **options
       end
 
       # @deprecated Use {#exchange_tickers} instead
@@ -157,7 +157,7 @@ module CoingeckoRuby
       #     }]
       #   }
       def exchange_status(id, **options)
-        get "exchanges/#{id}/status_updates", options
+        get "exchanges/#{id}/status_updates", **options
       end
 
       # @deprecated Use {#exchange_status} instead
@@ -181,7 +181,7 @@ module CoingeckoRuby
       #     [1620557400000.0, "1042158.4333253484568599192332614201045319574863305612009609211497295171074087677404153278624"]
       #   ]
       def exchange_volume(id, days: 7, **options)
-        get "exchanges/#{id}/volume_chart", { days: days, **options }
+        get "exchanges/#{id}/volume_chart", days: days, **options
       end
 
       # @deprecated Use {#exchange_volume} instead

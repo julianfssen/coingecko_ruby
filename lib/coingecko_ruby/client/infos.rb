@@ -163,7 +163,7 @@ module CoingeckoRuby
       #     }]
       #   }
       def status_updates(**options)
-        get 'status_updates', options
+        get 'status_updates', **options
       end
 
       def get_status_updates(options: {})

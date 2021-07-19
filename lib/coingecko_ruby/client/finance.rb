@@ -35,7 +35,7 @@ module CoingeckoRuby
       #     }
       #   ]
       def finance_platforms(**options)
-        get 'finance_platforms', options
+        get 'finance_platforms', **options
       end
 
       # @deprecated Use {#finance_platforms} instead
@@ -88,7 +88,7 @@ module CoingeckoRuby
       #     "redeem_at"=>0}
       #   ]
       def finance_products(**options)
-        get 'finance_products', options
+        get 'finance_products', **options
       end
 
       # @deprecated Use {#finance_products} instead
