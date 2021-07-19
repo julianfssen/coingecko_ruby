@@ -9,7 +9,7 @@ module CoingeckoRuby
       # @return [Array<Hash>] each finance platform's name, category, url, facts (description), and centralized status.
       #
       # @example Get all finance platforms.
-      #   client.get_finance_platforms
+      #   client.finance_platforms
       # @example Sample response object (truncated)
       #   [
       #     {
@@ -34,8 +34,13 @@ module CoingeckoRuby
       #       "website_url"=>"https://cobo.com/"
       #     }
       #   ]
+      def finance_platforms(**options)
+        get 'finance_platforms', options
+      end
+
+      # @deprecated Use {#finance_platforms} instead
       def get_finance_platforms(options: {})
-        get 'finance_platforms', { options: options }
+        finance_platforms(**options)
       end
 
       # Fetches the list of finance products (e.g. Binance Savings, Nexo, Fulcrum) listed in CoinGecko.
@@ -48,7 +53,7 @@ module CoingeckoRuby
       # @return [Array<Hash>] each finance product's platform, identifier, supply and borrow rate percentage, and the product duration data.
       #
       # @example Get all finance products.
-      #   client.get_finance_products
+      #   client.finance_products
       # @example Sample response object (truncated)
       #   [
       #     {"platform"=>"Binance Savings",
@@ -82,8 +87,13 @@ module CoingeckoRuby
       #     "value_at"=>0,
       #     "redeem_at"=>0}
       #   ]
+      def finance_products(**options)
+        get 'finance_products', options
+      end
+
+      # @deprecated Use {#finance_products} instead
       def get_finance_products(options: {})
-        get 'finance_products', { options: options }
+        finance_products(**options)
       end
     end
   end

@@ -6,7 +6,7 @@ module CoingeckoRuby
       # @return [Array<Hash>] each category's id and name
       #
       # @example Get all coin categories.
-      #   client.get_categories
+      #   client.categories
       # @example Sample response object
       #   [{
       #     "category_id" => "recently_added",
@@ -15,8 +15,13 @@ module CoingeckoRuby
       #     "category_id" => "aave-tokens",
       #     "name" => "Aave Tokens"
       #   }]
-      def get_categories
+      def categories
         get 'coins/categories/list'
+      end
+
+      # @deprecated Use {#categories} instead
+      def get_categories
+        categories
       end
 
       # Fetches the list of coin categories with its respective market data.
@@ -24,7 +29,7 @@ module CoingeckoRuby
       # @return [Array<Hash>] each category's id, name, and market data
       #
       # @example Get all coin categories with market data.
-      #   client.get_categories_with_market_data
+      #   client.categories_with_market_data
       # @example Sample response object
       #   [
       #     {
@@ -44,8 +49,13 @@ module CoingeckoRuby
       #       "updated_at" => "2021-05-16T08:20:20.877Z"
       #     }
       #   ]
-      def get_categories_with_market_data
+      def categories_with_market_data
         get 'coins/categories'
+      end
+
+      # @deprecated Use {#categories_with_market_data} instead
+      def get_categories_with_market_data
+        categories_with_market_data
       end
 
       # Fetches the list of asset platforms (e.g. Ethereum, OpenLedger, Counterpart) listed in CoinGecko.
@@ -53,7 +63,7 @@ module CoingeckoRuby
       # @return [Array<Hash>] each asset platform's id, name, short name, and chain identifier
       #
       # @example Get all asset platforms.
-      #   client.get_asset_platforms
+      #   client.asset_platforms
       # @example Sample response object
       #   [
       #     {"id"=>"factom", "chain_identifier"=>nil, "name"=>"Factom", "shortname"=>""},
@@ -62,8 +72,13 @@ module CoingeckoRuby
       #      "name"=>"OpenLedger",
       #      "shortname"=>""}
       #   ]
-      def get_asset_platforms
+      def asset_platforms
         get 'asset_platforms'
+      end
+
+      # @deprecated Use {#asset_platforms} instead
+      def get_asset_platforms
+        asset_platforms
       end
     end
   end

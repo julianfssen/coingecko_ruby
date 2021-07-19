@@ -1,3 +1,30 @@
+## 0.4.0 - 19-06-2021
+
+### [Changed]
+
+#### Modules
+* Removed 'get' prefix and unnecessary keyword arguments from method calls to make usage more Ruby-like.
+
+In previous versions, getting data from CoinGecko is invoked with a method like:
+
+```ruby
+  client.get_price(id: 'bitcoin')
+```
+
+Now, it's invoked in a more Ruby-like manner by excluding unnecessary keyword arguments and absorbing additional arguments via an `options` hash:
+
+```ruby
+  client.price('bitcoin', currency: 'usd', option_2: 'option', option_3: ...)
+```
+
+* Deprecated methods that were replaced by the change above. These deprecated methods can still be used but they will be removed in future versions.
+
+#### Docs
+* Updated docs to reflect method names and keyword arguments changes
+
+#### Tests
+* Updated tests to use the new methods.
+
 ## 0.3.0 - 18-05-2021
 
 ### [Added]

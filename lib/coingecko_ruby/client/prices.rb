@@ -2,8 +2,8 @@ module CoingeckoRuby
   class Client
     module Prices
       # Fetches the current price for a coin in the given coin or currency.
-      # @param id [String] the coin id to fetch.
-      # @param currency [String] the currency to display the coin's price.
+      # @param ids [String, Array] the coin id or array of ids to fetch.
+      # @param currency [String, Array] the currency or array of currencies to display the coin's price. Defaults to 'USD'
       # @option options [Boolean] :include_market_cap include market cap data.
       # @option options [Boolean] :include_24hr_vol include 24 hour volume data.
       # @option options [Boolean] :include_24hr_change include 24 hour price change data.
@@ -12,7 +12,7 @@ module CoingeckoRuby
       # @return [Hash] returns the given coin id and its current price.
       #
       # @example Fetch the current price in USD for Bitcoin.
-      #   client.get_price(id: 'bitcoin', currency: 'usd')
+      #   client.price('bitcoin', currency: 'usd')
       # @example Sample response object
       #   {
       #     "bitcoin" => {
@@ -20,7 +20,7 @@ module CoingeckoRuby
       #     }
       #   }
       # @example Fetch the current price, market cap, 24 hour volume, 24 hour price change and last updated at for Bitcoin.
-      #   client.get_price(id: 'bitcoin', currency: 'usd', options: { include_market_cap: true, include_24hr_vol: true, include_24hr_change: true, include_last_updated_at: true })
+      #   client.price('bitcoin', 'usd', include_market_cap: true, include_24hr_vol: true, include_24hr_change: true, include_last_updated_at: true)
       # @example Sample response object
       #   {
       #     "bitcoin" => {
@@ -31,18 +31,30 @@ module CoingeckoRuby
       #       "last_updated_at" => 1621142197 # last updated at UNIX timestamp for the given coin
       #     }
       #   }
+      def price(ids, currency: 'usd', **options)
+        ids = ids.join(',') if ids.is_a? Array
+        currency = currency.join(',') if currency.is_a? Array
+        get 'simple/price', { ids: ids, vs_currencies: currency, **options }
+      end
+
+      # @see Alias for {#price}
+      def prices(ids, currency: 'usd', **options)
+        price(ids, currency: currency, **options)
+      end
+
+      # @deprecated Use {#price} or {#prices} instead
       def get_price(id:, currency: 'usd', options: {})
-        get 'simple/price', { ids: id, vs_currencies: currency, options: options }
+        price(id, currency, **options)
       end
 
       # Fetches historical price data for a coin at a given date.
       # @param id [String] the coin id to fetch.
-      # @param date [String] the date to fetch the historical price, date given must be in the form of 'DD-MM-YYYY' (e.g: '14-05-2021').
+      # @param date [String] the date to fetch the historical price, date given must be in the form of 'DD-MM-YYYY' (e.g: '14-05-2021'). Defaults to today's date.
       #
       # @return [Hash] returns the coin's historical price data on the given date.
       #
       # @example Fetch Bitcoin's price on 30th December, 2017.
-      #   client.get_historical_price_on_date(id: 'bitcoin', date: '30-12-2017')
+      #   client.historical_price('bitcoin', date: '30-12-2017')
       # @example Sample response object (truncated)
       #   {
       #     "id": "bitcoin",
@@ -107,19 +119,26 @@ module CoingeckoRuby
       #       "bing_matches": null
       #     }
       #   }
+      def historical_price(id, date:, **options)
+        date = Time.now.strftime('%d-%m-%Y') if date.nil?
+
+        get "coins/#{id}/history", { date: date, **options }
+      end
+
+      # @deprecated Use {#historical_price} instead
       def get_historical_price_on_date(id:, date:)
-        get "coins/#{id}/history", { date: date }
+        historical_price(id, date: date)
       end
 
       # Fetches a coin's historical price data in 5 - 10 minutes ranges.
       # @note Minutely historical data is only available within the last 24 hours.
       # @param id [String] the coin id to fetch.
-      # @param currency [String] the currency used to display minutely historical price.
+      # @param currency [String] the currency used to display minutely historical price. Defaults to 'USD'
       #
       # @return [Hash] returns the coin's minutely historical price data within the last 24 hours.
       #
       # @example Fetch Bitcoin's minutely historical price within the last 24 hours.
-      #   client.get_minutely_historical_prices(id: 'bitcoin')
+      #   client.minutely_historical_price('bitcoin')
       # @example Sample response object (truncated)
       #   {
       #     "prices" => [
@@ -138,20 +157,25 @@ module CoingeckoRuby
       #       [1621058047104, 57046967935.326035],
       #     ]
       #   }
+      def minutely_historical_price(id, currency: 'usd', **options)
+        get "coins/#{id}/market_chart", { vs_currency: currency, days: 1, **options }
+      end
+
+      # @deprecated Use {#minutely_historical_price} instead
       def get_minutely_historical_prices(id:, currency: 'usd')
-        get "coins/#{id}/market_chart", { id: id, vs_currency: currency, days: 1 }
+        minutely_historical_price(id, currency: currency)
       end
 
       # Fetches a coin's historical price data in 1 hour ranges.
       # @note Hourly historical data is only available within the last 90 days.
       # @param id [String] the coin id to fetch.
-      # @param days [Integer] the number of days to fetch hourly historical prices (min: 1 day, max: 90 days)
-      # @param currency [String] the currency used to display hourly historical price.
+      # @param currency [String] the currency used to display hourly historical price. Defaults to 'USD'
+      # @param days [Integer] the number of days to fetch hourly historical prices (min: 1 day, max: 90 days). Defaults to 7 days
       #
       # @return [Hash] returns the coin's hourly historical price data within the number of days given.
       #
-      # @example Fetch Bitcoin's hourly historical price within the last 7 days.
-      #   client.get_hourly_historical_prices(id: 'bitcoin', days: 7)
+      # @example Fetch Bitcoin's hourly historical price in USD within the last 7 days.
+      #   client.hourly_historical_price('bitcoin', days: 7)
       # @example Sample response object (truncated)
       #   {
       #     "prices" => [
@@ -168,21 +192,26 @@ module CoingeckoRuby
       #       [1620547381049, 72064327648.28767],
       #     ]
       #   }
-      def get_hourly_historical_prices(id:, days:, currency: 'usd')
-        return get_daily_historical_prices(id: id, days: days) if days > 90
+      def hourly_historical_price(id, currency: 'usd', days: 7, **options)
+        return daily_historical_price(id, currrency: currency, days: days) if days > 90
 
-        get "coins/#{id}/market_chart", { vs_currency: currency, days: days }
+        get "coins/#{id}/market_chart", { vs_currency: currency, days: days, **options }
+      end
+
+      # @deprecated Use {#hourly_historical_price} instead
+      def get_hourly_historical_prices(id:, days:, currency: 'usd')
+        hourly_historical_price(id, currency: currency, days: days)
       end
 
       # Fetches a coin's historical price data in daily ranges.
       # @param id [String] the coin id to fetch.
-      # @param days [Integer] the number of days to fetch daily historical prices.
-      # @param currency [String] the currency used to display daily historical price.
+      # @param days [Integer] the number of days to fetch daily historical prices. Defaults to 7 days.
+      # @param currency [String] the currency used to display daily historical price. Defaults to USD.
       #
       # @return [Hash] returns the coin's daily historical price data within the number of days given.
       #
       # @example Fetch Bitcoin's daily historical price within the last 14 days.
-      #   client.get_daily_historical_prices(id: 'bitcoin', days: 14)
+      #   client.daily_historical_prices('bitcoin', days: 14)
       # @example Sample response object (truncated)
       #   {
       #     "prices" => [
@@ -199,30 +228,40 @@ module CoingeckoRuby
       #       [1620172800000, 71296763919.13268],
       #     ]
       #   }
+      def daily_historical_price(id, currency: 'usd', days: 7, **options)
+        get "coins/#{id}/market_chart", { vs_currency: currency, days: days, interval: 'daily', **options }
+      end
+
+      # @deprecated Use {#daily_historical_price} instead
       def get_daily_historical_prices(id:, days:, currency: 'usd')
-        get "coins/#{id}/market_chart", { vs_currency: currency, days: days, interval: 'daily' }
+        daily_historical_price(id, currency: currency, days: days)
       end
 
       # Fetches a coin's open, high, low, and close (OHLC) data within the number of days given.
       # @param id [String] the coin id to fetch.
-      # @param days [Integer, String] the number of days to fetch daily historical prices. Valid values: 1/7/14/30/90/180/365/'max'
-      # @param currency [String] the currency to display OHLC data.
+      # @param days [Integer, String] the number of days to fetch daily historical prices. Valid values: 1/7/14/30/90/180/365/'max'. Defaults to 7 days.
+      # @param currency [String] the currency to display OHLC data. Defaults to 'USD'.
       #
       # @return [Array<Array<String, Float>>] returns the coin's OHLC data within the number of days given.
       #   If the number of days given is between 1-2 days, the OHLC data is returned in 30-minute intervals.
       #   If the number of days given is between 3-30 days, the OHLC data is returned in 4-hour intervals.
       #   If the number of days given is more than 30 days, the OHLC data is returned in 4-day intervals.
       #
-      # @example Fetch Bitcoin's OHLC data in USD within the last 7 days.
-      #   client.get_ohlc(id: 'bitcoin', days: 7, currency: 'usd')
+      # @example Fetch Bitcoin's OHLC data within the last 7 days.
+      #   client.ohlc('bitcoin', days: 7)
       # @example Sample response object (truncated)
       #   [
       #     [1620547200000, 58384.27, 58384.27, 58384.27, 58384.27], # [UNIX timestamp for OHLC data, open, high, low, close]
       #     [1620561600000, 58022.03, 58214.96, 57943.18, 58048.35],
       #     [1620576000000, 57956.7, 57956.7, 56636.68, 57302.22],
       #   ]
+      def ohlc(id, currency: 'usd', days: 7, **options)
+        get "coins/#{id}/ohlc", { vs_currency: currency, days: days, **options }
+      end
+
+      # @deprecated Use {#ohlc} instead
       def get_ohlc(id:, days:, currency: 'usd')
-        get "coins/#{id}/ohlc", { vs_currency: currency, days: days }
+        ohlc(id, currency: currency, days: days)
       end
 
       # Fetches the list of currencies currently supported by CoinGecko's API.
@@ -247,12 +286,12 @@ module CoingeckoRuby
 
       # Fetches the exchange rate for a coin or currency in the given coin or currency.
       # @param from [String] the coin id or currency to be converted.
-      # @param to [String] the coin id or currency to convert against.
+      # @param to [String] the coin id or currency to convert against. Defaults to 'USD'.
       #
       # @return [Hash] returns the coin's exchange rate against the given coin or currency.
       #
       # @example Fetch the exchange rate for BTC-USD.
-      #   client.get_exchange_rate(from: 'bitcoin', to: 'usd')
+      #   client.exchange_rate(from: 'bitcoin', to: 'usd')
       # @example Sample response object
       #   {
       #     "bitcoin" => {
@@ -267,8 +306,13 @@ module CoingeckoRuby
       #       "eth" => 12.71434 # current price in given currency
       #     }
       #   }
+      def exchange_rate(from:, to: 'usd')
+        price(from, currency: to)
+      end
+
+      # @deprecated Use {#exchange_rate} instead
       def get_exchange_rate(from:, to: 'usd')
-        get_price(id: from, currency: to)
+        exchange_rate(from: from, to: to)
       end
     end
   end

@@ -9,7 +9,7 @@ module CoingeckoRuby
       # @return [Array<Hash>] returns an array of hashes of detailed exchange data.
       #
       # @example Fetch complete exchange data with 1 result per page.
-      #   client.get_exchanges(options: { per_page: 1 })
+      #   client.exchanges(per_page: 1)
       # @example Sample response object
       #   [{
       #     "id" => "binance",
@@ -25,8 +25,13 @@ module CoingeckoRuby
       #     "trade_volume_24h_btc" => 982949.3975723931,
       #     "trade_volume_24h_btc_normalized" => 982949.3975723931
       #   }]
+      def exchanges(**options)
+        get 'exchanges', options
+      end
+
+      # @deprecated Use {#exchanges} instead
       def get_exchanges(options: {})
-        get 'exchanges', { options: options }
+        exchanges(**options)
       end
 
       # Fetches complete data for a specific exchange.
@@ -36,9 +41,14 @@ module CoingeckoRuby
       # @return [Hash] returns detailed data for the given exchange.
       #
       # @example Fetch complete exchange data for Binance.
-      #   client.get_exchange_data(id: 'binance')
-      def get_exchange_data(id:)
+      #   client.exchange('binance')
+      def exchange(id)
         get "exchanges/#{id}"
+      end
+
+      # @deprecated Use {#exchange} instead
+      def get_exchange_data(id:)
+        exchange(id)
       end
 
       # Fetches exchange ids for every exchange currently supported by the CoinGecko API.
@@ -46,7 +56,7 @@ module CoingeckoRuby
       # @return [Array<Hash>] returns an array of hashes of the exchange id and name.
       #
       # @example Fetch all exchange ids.
-      #   client.get_exchanges_ids
+      #   client.exchange_ids
       # @example Sample response object
       #   [{
       #     "id" => "aave",
@@ -58,13 +68,19 @@ module CoingeckoRuby
       #     "id" => "aax_futures",
       #     "name" => "AAX Futures"
       #   }]
-      def get_exchanges_ids
+      def exchange_ids
         get 'exchanges/list'
+      end
+
+      # @deprecated Use {#exchange_ids} instead
+      def get_exchanges_ids
+        exchange_ids
       end
 
       # Fetches coin tickers from a specific exchange.
       #
       # @param id [String] the exchange id to fetch.
+      #
       # @option options [String] :coin_ids comma-separated list of tickers to fetch from the given exchange id (e.g. 'bitcoin, eth, litecoin').
       # @option options [String] :include_exchange_logo includes the exchange's logo.
       # @option options [Integer] :page sets the page for results.
@@ -74,7 +90,7 @@ module CoingeckoRuby
       # @return [Hash] the exchange name and tickers as provided or all tickers if coin_ids is not provided.
       #
       # @example Get Bitcoin tickers from Binance.
-      #   client.get_exchange_tickers(id: 'binance', options: { coin_ids: 'bitcoin' })
+      #   client.exchange_tickers('binance', coin_ids: 'bitcoin')
       # @example Sample response object
       #   {
       #     "name" => "Binance", "tickers" => [{
@@ -104,20 +120,26 @@ module CoingeckoRuby
       #       "target_coin_id" => "tether"
       #     }]
       #   }
+      def exchange_tickers(id, **options)
+        get "exchanges/#{id}/tickers", options
+      end
+
+      # @deprecated Use {#exchange_tickers} instead
       def get_exchange_tickers(id:, options: {})
-        get "exchanges/#{id}/tickers", { options: options }
+        exchange_tickers(id, **options)
       end
 
       # Fetches news,announcments, and updates from a specific exchange.
       #
       # @param id [String] the exchange id to fetch.
+      #
       # @option options [Integer] :per_page (100) sets the number of results to return per page.
       # @option options [Integer] :page sets the page for results.
       #
       # @return [Hash] the status update data for the given exchange.
       #
       # @example Get the last 3 status updates from Binance.
-      #   client.get_exchange_status_updates(id: 'binance', options: { per_page: 1 })
+      #   client.exchange_status('binance', per_page: 1)
       # @example Sample response object
       #   {
       #     "status_updates" => [{
@@ -134,27 +156,37 @@ module CoingeckoRuby
       #       }
       #     }]
       #   }
+      def exchange_status(id, **options)
+        get "exchanges/#{id}/status_updates", options
+      end
+
+      # @deprecated Use {#exchange_status} instead
       def get_exchange_status_updates(id:, options: {})
-        get "exchanges/#{id}/status_updates", { options: options }
+        exchange_status(id, **options)
       end
 
       # Fetches trade volume data from a specific exchange.
       #
       # @param id [String] the exchange id to fetch.
-      # @param days [Integer] number of days ago to fetch trade volume data.
+      # @param days [Integer] number of days ago to fetch trade volume data. Defaults to 7 days.
       #
       # @return [Array<Array<Float, String>>] the exchange's trade volume data in 10-minute intervals, hourly intervals, or daily intervals depending on the number of days given
       #
       # @example Get Binance's trade volume from a day ago.
-      #   client.get_exchange_volume(id: 'binance', days: 1)
+      #   client.exchange_volume('binance', days: 1)
       # @example Sample response object (truncated)
       #   [
       #     [1620550200000.0, "1005476.2667217359131632087795432176371669876601688256288859094077173967202827700534809705802"], # [UNIX timestamp for exchange trade volume data, trade volume]
       #     [1620553800000.0, "1018442.2775982988468591292487708941265043962519659923872972786095536137127193126138169804088"],
       #     [1620557400000.0, "1042158.4333253484568599192332614201045319574863305612009609211497295171074087677404153278624"]
       #   ]
+      def exchange_volume(id, days: 7, **options)
+        get "exchanges/#{id}/volume_chart", { days: days, **options }
+      end
+
+      # @deprecated Use {#exchange_volume} instead
       def get_exchange_volume(id:, days:)
-        get "exchanges/#{id}/volume_chart", { days: days }
+        exchange_volume(id, days: days)
       end
     end
   end
