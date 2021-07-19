@@ -8,8 +8,8 @@ CoingeckoRuby is an easy-to-use client/wrapper for CoinGecko's awesome cryptocur
 
 Add this line to your application's Gemfile:
 
-```ruby
-gem 'coingecko_ruby'
+```
+  gem 'coingecko_ruby'
 ```
 
 And then execute:
@@ -24,19 +24,19 @@ Or install it yourself as:
 
 1. Require the gem if you're not using Rails or if your environment does not autoload libraries.
 
-```ruby
+```
 require 'coingecko_ruby'
 ```
 
 2. Create a client instance.
 
-```ruby
+```
 client = CoingeckoRuby::Client.new
 ```
 
 3. Use the client to fetch your desired data.
 
-```ruby
+```
 # Example: Fetching the current price of Bitcoin.
 client.price('bitcoin')
 ```
