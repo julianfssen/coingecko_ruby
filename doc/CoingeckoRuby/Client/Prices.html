@@ -1,0 +1,2066 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Module: CoingeckoRuby::Client::Prices
+  
+    &mdash; Documentation by YARD 0.9.26
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "CoingeckoRuby::Client::Prices";
+  relpath = '../../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../../_index.html">Index (P)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../CoingeckoRuby.html" title="CoingeckoRuby (module)">CoingeckoRuby</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Client.html" title="CoingeckoRuby::Client (class)">Client</a></span></span>
+     &raquo; 
+    <span class="title">Prices</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Module: CoingeckoRuby::Client::Prices
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+
+  
+  
+  
+  
+  
+
+  
+  <dl>
+    <dt>Included in:</dt>
+    <dd><span class='object_link'><a href="../Client.html" title="CoingeckoRuby::Client (class)">CoingeckoRuby::Client</a></span></dd>
+  </dl>
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/coingecko_ruby/client/prices.rb</dd>
+  </dl>
+  
+</div>
+
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#daily_historical_price-instance_method" title="#daily_historical_price (instance method)">#<strong>daily_historical_price</strong>(id, currency: &#39;usd&#39;, days: 7, **options)  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Fetches a coin&#39;s historical price data in daily ranges.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#exchange_rate-instance_method" title="#exchange_rate (instance method)">#<strong>exchange_rate</strong>(from:, to: &#39;usd&#39;)  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Fetches the exchange rate for a coin or currency in the given coin or currency.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public deprecated">
+  <span class="summary_signature">
+    
+      <a href="#get_daily_historical_prices-instance_method" title="#get_daily_historical_prices (instance method)">#<strong>get_daily_historical_prices</strong>(id:, days:, currency: &#39;usd&#39;)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  <span class="deprecated note title">deprecated</span>
+  
+
+  
+    <span class="summary_desc"><strong>Deprecated.</strong> <div class='inline'>
+<p>Use <span class='object_link'><a href="#daily_historical_price-instance_method" title="CoingeckoRuby::Client::Prices#daily_historical_price (method)">#daily_historical_price</a></span> instead</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public deprecated">
+  <span class="summary_signature">
+    
+      <a href="#get_exchange_rate-instance_method" title="#get_exchange_rate (instance method)">#<strong>get_exchange_rate</strong>(from:, to: &#39;usd&#39;)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  <span class="deprecated note title">deprecated</span>
+  
+
+  
+    <span class="summary_desc"><strong>Deprecated.</strong> <div class='inline'>
+<p>Use <span class='object_link'><a href="#exchange_rate-instance_method" title="CoingeckoRuby::Client::Prices#exchange_rate (method)">#exchange_rate</a></span> instead</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public deprecated">
+  <span class="summary_signature">
+    
+      <a href="#get_historical_price_on_date-instance_method" title="#get_historical_price_on_date (instance method)">#<strong>get_historical_price_on_date</strong>(id:, date:)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  <span class="deprecated note title">deprecated</span>
+  
+
+  
+    <span class="summary_desc"><strong>Deprecated.</strong> <div class='inline'>
+<p>Use <span class='object_link'><a href="#historical_price-instance_method" title="CoingeckoRuby::Client::Prices#historical_price (method)">#historical_price</a></span> instead</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public deprecated">
+  <span class="summary_signature">
+    
+      <a href="#get_hourly_historical_prices-instance_method" title="#get_hourly_historical_prices (instance method)">#<strong>get_hourly_historical_prices</strong>(id:, days:, currency: &#39;usd&#39;)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  <span class="deprecated note title">deprecated</span>
+  
+
+  
+    <span class="summary_desc"><strong>Deprecated.</strong> <div class='inline'>
+<p>Use <span class='object_link'><a href="#hourly_historical_price-instance_method" title="CoingeckoRuby::Client::Prices#hourly_historical_price (method)">#hourly_historical_price</a></span> instead</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public deprecated">
+  <span class="summary_signature">
+    
+      <a href="#get_minutely_historical_prices-instance_method" title="#get_minutely_historical_prices (instance method)">#<strong>get_minutely_historical_prices</strong>(id:, currency: &#39;usd&#39;)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  <span class="deprecated note title">deprecated</span>
+  
+
+  
+    <span class="summary_desc"><strong>Deprecated.</strong> <div class='inline'>
+<p>Use <span class='object_link'><a href="#minutely_historical_price-instance_method" title="CoingeckoRuby::Client::Prices#minutely_historical_price (method)">#minutely_historical_price</a></span> instead</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public deprecated">
+  <span class="summary_signature">
+    
+      <a href="#get_ohlc-instance_method" title="#get_ohlc (instance method)">#<strong>get_ohlc</strong>(id:, days:, currency: &#39;usd&#39;)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  <span class="deprecated note title">deprecated</span>
+  
+
+  
+    <span class="summary_desc"><strong>Deprecated.</strong> <div class='inline'>
+<p>Use <span class='object_link'><a href="#ohlc-instance_method" title="CoingeckoRuby::Client::Prices#ohlc (method)">#ohlc</a></span> instead</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public deprecated">
+  <span class="summary_signature">
+    
+      <a href="#get_price-instance_method" title="#get_price (instance method)">#<strong>get_price</strong>(id:, currency: &#39;usd&#39;, options: {})  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  <span class="deprecated note title">deprecated</span>
+  
+
+  
+    <span class="summary_desc"><strong>Deprecated.</strong> <div class='inline'>
+<p>Use <span class='object_link'><a href="#price-instance_method" title="CoingeckoRuby::Client::Prices#price (method)">#price</a></span> or <span class='object_link'><a href="#prices-instance_method" title="CoingeckoRuby::Client::Prices#prices (method)">#prices</a></span> instead</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#historical_price-instance_method" title="#historical_price (instance method)">#<strong>historical_price</strong>(id, date:, **options)  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Fetches historical price data for a coin at a given date.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#hourly_historical_price-instance_method" title="#hourly_historical_price (instance method)">#<strong>hourly_historical_price</strong>(id, currency: &#39;usd&#39;, days: 7, **options)  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Fetches a coin&#39;s historical price data in 1 hour ranges.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#minutely_historical_price-instance_method" title="#minutely_historical_price (instance method)">#<strong>minutely_historical_price</strong>(id, currency: &#39;usd&#39;, **options)  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Fetches a coin&#39;s historical price data in 5 - 10 minutes ranges.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#ohlc-instance_method" title="#ohlc (instance method)">#<strong>ohlc</strong>(id, currency: &#39;usd&#39;, days: 7, **options)  &#x21d2; Array&lt;Array&lt;String, Float&gt;&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Fetches a coin&#39;s open, high, low, and close (OHLC) data within the number of days given.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#price-instance_method" title="#price (instance method)">#<strong>price</strong>(ids, currency: &#39;usd&#39;, **options)  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Fetches the current price for a coin in the given coin or currency.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#prices-instance_method" title="#prices (instance method)">#<strong>prices</strong>(ids, currency: &#39;usd&#39;, **options)  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#supported_currencies-instance_method" title="#supported_currencies (instance method)">#<strong>supported_currencies</strong>  &#x21d2; Array&lt;String&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Fetches the list of currencies currently supported by CoinGecko&#39;s API.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="daily_historical_price-instance_method">
+  
+    #<strong>daily_historical_price</strong>(id, currency: &#39;usd&#39;, days: 7, **options)  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Fetches a coin&#39;s historical price data in daily ranges.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Fetch Bitcoin&#39;s daily historical price within the last 14 days.</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_daily_historical_prices'>daily_historical_prices</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>bitcoin</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>days:</span> <span class='int'>14</span><span class='rparen'>)</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Sample response object (truncated)</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='lbrace'>{</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>prices</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='lbracket'>[</span>
+    <span class='lbracket'>[</span><span class='int'>1620000000000</span><span class='comma'>,</span> <span class='float'>56600.74528738432</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='comment'># [UNIX timestamp for minutely price data, coin price in given currency]
+</span>    <span class='lbracket'>[</span><span class='int'>1620086400000</span><span class='comma'>,</span> <span class='float'>57200.30029871162</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbracket'>[</span><span class='int'>1620172800000</span><span class='comma'>,</span> <span class='float'>53464.37021950372</span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='rbracket'>]</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>market_caps</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='lbracket'>[</span>
+    <span class='lbracket'>[</span><span class='int'>1620000000000</span><span class='comma'>,</span> <span class='float'>1057850321948.5465</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbracket'>[</span><span class='int'>1620086400000</span><span class='comma'>,</span> <span class='float'>1069571255195.5189</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbracket'>[</span><span class='int'>1620172800000</span><span class='comma'>,</span> <span class='float'>999775008412.3738</span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='rbracket'>]</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>total_volumes</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='lbracket'>[</span>
+    <span class='lbracket'>[</span><span class='int'>1620000000000</span><span class='comma'>,</span> <span class='float'>39072664393.929405</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbracket'>[</span><span class='int'>1620086400000</span><span class='comma'>,</span> <span class='float'>54132470274.07509</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbracket'>[</span><span class='int'>1620172800000</span><span class='comma'>,</span> <span class='float'>71296763919.13268</span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='rbracket'>]</span>
+<span class='rbrace'>}</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>id</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the coin id to fetch.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>days</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>7</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the number of days to fetch daily historical prices. Defaults to 7 days.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>currency</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>&#39;usd&#39;</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the currency used to display daily historical price. Defaults to USD.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>returns the coin&#39;s daily historical price data within the number of days given.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+231
+232
+233</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coingecko_ruby/client/prices.rb', line 231</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_daily_historical_price'>daily_historical_price</span><span class='lparen'>(</span><span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='label'>currency:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>usd</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>days:</span> <span class='int'>7</span><span class='comma'>,</span> <span class='op'>**</span><span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_get'>get</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>coins/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_id'>id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/market_chart</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbrace'>{</span> <span class='label'>vs_currency:</span> <span class='id identifier rubyid_currency'>currency</span><span class='comma'>,</span> <span class='label'>days:</span> <span class='id identifier rubyid_days'>days</span><span class='comma'>,</span> <span class='label'>interval:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>daily</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='op'>**</span><span class='id identifier rubyid_options'>options</span> <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="exchange_rate-instance_method">
+  
+    #<strong>exchange_rate</strong>(from:, to: &#39;usd&#39;)  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Fetches the exchange rate for a coin or currency in the given coin or currency.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Fetch the exchange rate for BTC-USD.</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_exchange_rate'>exchange_rate</span><span class='lparen'>(</span><span class='label'>from:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>bitcoin</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>to:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>usd</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Sample response object</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='lbrace'>{</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>bitcoin</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>usd</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='int'>47931</span> <span class='comment'># current price in given currency
+</span>  <span class='rbrace'>}</span>
+<span class='rbrace'>}</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Fetch the exchange rate for BTC-ETH.</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_get_exchange_rate'>get_exchange_rate</span><span class='lparen'>(</span><span class='label'>from:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>bitcoin</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>to:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>eth</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Sample response object</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='lbrace'>{</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>bitcoin</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>eth</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='float'>12.71434</span> <span class='comment'># current price in given currency
+</span>  <span class='rbrace'>}</span>
+<span class='rbrace'>}</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>from</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the coin id or currency to be converted.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>to</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>&#39;usd&#39;</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the coin id or currency to convert against. Defaults to &#39;USD&#39;.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>returns the coin&#39;s exchange rate against the given coin or currency.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+309
+310
+311</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coingecko_ruby/client/prices.rb', line 309</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_exchange_rate'>exchange_rate</span><span class='lparen'>(</span><span class='label'>from:</span><span class='comma'>,</span> <span class='label'>to:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>usd</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_price'>price</span><span class='lparen'>(</span><span class='id identifier rubyid_from'>from</span><span class='comma'>,</span> <span class='label'>currency:</span> <span class='id identifier rubyid_to'>to</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_daily_historical_prices-instance_method">
+  
+    #<strong>get_daily_historical_prices</strong>(id:, days:, currency: &#39;usd&#39;)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <div class="note deprecated"><strong>Deprecated.</strong> <div class='inline'>
+<p>Use <span class='object_link'><a href="#daily_historical_price-instance_method" title="CoingeckoRuby::Client::Prices#daily_historical_price (method)">#daily_historical_price</a></span> instead</p>
+</div></div>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+236
+237
+238</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coingecko_ruby/client/prices.rb', line 236</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_daily_historical_prices'>get_daily_historical_prices</span><span class='lparen'>(</span><span class='label'>id:</span><span class='comma'>,</span> <span class='label'>days:</span><span class='comma'>,</span> <span class='label'>currency:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>usd</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_daily_historical_price'>daily_historical_price</span><span class='lparen'>(</span><span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='label'>currency:</span> <span class='id identifier rubyid_currency'>currency</span><span class='comma'>,</span> <span class='label'>days:</span> <span class='id identifier rubyid_days'>days</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_exchange_rate-instance_method">
+  
+    #<strong>get_exchange_rate</strong>(from:, to: &#39;usd&#39;)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <div class="note deprecated"><strong>Deprecated.</strong> <div class='inline'>
+<p>Use <span class='object_link'><a href="#exchange_rate-instance_method" title="CoingeckoRuby::Client::Prices#exchange_rate (method)">#exchange_rate</a></span> instead</p>
+</div></div>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+314
+315
+316</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coingecko_ruby/client/prices.rb', line 314</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_exchange_rate'>get_exchange_rate</span><span class='lparen'>(</span><span class='label'>from:</span><span class='comma'>,</span> <span class='label'>to:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>usd</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_exchange_rate'>exchange_rate</span><span class='lparen'>(</span><span class='label'>from:</span> <span class='id identifier rubyid_from'>from</span><span class='comma'>,</span> <span class='label'>to:</span> <span class='id identifier rubyid_to'>to</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_historical_price_on_date-instance_method">
+  
+    #<strong>get_historical_price_on_date</strong>(id:, date:)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <div class="note deprecated"><strong>Deprecated.</strong> <div class='inline'>
+<p>Use <span class='object_link'><a href="#historical_price-instance_method" title="CoingeckoRuby::Client::Prices#historical_price (method)">#historical_price</a></span> instead</p>
+</div></div>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+129
+130
+131</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coingecko_ruby/client/prices.rb', line 129</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_historical_price_on_date'>get_historical_price_on_date</span><span class='lparen'>(</span><span class='label'>id:</span><span class='comma'>,</span> <span class='label'>date:</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_historical_price'>historical_price</span><span class='lparen'>(</span><span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='label'>date:</span> <span class='id identifier rubyid_date'>date</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_hourly_historical_prices-instance_method">
+  
+    #<strong>get_hourly_historical_prices</strong>(id:, days:, currency: &#39;usd&#39;)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <div class="note deprecated"><strong>Deprecated.</strong> <div class='inline'>
+<p>Use <span class='object_link'><a href="#hourly_historical_price-instance_method" title="CoingeckoRuby::Client::Prices#hourly_historical_price (method)">#hourly_historical_price</a></span> instead</p>
+</div></div>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+202
+203
+204</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coingecko_ruby/client/prices.rb', line 202</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_hourly_historical_prices'>get_hourly_historical_prices</span><span class='lparen'>(</span><span class='label'>id:</span><span class='comma'>,</span> <span class='label'>days:</span><span class='comma'>,</span> <span class='label'>currency:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>usd</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_hourly_historical_price'>hourly_historical_price</span><span class='lparen'>(</span><span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='label'>currency:</span> <span class='id identifier rubyid_currency'>currency</span><span class='comma'>,</span> <span class='label'>days:</span> <span class='id identifier rubyid_days'>days</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_minutely_historical_prices-instance_method">
+  
+    #<strong>get_minutely_historical_prices</strong>(id:, currency: &#39;usd&#39;)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <div class="note deprecated"><strong>Deprecated.</strong> <div class='inline'>
+<p>Use <span class='object_link'><a href="#minutely_historical_price-instance_method" title="CoingeckoRuby::Client::Prices#minutely_historical_price (method)">#minutely_historical_price</a></span> instead</p>
+</div></div>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+165
+166
+167</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coingecko_ruby/client/prices.rb', line 165</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_minutely_historical_prices'>get_minutely_historical_prices</span><span class='lparen'>(</span><span class='label'>id:</span><span class='comma'>,</span> <span class='label'>currency:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>usd</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_minutely_historical_price'>minutely_historical_price</span><span class='lparen'>(</span><span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='label'>currency:</span> <span class='id identifier rubyid_currency'>currency</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_ohlc-instance_method">
+  
+    #<strong>get_ohlc</strong>(id:, days:, currency: &#39;usd&#39;)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <div class="note deprecated"><strong>Deprecated.</strong> <div class='inline'>
+<p>Use <span class='object_link'><a href="#ohlc-instance_method" title="CoingeckoRuby::Client::Prices#ohlc (method)">#ohlc</a></span> instead</p>
+</div></div>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+263
+264
+265</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coingecko_ruby/client/prices.rb', line 263</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_ohlc'>get_ohlc</span><span class='lparen'>(</span><span class='label'>id:</span><span class='comma'>,</span> <span class='label'>days:</span><span class='comma'>,</span> <span class='label'>currency:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>usd</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_ohlc'>ohlc</span><span class='lparen'>(</span><span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='label'>currency:</span> <span class='id identifier rubyid_currency'>currency</span><span class='comma'>,</span> <span class='label'>days:</span> <span class='id identifier rubyid_days'>days</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="get_price-instance_method">
+  
+    #<strong>get_price</strong>(id:, currency: &#39;usd&#39;, options: {})  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <div class="note deprecated"><strong>Deprecated.</strong> <div class='inline'>
+<p>Use <span class='object_link'><a href="#price-instance_method" title="CoingeckoRuby::Client::Prices#price (method)">#price</a></span> or <span class='object_link'><a href="#prices-instance_method" title="CoingeckoRuby::Client::Prices#prices (method)">#prices</a></span> instead</p>
+</div></div>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+46
+47
+48</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coingecko_ruby/client/prices.rb', line 46</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_get_price'>get_price</span><span class='lparen'>(</span><span class='label'>id:</span><span class='comma'>,</span> <span class='label'>currency:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>usd</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>options:</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_price'>price</span><span class='lparen'>(</span><span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='id identifier rubyid_currency'>currency</span><span class='comma'>,</span> <span class='op'>**</span><span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="historical_price-instance_method">
+  
+    #<strong>historical_price</strong>(id, date:, **options)  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Fetches historical price data for a coin at a given date.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Fetch Bitcoin&#39;s price on 30th December, 2017.</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_historical_price'>historical_price</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>bitcoin</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>date:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>30-12-2017</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Sample response object (truncated)</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='lbrace'>{</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='label_end'>&quot;:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>bitcoin</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>symbol</span><span class='label_end'>&quot;:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>btc</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>name</span><span class='label_end'>&quot;:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Bitcoin</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>localization</span><span class='label_end'>&quot;:</span> <span class='lbrace'>{</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>en</span><span class='label_end'>&quot;:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Bitcoin</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ja</span><span class='label_end'>&quot;:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>ビットコイン</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>id</span><span class='label_end'>&quot;:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Bitcoin</span><span class='tstring_end'>&quot;</span></span>
+  <span class='rbrace'>}</span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>image</span><span class='label_end'>&quot;:</span> <span class='lbrace'>{</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>thumb</span><span class='label_end'>&quot;:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png?1547033579</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>small</span><span class='label_end'>&quot;:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://assets.coingecko.com/coins/images/1/small/bitcoin.png?1547033579</span><span class='tstring_end'>&quot;</span></span>
+  <span class='rbrace'>}</span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>market_data</span><span class='label_end'>&quot;:</span> <span class='lbrace'>{</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>current_price</span><span class='label_end'>&quot;:</span> <span class='lbrace'>{</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>btc</span><span class='label_end'>&quot;:</span> <span class='int'>1</span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>eth</span><span class='label_end'>&quot;:</span> <span class='float'>18.483094024188404</span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>eur</span><span class='label_end'>&quot;:</span> <span class='float'>11345.8976447824</span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>gbp</span><span class='label_end'>&quot;:</span> <span class='float'>10079.0677868681</span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>usd</span><span class='label_end'>&quot;:</span> <span class='float'>13620.3618741461</span><span class='comma'>,</span>
+    <span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>market_cap</span><span class='label_end'>&quot;:</span> <span class='lbrace'>{</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>btc</span><span class='label_end'>&quot;:</span> <span class='int'>16772375</span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>eth</span><span class='label_end'>&quot;:</span> <span class='float'>310005384.13394696</span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>eur</span><span class='label_end'>&quot;:</span> <span class='float'>190297650009.907</span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>gbp</span><span class='label_end'>&quot;:</span> <span class='float'>169049904571.772</span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>usd</span><span class='label_end'>&quot;:</span> <span class='float'>228445816988.881</span><span class='comma'>,</span>
+    <span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>total_volume</span><span class='label_end'>&quot;:</span> <span class='lbrace'>{</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>btc</span><span class='label_end'>&quot;:</span> <span class='float'>264345.493482963</span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>eth</span><span class='label_end'>&quot;:</span> <span class='float'>4885922.610916088</span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>eur</span><span class='label_end'>&quot;:</span> <span class='float'>2999236911.91719</span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>gbp</span><span class='label_end'>&quot;:</span> <span class='float'>2664356147.96788</span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>usd</span><span class='label_end'>&quot;:</span> <span class='float'>3600481281.03768</span><span class='comma'>,</span>
+    <span class='rbrace'>}</span>
+  <span class='rbrace'>}</span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>community_data</span><span class='label_end'>&quot;:</span> <span class='lbrace'>{</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>facebook_likes</span><span class='label_end'>&quot;:</span> <span class='id identifier rubyid_null'>null</span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>twitter_followers</span><span class='label_end'>&quot;:</span> <span class='int'>603664</span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>reddit_average_posts_48h</span><span class='label_end'>&quot;:</span> <span class='float'>2.042</span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>reddit_average_comments_48h</span><span class='label_end'>&quot;:</span> <span class='float'>445.896</span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>reddit_subscribers</span><span class='label_end'>&quot;:</span> <span class='int'>612412</span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>reddit_accounts_active_48h</span><span class='label_end'>&quot;:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>14074.0</span><span class='tstring_end'>&quot;</span></span>
+  <span class='rbrace'>}</span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>developer_data</span><span class='label_end'>&quot;:</span> <span class='lbrace'>{</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>forks</span><span class='label_end'>&quot;:</span> <span class='int'>13660</span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>stars</span><span class='label_end'>&quot;:</span> <span class='int'>23665</span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>subscribers</span><span class='label_end'>&quot;:</span> <span class='int'>2513</span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>total_issues</span><span class='label_end'>&quot;:</span> <span class='int'>3591</span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>closed_issues</span><span class='label_end'>&quot;:</span> <span class='int'>3022</span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>pull_requests_merged</span><span class='label_end'>&quot;:</span> <span class='int'>5038</span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>pull_request_contributors</span><span class='label_end'>&quot;:</span> <span class='int'>450</span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>code_additions_deletions_4_weeks</span><span class='label_end'>&quot;:</span> <span class='lbrace'>{</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>additions</span><span class='label_end'>&quot;:</span> <span class='id identifier rubyid_null'>null</span><span class='comma'>,</span>
+      <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>deletions</span><span class='label_end'>&quot;:</span> <span class='id identifier rubyid_null'>null</span>
+    <span class='rbrace'>}</span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>commit_count_4_weeks</span><span class='label_end'>&quot;:</span> <span class='int'>147</span>
+  <span class='rbrace'>}</span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>public_interest_stats</span><span class='label_end'>&quot;:</span> <span class='lbrace'>{</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>alexa_rank</span><span class='label_end'>&quot;:</span> <span class='int'>2912</span><span class='comma'>,</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>bing_matches</span><span class='label_end'>&quot;:</span> <span class='id identifier rubyid_null'>null</span>
+  <span class='rbrace'>}</span>
+<span class='rbrace'>}</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>id</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the coin id to fetch.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>date</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the date to fetch the historical price, date given must be in the form of &#39;DD-MM-YYYY&#39; (e.g: &#39;14-05-2021&#39;). Defaults to today&#39;s date.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>returns the coin&#39;s historical price data on the given date.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+122
+123
+124
+125
+126</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coingecko_ruby/client/prices.rb', line 122</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_historical_price'>historical_price</span><span class='lparen'>(</span><span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='label'>date:</span><span class='comma'>,</span> <span class='op'>**</span><span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_date'>date</span> <span class='op'>=</span> <span class='const'>Time</span><span class='period'>.</span><span class='id identifier rubyid_now'>now</span><span class='period'>.</span><span class='id identifier rubyid_strftime'>strftime</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%d-%m-%Y</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_date'>date</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+
+  <span class='id identifier rubyid_get'>get</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>coins/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_id'>id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/history</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbrace'>{</span> <span class='label'>date:</span> <span class='id identifier rubyid_date'>date</span><span class='comma'>,</span> <span class='op'>**</span><span class='id identifier rubyid_options'>options</span> <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="hourly_historical_price-instance_method">
+  
+    #<strong>hourly_historical_price</strong>(id, currency: &#39;usd&#39;, days: 7, **options)  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class='inline'>
+<p>Hourly historical data is only available within the last 90 days.</p>
+</div>
+  </div>
+
+
+<p>Fetches a coin&#39;s historical price data in 1 hour ranges.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Fetch Bitcoin&#39;s hourly historical price in USD within the last 7 days.</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_hourly_historical_price'>hourly_historical_price</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>bitcoin</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>days:</span> <span class='int'>7</span><span class='rparen'>)</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Sample response object (truncated)</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='lbrace'>{</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>prices</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='lbracket'>[</span>
+    <span class='lbracket'>[</span><span class='int'>1620540153122</span><span class='comma'>,</span> <span class='float'>58533.64354969528</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='comment'># [UNIX timestamp for minutely price data, coin price in given currency]
+</span>    <span class='lbracket'>[</span><span class='int'>1620543723872</span><span class='comma'>,</span> <span class='float'>58384.26782776662</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbracket'>[</span><span class='int'>1620547381049</span><span class='comma'>,</span> <span class='float'>58022.030773147424</span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='rbracket'>]</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>market_caps</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='lbracket'>[</span>
+    <span class='lbracket'>[</span><span class='int'>1620540153122</span><span class='comma'>,</span> <span class='float'>1094831531450.288</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbracket'>[</span><span class='int'>1620543723872</span><span class='comma'>,</span> <span class='float'>1092040480555.5005</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbracket'>[</span><span class='int'>1620547381049</span><span class='comma'>,</span> <span class='float'>1085268316789.8125</span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='rbracket'>]</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>total_volumes</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='lbracket'>[</span>
+    <span class='lbracket'>[</span><span class='int'>1620540153122</span><span class='comma'>,</span> <span class='float'>71975097904.11748</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbracket'>[</span><span class='int'>1620543723872</span><span class='comma'>,</span> <span class='float'>72192190625.33702</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbracket'>[</span><span class='int'>1620547381049</span><span class='comma'>,</span> <span class='float'>72064327648.28767</span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='rbracket'>]</span>
+<span class='rbrace'>}</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>id</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the coin id to fetch.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>currency</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>&#39;usd&#39;</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the currency used to display hourly historical price. Defaults to &#39;USD&#39;</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>days</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>7</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the number of days to fetch hourly historical prices (min: 1 day, max: 90 days). Defaults to 7 days</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>returns the coin&#39;s hourly historical price data within the number of days given.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+195
+196
+197
+198
+199</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coingecko_ruby/client/prices.rb', line 195</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_hourly_historical_price'>hourly_historical_price</span><span class='lparen'>(</span><span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='label'>currency:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>usd</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>days:</span> <span class='int'>7</span><span class='comma'>,</span> <span class='op'>**</span><span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+  <span class='kw'>return</span> <span class='id identifier rubyid_daily_historical_price'>daily_historical_price</span><span class='lparen'>(</span><span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='label'>currrency:</span> <span class='id identifier rubyid_currency'>currency</span><span class='comma'>,</span> <span class='label'>days:</span> <span class='id identifier rubyid_days'>days</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_days'>days</span> <span class='op'>&gt;</span> <span class='int'>90</span>
+
+  <span class='id identifier rubyid_get'>get</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>coins/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_id'>id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/market_chart</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbrace'>{</span> <span class='label'>vs_currency:</span> <span class='id identifier rubyid_currency'>currency</span><span class='comma'>,</span> <span class='label'>days:</span> <span class='id identifier rubyid_days'>days</span><span class='comma'>,</span> <span class='op'>**</span><span class='id identifier rubyid_options'>options</span> <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="minutely_historical_price-instance_method">
+  
+    #<strong>minutely_historical_price</strong>(id, currency: &#39;usd&#39;, **options)  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class='inline'>
+<p>Minutely historical data is only available within the last 24 hours.</p>
+</div>
+  </div>
+
+
+<p>Fetches a coin&#39;s historical price data in 5 - 10 minutes ranges.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Fetch Bitcoin&#39;s minutely historical price within the last 24 hours.</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_minutely_historical_price'>minutely_historical_price</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>bitcoin</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Sample response object (truncated)</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='lbrace'>{</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>prices</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='lbracket'>[</span>
+    <span class='lbracket'>[</span><span class='int'>1621057474114</span><span class='comma'>,</span> <span class='float'>49364.605172521166</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='comment'># [UNIX timestamp for minutely price data, coin price in given currency]
+</span>    <span class='lbracket'>[</span><span class='int'>1621057731319</span><span class='comma'>,</span> <span class='float'>49482.24672699064</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbracket'>[</span><span class='int'>1621058047104</span><span class='comma'>,</span> <span class='float'>49759.16253913667</span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>market_caps</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='lbracket'>[</span>
+    <span class='lbracket'>[</span><span class='int'>1621057474114</span><span class='comma'>,</span> <span class='float'>923529491095.7441</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbracket'>[</span><span class='int'>1621057731319</span><span class='comma'>,</span> <span class='float'>923529491095.7441</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbracket'>[</span><span class='int'>1621058047104</span><span class='comma'>,</span> <span class='float'>925839705121.9677</span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>total_volumes</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='lbracket'>[</span>
+    <span class='lbracket'>[</span><span class='int'>1621057474114</span><span class='comma'>,</span> <span class='float'>55351845301.87241</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbracket'>[</span><span class='int'>1621057731319</span><span class='comma'>,</span> <span class='float'>55565821585.076706</span><span class='rbracket'>]</span><span class='comma'>,</span>
+    <span class='lbracket'>[</span><span class='int'>1621058047104</span><span class='comma'>,</span> <span class='float'>57046967935.326035</span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='rbracket'>]</span>
+<span class='rbrace'>}</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>id</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the coin id to fetch.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>currency</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>&#39;usd&#39;</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the currency used to display minutely historical price. Defaults to &#39;USD&#39;</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>returns the coin&#39;s minutely historical price data within the last 24 hours.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+160
+161
+162</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coingecko_ruby/client/prices.rb', line 160</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_minutely_historical_price'>minutely_historical_price</span><span class='lparen'>(</span><span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='label'>currency:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>usd</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='op'>**</span><span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_get'>get</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>coins/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_id'>id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/market_chart</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbrace'>{</span> <span class='label'>vs_currency:</span> <span class='id identifier rubyid_currency'>currency</span><span class='comma'>,</span> <span class='label'>days:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='op'>**</span><span class='id identifier rubyid_options'>options</span> <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="ohlc-instance_method">
+  
+    #<strong>ohlc</strong>(id, currency: &#39;usd&#39;, days: 7, **options)  &#x21d2; <tt>Array&lt;Array&lt;String, Float&gt;&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Fetches a coin&#39;s open, high, low, and close (OHLC) data within the number of days given.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Fetch Bitcoin&#39;s OHLC data within the last 7 days.</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_ohlc'>ohlc</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>bitcoin</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>days:</span> <span class='int'>7</span><span class='rparen'>)</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Sample response object (truncated)</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='lbracket'>[</span>
+  <span class='lbracket'>[</span><span class='int'>1620547200000</span><span class='comma'>,</span> <span class='float'>58384.27</span><span class='comma'>,</span> <span class='float'>58384.27</span><span class='comma'>,</span> <span class='float'>58384.27</span><span class='comma'>,</span> <span class='float'>58384.27</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='comment'># [UNIX timestamp for OHLC data, open, high, low, close]
+</span>  <span class='lbracket'>[</span><span class='int'>1620561600000</span><span class='comma'>,</span> <span class='float'>58022.03</span><span class='comma'>,</span> <span class='float'>58214.96</span><span class='comma'>,</span> <span class='float'>57943.18</span><span class='comma'>,</span> <span class='float'>58048.35</span><span class='rbracket'>]</span><span class='comma'>,</span>
+  <span class='lbracket'>[</span><span class='int'>1620576000000</span><span class='comma'>,</span> <span class='float'>57956.7</span><span class='comma'>,</span> <span class='float'>57956.7</span><span class='comma'>,</span> <span class='float'>56636.68</span><span class='comma'>,</span> <span class='float'>57302.22</span><span class='rbracket'>]</span><span class='comma'>,</span>
+<span class='rbracket'>]</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>id</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the coin id to fetch.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>days</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>, <tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>7</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the number of days to fetch daily historical prices. Valid values: 1/7/14/30/90/180/365/&#39;max&#39;. Defaults to 7 days.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>currency</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>&#39;usd&#39;</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the currency to display OHLC data. Defaults to &#39;USD&#39;.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;Array&lt;String, Float&gt;&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>returns the coin&#39;s OHLC data within the number of days given. If the number of days given is between 1-2 days, the OHLC data is returned in 30-minute intervals. If the number of days given is between 3-30 days, the OHLC data is returned in 4-hour intervals. If the number of days given is more than 30 days, the OHLC data is returned in 4-day intervals.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+258
+259
+260</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coingecko_ruby/client/prices.rb', line 258</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_ohlc'>ohlc</span><span class='lparen'>(</span><span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='label'>currency:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>usd</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>days:</span> <span class='int'>7</span><span class='comma'>,</span> <span class='op'>**</span><span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_get'>get</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>coins/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_id'>id</span><span class='embexpr_end'>}</span><span class='tstring_content'>/ohlc</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='lbrace'>{</span> <span class='label'>vs_currency:</span> <span class='id identifier rubyid_currency'>currency</span><span class='comma'>,</span> <span class='label'>days:</span> <span class='id identifier rubyid_days'>days</span><span class='comma'>,</span> <span class='op'>**</span><span class='id identifier rubyid_options'>options</span> <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="price-instance_method">
+  
+    #<strong>price</strong>(ids, currency: &#39;usd&#39;, **options)  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Fetches the current price for a coin in the given coin or currency.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Fetch the current price in USD for Bitcoin.</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_price'>price</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>bitcoin</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>currency:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>usd</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Sample response object</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='lbrace'>{</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>bitcoin</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>usd</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='int'>47931</span> <span class='comment'># current price in given currency
+</span>  <span class='rbrace'>}</span>
+<span class='rbrace'>}</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Fetch the current price, market cap, 24 hour volume, 24 hour price change and last updated at for Bitcoin.</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_price'>price</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>bitcoin</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>usd</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='label'>include_market_cap:</span> <span class='kw'>true</span><span class='comma'>,</span> <span class='label'>include_24hr_vol:</span> <span class='kw'>true</span><span class='comma'>,</span> <span class='label'>include_24hr_change:</span> <span class='kw'>true</span><span class='comma'>,</span> <span class='label'>include_last_updated_at:</span> <span class='kw'>true</span><span class='rparen'>)</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Sample response object</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='lbrace'>{</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>bitcoin</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span>
+    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>usd</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='int'>48217</span><span class='comma'>,</span> <span class='comment'># current price in given currency
+</span>    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>usd_market_cap</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='float'>905542853013.7438</span><span class='comma'>,</span> <span class='comment'># market cap in given currency
+</span>    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>usd_24h_vol</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='float'>66724791943.1098</span><span class='comma'>,</span> <span class='comment'># 24 hour volume in given currency
+</span>    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>usd_24h_change</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='op'>-</span><span class='float'>2.813036070702345</span><span class='comma'>,</span> <span class='comment'># 24 hour price change percentage
+</span>    <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>last_updated_at</span><span class='tstring_end'>&quot;</span></span> <span class='op'>=&gt;</span> <span class='int'>1621142197</span> <span class='comment'># last updated at UNIX timestamp for the given coin
+</span>  <span class='rbrace'>}</span>
+<span class='rbrace'>}</span></code></pre>
+    
+  </div>
+<p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>ids</span>
+      
+      
+        <span class='type'>(<tt>String</tt>, <tt>Array</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the coin id or array of ids to fetch.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>currency</span>
+      
+      
+        <span class='type'>(<tt>String</tt>, <tt>Array</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>&#39;usd&#39;</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>the currency or array of currencies to display the coin&#39;s price. Defaults to &#39;USD&#39;</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    
+    
+    
+    
+    <p class="tag_title">Options Hash (<tt>**options</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:include_market_cap</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>include market cap data.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:include_24hr_vol</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>include 24 hour volume data.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:include_24hr_change</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>include 24 hour price change data.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:include_last_updated_at</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>include last updated at value for the given coin.</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>returns the given coin id and its current price.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+34
+35
+36
+37
+38</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coingecko_ruby/client/prices.rb', line 34</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_price'>price</span><span class='lparen'>(</span><span class='id identifier rubyid_ids'>ids</span><span class='comma'>,</span> <span class='label'>currency:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>usd</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='op'>**</span><span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_ids'>ids</span> <span class='op'>=</span> <span class='id identifier rubyid_ids'>ids</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>,</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_ids'>ids</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span> <span class='const'>Array</span>
+  <span class='id identifier rubyid_currency'>currency</span> <span class='op'>=</span> <span class='id identifier rubyid_currency'>currency</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>,</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_currency'>currency</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span> <span class='const'>Array</span>
+  <span class='id identifier rubyid_get'>get</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>simple/price</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='lbrace'>{</span> <span class='label'>ids:</span> <span class='id identifier rubyid_ids'>ids</span><span class='comma'>,</span> <span class='label'>vs_currencies:</span> <span class='id identifier rubyid_currency'>currency</span><span class='comma'>,</span> <span class='op'>**</span><span class='id identifier rubyid_options'>options</span> <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="prices-instance_method">
+  
+    #<strong>prices</strong>(ids, currency: &#39;usd&#39;, **options)  &#x21d2; <tt>Object</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li>for {#price}</li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+41
+42
+43</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coingecko_ruby/client/prices.rb', line 41</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_prices'>prices</span><span class='lparen'>(</span><span class='id identifier rubyid_ids'>ids</span><span class='comma'>,</span> <span class='label'>currency:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>usd</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='op'>**</span><span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_price'>price</span><span class='lparen'>(</span><span class='id identifier rubyid_ids'>ids</span><span class='comma'>,</span> <span class='label'>currency:</span> <span class='id identifier rubyid_currency'>currency</span><span class='comma'>,</span> <span class='op'>**</span><span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="supported_currencies-instance_method">
+  
+    #<strong>supported_currencies</strong>  &#x21d2; <tt>Array&lt;String&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Fetches the list of currencies currently supported by CoinGecko&#39;s API.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Fetch supported currencies.</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='id identifier rubyid_client'>client</span><span class='period'>.</span><span class='id identifier rubyid_supported_currencies'>supported_currencies</span></code></pre>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p>Sample response object (truncated)</p>
+</div></p>
+      
+      <pre class="example code"><code><span class='lbracket'>[</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>btc</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>eth</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>yfi</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>usd</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>aud</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>eur</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>gbp</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+<span class='rbracket'>]</span></code></pre>
+    
+  </div>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;String&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>returns the list of currencies currently supported by CoinGecko&#39;s API.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+283
+284
+285</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/coingecko_ruby/client/prices.rb', line 283</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_supported_currencies'>supported_currencies</span>
+  <span class='id identifier rubyid_get'>get</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>simple/supported_vs_currencies</span><span class='tstring_end'>&#39;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Mon Jul 19 12:04:51 2021 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.26 (ruby-2.7.1).
+</div>
+
+    </div>
+  </body>
+</html>
