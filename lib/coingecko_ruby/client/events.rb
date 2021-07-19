@@ -14,9 +14,14 @@ module CoingeckoRuby
       # @return [Array<Hash>] each finance platform's name, category, url, facts (description), and centralized status.
       #
       # @example Get all upcoming events.
-      #   client.get_events(options: { upcoming_events_only: true })
+      #   client.events(upcoming_events_only: true) 
+      def events(**options)
+        get 'events', options
+      end
+
+      # @deprecated Use {#events} instead
       def get_events(options: {})
-        get 'events', { options: options }
+        events(**options)
       end
 
       # Fetches the valid list of countries to fetch events from.
@@ -24,7 +29,7 @@ module CoingeckoRuby
       # @return [Hash] each country's name and code and the total country count.
       #
       # @example Get all event countries.
-      #   client.get_event_countries
+      #   client.event_countries
       # @example Sample response object (truncated)
       #   {
       #     "data" => [{
@@ -46,8 +51,13 @@ module CoingeckoRuby
       #     ],
       #     "count" => 4
       #   }
-      def get_event_countries
+      def event_countries
         get 'events/countries'
+      end
+
+      # @deprecated Use {#event_countries} instead
+      def get_event_countries
+        event_countries
       end
 
       # Fetches the valid list of events to fetch.
@@ -55,14 +65,19 @@ module CoingeckoRuby
       # @return [Array<Hash>] the list of event types and total event types count.
       #
       # @example Get all event types.
-      #   client.get_event_types
+      #   client.event_types
       # @example Sample response object
       #   {
       #     "data" => ["Event", "Conference", "Meetup"],
       #     "count" => 3
       #   }
-      def get_event_types
+      def event_types
         get 'events/types'
+      end
+
+      # @deprecated Use {#event_types} instead
+      def get_event_types
+        event_types
       end
     end
   end

@@ -6,7 +6,7 @@ module CoingeckoRuby
       # @return [Hash] global crypto data (e.g. market cap, total volume, active ICOs, etc.)
       #
       # @example Get global crypto data.
-      #   client.get_global_crypto_data
+      #   client.global_crypto_data
       # @example Sample response object (truncated)
       #   {
       #     "data" => {
@@ -35,8 +35,13 @@ module CoingeckoRuby
       #       "updated_at" => 1621344957
       #     }
       #   }
-      def get_global_crypto_data
+      def global_crypto_data
         get 'global'
+      end
+
+      # @deprecated Use {#global_crypto_data} instead
+      def get_global_crypto_data
+        global_crypto_data
       end
 
       # Fetches global crypto data from CoinGecko.
@@ -44,7 +49,7 @@ module CoingeckoRuby
       # @return [Hash] global defi data.
       #
       # @example Get global defi data.
-      #   client.get_global_defi_data
+      #   client.global_defi_data
       # @example Sample response object
       #   {
       #     "data" => {
@@ -59,8 +64,13 @@ module CoingeckoRuby
       #       "top_coin_defi_dominance" => 14.449398175884316
       #     }
       #   }
-      def get_global_defi_data
+      def global_defi_data
         get 'global/decentralized_finance_defi'
+      end
+
+      # @deprecated Use {#global_defi_data} instead
+      def get_global_defi_data
+        global_defi_data
       end
 
       # Fetches the top 7 coin searches from CoinGecko in the last 24 hours.
@@ -68,7 +78,7 @@ module CoingeckoRuby
       # @return [Hash] the ternding searches and its information.
       #
       # @example Get trending searches in the last 24 hours.
-      #   client.get_trending_searches
+      #   client.trending_searches
       # @example Sample response object (truncated)
       #   {
       #     "coins" => [{
@@ -92,8 +102,13 @@ module CoingeckoRuby
       #     ],
       #     "exchanges" => []
       #   }
-      def get_trending_searches
+      def trending_searches
         get 'search/trending'
+      end
+
+      # @deprecated Use {#trending_searches} instead
+      def get_trending_searches
+        trending_searches
       end
 
       # Fetches coin and/or market status updates.
@@ -106,7 +121,7 @@ module CoingeckoRuby
       # @return [Hash] the list of status updates and its information.
       #
       # @example Get a single status update.
-      #   client.get_status_updates(options: { per_page: 1 })
+      #   client.status_updates(per_page: 1)
       # @example Sample response object
       #   {
       #     "status_updates" => [{
@@ -147,8 +162,12 @@ module CoingeckoRuby
       #       }
       #     }]
       #   }
+      def status_updates(**options)
+        get 'status_updates', options
+      end
+
       def get_status_updates(options: {})
-        get 'status_updates', { options: options }
+        status_updates(**options)
       end
     end
   end

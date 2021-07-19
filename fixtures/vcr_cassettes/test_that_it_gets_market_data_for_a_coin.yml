@@ -68,4 +68,102 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '[{"id":"bitcoin","symbol":"btc","name":"Bitcoin","image":"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579","current_price":49053,"market_cap":917825524991,"market_cap_rank":1,"fully_diluted_valuation":1030116515125,"total_volume":61679663434,"high_24h":51300,"low_24h":48019,"price_change_24h":-2246.57482218,"price_change_percentage_24h":-4.37931,"market_cap_change_24h":-41121427948.2572,"market_cap_change_percentage_24h":-4.28819,"circulating_supply":18710831.0,"total_supply":21000000.0,"max_supply":21000000.0,"ath":64805,"ath_change_percentage":-24.30618,"ath_date":"2021-04-14T11:54:46.763Z","atl":67.81,"atl_change_percentage":72240.20172,"atl_date":"2013-07-06T00:00:00.000Z","roi":null,"last_updated":"2021-05-15T15:59:43.867Z"}]'
   recorded_at: Sat, 15 May 2021 16:01:04 GMT
+- request:
+    method: get
+    uri: https://api.coingecko.com/api/v3/coins/markets
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 422
+      message: Unprocessable Entity
+    headers:
+      Date:
+      - Mon, 19 Jul 2021 03:15:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding, Origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 8f272c6f-8853-44a6-8bda-3155726909cd
+      X-Runtime:
+      - '0.003016'
+      Cf-Cache-Status:
+      - MISS
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6710c9a018fe3db2-HKG
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443";
+        ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":"Missing parameter vs_currency"}'
+  recorded_at: Mon, 19 Jul 2021 03:15:50 GMT
+- request:
+    method: get
+    uri: https://api.coingecko.com/api/v3/coins/markets?ids=bitcoin
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 422
+      message: Unprocessable Entity
+    headers:
+      Date:
+      - Mon, 19 Jul 2021 03:24:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding, Origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 12bb8965-3885-4044-8895-b0c2f48f16d8
+      X-Runtime:
+      - '0.002410'
+      Cf-Cache-Status:
+      - MISS
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6710d6961c18d1fb-HKG
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443";
+        ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":"Missing parameter vs_currency"}'
+  recorded_at: Mon, 19 Jul 2021 03:24:41 GMT
 recorded_with: VCR 6.0.0

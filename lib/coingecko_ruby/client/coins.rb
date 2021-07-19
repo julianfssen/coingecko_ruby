@@ -3,7 +3,7 @@ module CoingeckoRuby
     module Coins
       # Fetches the id, name, and symbol of every coin supported by CoinGecko's API.
       #
-      # @param include_contract_address [Boolean] displays the coin's platform contract address (e.g. 0x... for ETH-based tokens) 
+      # @option options include_platform [Boolean] displays the coin's platform contract address (e.g. 0x... for ETH-based tokens) 
       #
       # @return [Array<Hash>] returns an array of hashes for every supported coin's id, name, symbol, and platform contract address (optional).
       #
@@ -21,8 +21,8 @@ module CoingeckoRuby
       #       "name" => "0.5X Long Algorand Token"
       #     }, {
       #   ]
-      def coins_list(include_contract_address: false)
-        get 'coins/list', { include_contract_address: include_contract_address }
+      def coins_list(**options)
+        get 'coins/list', options
       end
 
       # Fetches detailed current data for a coin.
@@ -36,16 +36,21 @@ module CoingeckoRuby
       # @return [Hash] returns comprehensive current data for the given coin.
       #
       # @example Fetch Bitcoin's current data.
-      #   client.get_coin_data(id: 'bitcoin')
+      #   client.coin('bitcoin')
+      def coin(id, **options)
+        get "coins/#{id}", options
+      end
+
+      # @deprecated Use {#coin} instead
       def get_coin_data(id:, options: {})
-        get "coins/#{id}", { options: options }
+        coin(id, **options)
       end
 
       # Fetches the list of tickers (e.g: BTC-USD) for a coin
       #
       # @param id [String] the coin id to fetch.
-      # @option options [String] :exchange_id fetch tickers from the given exchange id (e.g. 'binance').
-      # @option options [String] :include_exchange_logo includes the exchange's logo.
+      # @option options [String] :exchange_ids filter ticker results from the given exchange ids (e.g. 'binance, bitfinex').
+      # @option options [Boolean] :include_exchange_logo flag to show the exchange's logo.
       # @option options [Integer] :page sets the page for results.
       # @option options [String] :order ('trust_score_desc') sets the sort order for results. Valid values: trust_score_desc', 'trust_score_asc', 'volume_desc.
       # @option options [Boolean] :depth (false) displays orderbook depth (2%).
@@ -53,7 +58,7 @@ module CoingeckoRuby
       # @return [Hash] returns the list of tickers for the given coin.
       #
       # @example Fetch Bitcoin's tickers.
-      #   client.get_tickers(id: 'bitcoin)
+      #   client.tickers('bitcoin')
       # @example Sample response object (truncated)
       #   {
       #     "name" => "Bitcoin",
@@ -87,7 +92,7 @@ module CoingeckoRuby
       #     }],
       #   }
       # @example Fetch Bitcoin's tickers from Binance with 2% orderbook depth data.
-      #   client.get_tickers(id: 'bitcoin', options: { exchange_id: 'binance', depth: true })
+      #   client.tickers('bitcoin', exchange_id: 'binance', depth: true)
       # @example Sample response object (truncated)
       #   {
       #     "name" => "Bitcoin",
@@ -122,14 +127,19 @@ module CoingeckoRuby
       #       "target_coin_id" => "tether"
       #     }],
       #   }
+      def tickers(id, **options)
+        get "coins/#{id}/tickers", options
+      end
+
+      # @deprecated Use {#tickers} instead
       def get_tickers(id:, options: {})
-        get "coins/#{id}/tickers", { options: options }
+        tickers(id, **options)
       end
 
       # Fetches market data for a coin or a list of coins.
       #
       # @param ids [String] the coin id or ids to fetch.
-      # @param currency [String] the currency to display market price data.
+      # @option options [String] :vs_currency the currency to display market price data.
       # @option options [String] :category filter results by the given coin category.
       # @option options [String] :order ('market_cap_desc') sets the sort order for results. Valid values: market_cap_desc, gecko_desc, gecko_asc, market_cap_asc, market_cap_desc, volume_asc, volume_desc, id_asc, id_desc.
       # @option options [Integer] :per_page (100) sets the number of results to return per page.
@@ -140,7 +150,7 @@ module CoingeckoRuby
       # @return [Array<Hash>] returns market data for the given coin or coins.
       #
       # @example Fetch market data for Bitcoin and Ethereum in USD.
-      #   client.get_markets(ids: 'bitcoin, ethereum', currency: 'gbp')
+      #   client.markets('bitcoin, ethereum', vs_currency: 'gbp')
       # @example Sample response object
       #   [{
       #       "id" => "bitcoin",
@@ -205,10 +215,13 @@ module CoingeckoRuby
       #       "last_updated" => "2021-05-16T07:06:00.946Z"
       #     }
       #   ]
-      # @example Fetch market data for every CoinGecko-supported coin in USD.
-      #   client.get_markets(currency: 'usd')
+      def markets(ids, **options)
+        get 'coins/markets', { ids: ids, **options }
+      end
+
+      # @deprecated Use {#markets} instead
       def get_markets(ids:, currency: 'usd', options: {})
-        get 'coins/markets', { ids: ids, vs_currency: currency, options: options }
+        markets(ids, vs_currency: currency, **options)
       end
     end
   end

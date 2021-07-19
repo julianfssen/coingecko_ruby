@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-1. Require the gem.
+1. Require the gem if you're not using Rails or if your environment does not autoload libraries.
 
 ```ruby
 require 'coingecko_ruby'
@@ -31,19 +31,19 @@ require 'coingecko_ruby'
 2. Create a client instance.
 
 ```ruby
-client = CoingeckoRuby.client
+client = CoingeckoRuby::Client.new
 ```
 
 3. Use the client to fetch your desired data.
 
 ```ruby
-# Example: Fetching the current price of Bitcoin in USD
-client.get_price(id: 'bitcoin', currency: 'usd')
+# Example: Fetching the current price of Bitcoin.
+client.price('bitcoin')
 ```
 
 ## Documentation
 
-WORK IN PROGRESS
+[Read the API documentation here: ](https://julianfssen.github.io/coingecko_ruby/CoingeckoRuby.html)
 
 ## Contributing
 

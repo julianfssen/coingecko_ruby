@@ -8,7 +8,7 @@ module CoingeckoRuby
       # @return [Array<Hash>] each derivative product's information.
       #
       # @example Get all unexpired derivatives.
-      #   client.get_derivatives(options: { include_tickers: 'unexpired' })
+      #   client.derivatives(include_tickers: 'unexpired')
       # @example Sample response object (truncated)
       #   [
       #     {
@@ -44,8 +44,13 @@ module CoingeckoRuby
       #       "expired_at" => nil
       #     },
       #   ]
+      def derivatives(**options)
+        get 'derivatives', options
+      end
+
+      # @deprecated Use {#derivatives} instead
       def get_derivatives(options: {})
-        get 'derivatives', { options: options }
+        derivatives(**options)
       end
 
       # Fetches the list of derivative exchanges listed in CoinGecko.
@@ -57,7 +62,7 @@ module CoingeckoRuby
       # @return [Array<Hash>] each derivative exchange's information.
       #
       # @example Get one derivative exchange.
-      #   client.get_derivative_exchanges(options: { per_page: 1 })
+      #   client.derivative_exchanges(per_page: 1)
       # @example Sample response object
       #   [{
       #     "name" => "Binance (Futures)",
@@ -73,19 +78,25 @@ module CoingeckoRuby
       #     "description" => "",
       #     "url" => "https://www.binance.com/"
       #   }]
+      def derivative_exchanges(**options)
+        get 'derivatives/exchanges', options
+      end
+
+      # @deprecated Use {#derivative_exchanges} instead
       def get_derivative_exchanges(options: {})
-        get 'derivatives/exchanges', { options: options }
+        derivative_exchanges(**options)
       end
 
       # Fetches data for a specific derivative exchange.
       #
-      # @option options [String] :id the id of the derivative exchange.
+      # @param id [String] the id of the derivative exchange.
+      #
       # @option options [String] :include_tickers determines whether to display all tickers or only show unexpired tickers. Does not return any ticker data if left blank. Valid values: all, unexpired
       #
       # @return [Hash] the derivative exchange's information.
       #
       # @example Get data for the Binance Futures derivative exchange.
-      #   client.get_derivative_exchange(id: 'binance_futures')
+      #   client.derivative_exchange('binance_futures')
       # @example Sample response object
       #   {
       #     "name" => "Binance (Futures)",
@@ -100,8 +111,13 @@ module CoingeckoRuby
       #     "description" => "",
       #     "url" => "https://www.binance.com/"
       #   }
+      def derivative_exchange(id, **options)
+        get "derivatives/exchanges/#{id}", options
+      end
+
+      # @deprecated Use {#derivative_exchange} instead
       def get_derivative_exchange(id:, options: {})
-        get "derivatives/exchanges/#{id}", { options: options }
+        derivative_exchange(id, **options)
       end
 
       # Fetches the list ids and names of derivative exchanges listed in CoinGecko.
@@ -109,7 +125,7 @@ module CoingeckoRuby
       # @return [Array<Hash>] each derivative exchange's id and name.
       #
       # @example Get all unexpired derivatives.
-      #   client.get_derivative_exchanges_ids_and_names
+      #   client.derivative_exchanges_ids_and_names
       # @example Sample response object (truncated)
       #   [
       #     {
@@ -125,8 +141,13 @@ module CoingeckoRuby
       #       "name" => "FTX (Derivatives)"
       #     }
       #   ]
-      def get_derivative_exchanges_ids_and_names
+      def derivative_exchanges_ids_and_names
         get 'derivatives/exchanges/list'
+      end
+
+      # @deprecated Use {#derivative_exchanges_ids_and_names} instead
+      def get_derivative_exchanges_ids_and_names
+        derivative_exchanges_ids_and_names
       end
     end
   end

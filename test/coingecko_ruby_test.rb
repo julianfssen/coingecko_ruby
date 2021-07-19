@@ -6,6 +6,6 @@ class CoingeckoRubyTest < Minitest::Test
   end
 
   def test_that_it_returns_a_new_client_instance
-    assert_instance_of CoingeckoRuby::Client, CoingeckoRuby.client
+    assert_instance_of CoingeckoRuby::Client, CoingeckoRuby::Client.new
   end
 end

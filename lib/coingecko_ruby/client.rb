@@ -23,5 +23,11 @@ module CoingeckoRuby
     include CoingeckoRuby::Client::Derivatives
     include CoingeckoRuby::Client::Events
     include CoingeckoRuby::Client::Infos
+
+    attr_reader :client
+
+    def initialize
+      @client = self
+    end
   end
 end

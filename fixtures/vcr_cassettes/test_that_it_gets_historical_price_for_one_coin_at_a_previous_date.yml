@@ -121,4 +121,53 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"error":"Missing parameter date"}'
   recorded_at: Sun, 16 May 2021 08:21:20 GMT
+- request:
+    method: get
+    uri: https://api.coingecko.com/api/v3/coins/bitcoin/history
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 422
+      message: Unprocessable Entity
+    headers:
+      Date:
+      - Mon, 19 Jul 2021 03:15:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding, Origin
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - e2275edd-30e1-4d52-a72a-77424e5ecff2
+      X-Runtime:
+      - '0.004017'
+      Cf-Cache-Status:
+      - MISS
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 6710c9c19aff2254-HKG
+      Alt-Svc:
+      - h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443";
+        ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"error":"Missing parameter date"}'
+  recorded_at: Mon, 19 Jul 2021 03:15:56 GMT
 recorded_with: VCR 6.0.0
