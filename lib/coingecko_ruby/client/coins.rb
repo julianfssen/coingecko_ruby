@@ -223,6 +223,11 @@ module CoingeckoRuby
       def get_markets(ids:, currency: 'usd', options: {})
         markets(ids, vs_currency: currency, **options)
       end
+
+      def contract(id, address, **options)
+        get "coins/#{id}/contract/#{address}", **options
+      end
+
     end
   end
 end
