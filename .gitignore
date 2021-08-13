@@ -8,4 +8,5 @@
 /tmp/
 *.gem
 *.swp
+.byebug_history
 .DS_Store

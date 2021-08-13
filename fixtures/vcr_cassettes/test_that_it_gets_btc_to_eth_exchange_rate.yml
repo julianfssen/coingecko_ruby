@@ -117,4 +117,64 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"error":"Missing parameter ids"}'
   recorded_at: Mon, 19 Jul 2021 03:21:30 GMT
+- request:
+    method: get
+    uri: https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=eth
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 13 Aug 2021 13:33:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - max-age=30, public, must-revalidate, s-maxage=60
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - POST, PUT, DELETE, GET, OPTIONS
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Accept, Authorization
+      Access-Control-Expose-Headers:
+      - link, per-page, total
+      Vary:
+      - Accept-Encoding, Origin
+      Etag:
+      - W/"8b426752b96fdbffea9b2574324950d1"
+      X-Request-Id:
+      - 175e8f17-784b-49f0-b4ea-38533643f508
+      X-Runtime:
+      - '0.004189'
+      Alternate-Protocol:
+      - 443:npn-spdy/2
+      Cf-Cache-Status:
+      - EXPIRED
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 67e2506bce6f4655-SIN
+    body:
+      encoding: ASCII-8BIT
+      string: '{"bitcoin":{"eth":14.394342}}'
+  recorded_at: Fri, 13 Aug 2021 13:33:15 GMT
 recorded_with: VCR 6.0.0

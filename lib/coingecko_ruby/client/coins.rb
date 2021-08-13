@@ -215,8 +215,8 @@ module CoingeckoRuby
       #       "last_updated" => "2021-05-16T07:06:00.946Z"
       #     }
       #   ]
-      def markets(ids, **options)
-        get 'coins/markets', ids: ids, **options
+      def markets(ids, vs_currency: 'usd', **options)
+        get 'coins/markets', ids: ids, vs_currency: vs_currency, **options
       end
 
       # @deprecated Use {#markets} instead
@@ -224,10 +224,15 @@ module CoingeckoRuby
         markets(ids, vs_currency: currency, **options)
       end
 
-      def contract(id, address, **options)
-        get "coins/#{id}/contract/#{address}", **options
+      # Fetches coin info from a contract address.
+      #
+      # @param id [String] the id of the asset platform to fetch the coin info data.
+      # @param contract_address [String] the contract address to be fetched.
+      #
+      # @return [Hash] returns the contract info.
+      def contract(id, contract_address, **options)
+        get "coins/#{id}/contract/#{contract_address}", **options
       end
-
     end
   end
 end

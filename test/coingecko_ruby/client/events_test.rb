@@ -8,12 +8,14 @@ class TestEvents < Minitest::Test
 
   def test_that_it_gets_event_countries
     response = @client.event_countries
-    refute_empty(response)
+    assert_includes response, 'data'
+    assert_includes response, 'count'
   end
 
   def test_that_it_gets_event_types
     response = @client.event_types
-    refute_empty(response)
+    assert_includes response, 'data'
+    assert_includes response, 'count'
   end
 
   def teardown

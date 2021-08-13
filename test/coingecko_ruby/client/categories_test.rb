@@ -8,17 +8,25 @@ class TestCategories < Minitest::Test
 
   def test_that_it_gets_the_list_of_categories
     response = @client.categories
-    refute_empty(response)
+    data = response[0]
+    assert_includes data, 'category_id'
+    assert_includes data, 'name'
   end
 
   def test_that_it_gets_the_list_of_categories_with_market_data
     response = @client.categories_with_market_data
-    refute_empty(response)
+    data = response[0]
+    assert_includes data, 'id'
+    assert_includes data, 'name'
+    assert_includes data, 'market_cap'
+    assert_includes data, 'volume_24h'
   end
 
   def test_that_it_gets_the_list_of_asset_platforms
     response = @client.asset_platforms
-    refute_empty(response)
+    data = response[0]
+    assert_includes data, 'id'
+    assert_includes data, 'name'
   end
 
   def teardown

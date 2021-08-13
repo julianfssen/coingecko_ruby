@@ -8,6 +8,7 @@ GEM
   specs:
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+    byebug (11.1.3)
     crack (0.4.5)
       rexml
     hashdiff (1.0.1)
@@ -26,6 +27,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  byebug
   coingecko_ruby!
   minitest (~> 5.0)
   rake (~> 12.0)

@@ -8,22 +8,23 @@ class TestInfos < Minitest::Test
 
   def test_that_it_gets_global_crypto_data
     response = @client.global_crypto_data
-    refute_empty(response)
+    assert_includes response, 'data'
   end
 
   def test_that_it_gets_global_defi_data
     response = @client.global_defi_data
-    refute_empty(response)
+    assert_includes response, 'data'
   end
 
   def test_that_it_gets_trending_searches
     response = @client.trending_searches
-    refute_empty(response)
+    assert_includes response, 'coins'
+    assert_includes response, 'exchanges'
   end
 
   def test_that_it_gets_status_updates
     response = @client.status_updates
-    refute_empty(response)
+    assert_includes response, 'status_updates'
   end
 
   def teardown
