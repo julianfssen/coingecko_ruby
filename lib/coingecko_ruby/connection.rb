@@ -1,17 +1,19 @@
-require 'net/http'
-require 'uri'
-require 'json'
+require 'faraday'
 
 module CoingeckoRuby
   module Connection
     BASE_URL = 'https://api.coingecko.com/api/v3/'.freeze
 
     def get(endpoint, **params)
-      url = BASE_URL + endpoint
-      uri = URI(url)
-      uri = build_request(uri, params) unless params.empty?
-      response = Net::HTTP.get(uri)
-      JSON.parse(response)
+      begin
+        url = BASE_URL + endpoint
+        uri = URI(url)
+        uri = build_request(uri, params) unless params.empty?
+        response = Net::HTTP.get(uri)
+        JSON.parse(response)
+      rescue StandardError => err
+        p err
+      end
     end
 
     private
