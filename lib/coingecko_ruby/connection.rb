@@ -1,26 +1,27 @@
 require 'faraday'
+require 'faraday_middleware'
+require 'coingecko_ruby/error'
+require 'byebug'
 
 module CoingeckoRuby
   module Connection
     BASE_URL = 'https://api.coingecko.com/api/v3/'.freeze
 
     def get(endpoint, **params)
-      begin
-        url = BASE_URL + endpoint
-        uri = URI(url)
-        uri = build_request(uri, params) unless params.empty?
-        response = Net::HTTP.get(uri)
-        JSON.parse(response)
-      rescue StandardError => err
-        p err
+      connection = Faraday.new(url: BASE_URL) do |c|
+        c.use Faraday::Response::RaiseError
+        c.request :retry, max: 5
+        c.response :json
       end
+      response = connection.get(endpoint, params)
+      handle_response(response)
     end
 
-    private
-
-    def build_request(uri, params)
-      uri.query = URI.encode_www_form(params)
-      uri
+    def handle_response(response)
+      response.body
+    rescue Faraday::Error => e
+      wrapped_error_class = CoingeckoRuby::Error.wrap_error(e)
+      raise wrapped_error_class.new(e.message, response)
     end
   end
 end
