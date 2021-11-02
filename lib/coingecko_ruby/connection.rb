@@ -1,7 +1,6 @@
 require 'faraday'
 require 'faraday_middleware'
 require 'coingecko_ruby/error'
-require 'byebug'
 
 module CoingeckoRuby
   module Connection
