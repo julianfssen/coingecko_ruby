@@ -12,3 +12,7 @@ VCR.configure do |config|
     record: :new_episodes
   }
 end
+
+def stub_get(endpoint)
+  stub_request(:get, CoingeckoRuby::Connection::BASE_URL + endpoint)
+end
