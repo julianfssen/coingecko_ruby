@@ -1,4 +1,5 @@
 $LOAD_PATH.unshift File.expand_path("../lib", __dir__)
+
 require 'coingecko_ruby'
 require 'minitest/autorun'
 require 'webmock/minitest'
@@ -10,4 +11,8 @@ VCR.configure do |config|
   config.default_cassette_options = {
     record: :new_episodes
   }
+end
+
+def stub_get(endpoint)
+  stub_request(:get, CoingeckoRuby::Connection::BASE_URL + endpoint)
 end
