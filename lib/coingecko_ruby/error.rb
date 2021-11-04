@@ -1,5 +1,4 @@
 require 'faraday'
-require 'byebug'
 
 module CoingeckoRuby
   class FaradayError < Faraday::Error

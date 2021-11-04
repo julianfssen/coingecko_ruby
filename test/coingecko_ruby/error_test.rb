@@ -1,5 +1,4 @@
 require 'test_helper'
-require 'byebug'
 
 class TestError < Minitest::Test
   ClientErrorStatuses = (400...451).freeze
