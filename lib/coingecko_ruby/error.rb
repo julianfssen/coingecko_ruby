@@ -1,17 +1,23 @@
 require 'faraday'
 
 module CoingeckoRuby
-  class FaradayError < Faraday::Error
-    def self.wrap_error(error)
-      class_to_wrap = error.class.name.split('::').last
-      wrapped_error_class = Class.new(error.class)
-      if CoingeckoRuby.const_defined?(class_to_wrap)
-        CoingeckoRuby.const_get(class_to_wrap)
-      else
-        CoingeckoRuby.const_set(class_to_wrap, wrapped_error_class)
+  class Error < StandardError
+    class << self
+      def delegate_and_return_error(error)
+        error_class_name = error.class.name.split('::').last
+        if CoingeckoRuby.const_defined?(error_class_name)
+          error_class = CoingeckoRuby.const_get(error_class_name)
+          error_class.new(error)
+        else
+          delegated_error_class = DelegateClass(error.class) do
+            def initialize(error)
+              super error
+            end
+          end
+          CoingeckoRuby.const_set(error_class_name, delegated_error_class)
+          delegated_error_class.new(error)
+        end
       end
     end
   end
-
-  class Error < StandardError; end
 end

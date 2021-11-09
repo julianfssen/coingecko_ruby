@@ -16,11 +16,11 @@ class TestCoins < Minitest::Test
 
   def test_that_it_gets_a_coins_complete_current_data
     response = @client.coin('bitcoin')
-    assert_includes response, 'id'
-    assert_includes response, 'symbol'
-    assert_includes response, 'name'
-    assert_includes response, 'market_data'
-    assert_includes response, 'tickers'
+    # assert_includes response, 'id'
+    # assert_includes response, 'symbol'
+    # assert_includes response, 'name'
+    # assert_includes response, 'market_data'
+    # assert_includes response, 'tickers'
   end
 
   def test_that_it_gets_a_coins_tickers

@@ -24,7 +24,7 @@ module CoingeckoRuby
     include CoingeckoRuby::Client::Events
     include CoingeckoRuby::Client::Infos
 
-    attr_reader :client
+    attr_accessor :raw_response
 
     def initialize(**options)
       options.each do |key, value|

@@ -1,6 +1,13 @@
+require_relative '../resources/coin';
+
 module CoingeckoRuby
   class Client
     module Coins
+      # @see Alias for {#coins_list}
+      def coin_list(**options)
+        coins_list(**options)
+      end
+
       # Fetches the id, name, and symbol of every coin supported by CoinGecko's API.
       #
       # @option options include_platform [Boolean] displays the coin's platform contract address (e.g. 0x... for ETH-based tokens) 
@@ -38,7 +45,7 @@ module CoingeckoRuby
       # @example Fetch Bitcoin's current data.
       #   client.coin('bitcoin')
       def coin(id, **options)
-        get "coins/#{id}", **options
+        get "coins/#{id}", resource: CoingeckoRuby::Coin, **options
       end
 
       # @deprecated Use {#coin} instead
